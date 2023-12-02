@@ -1,10 +1,15 @@
 
 
 @layer framework {
-    
+
+}
+
+@layer base {
+    @import './base/variables';
 }
 
 @layer components {
     @import './components/case-study';
     @import './components/expertise';
+    @import './components/dark-section';
 }
