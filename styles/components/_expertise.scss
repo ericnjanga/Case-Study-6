@@ -1,0 +1,11 @@
+
+:root {
+    --enjanga-clr-expertise-border: blue;
+}
+
+
+@layer expertise {
+    .expertise {
+        border: 1px solid var(--enjanga-clr-expertise-border);
+    }
+}

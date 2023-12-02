@@ -1,0 +1,11 @@
+
+:root {
+    --enjanga-clr-case-study-border: red;
+}
+
+
+@layer case-study {
+    .case-study {
+        border: 1px solid var(--enjanga-clr-case-study-border);
+    }
+}
