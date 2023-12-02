@@ -9,7 +9,10 @@
 }
 
 @layer components {
+    @import './components/navigation';
     @import './components/case-study';
     @import './components/card-expertise';
     @import './components/dark-section';
+    @import './components/footer';
+    @import './components/hero';
 }
