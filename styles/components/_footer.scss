@@ -12,7 +12,8 @@
 
 @layer footer {
   .footer {
-    .footer-component {
+    .footer-body {
+      color: var(--enjanga-clr-body-txt);
       padding: var(--enjanga-footer-padding);
       flex-direction: var(--enjanga-footer-direction);
       justify-content: var(--enjanga-footer-align);
