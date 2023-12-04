@@ -1,0 +1,39 @@
+:root {
+  --enjanga-section-gap: 75px;
+}
+
+
+
+
+// MARGINS
+.section-top-margin {
+    margin-top: var(--enjanga-section-gap);
+}
+.section-bottom-margin {
+    margin-bottom: var(--enjanga-section-gap);
+}
+
+.section-top-margin-half {
+    margin-top: calc(var(--enjanga-section-gap) / 2);
+}
+.section-top-margin-half {
+    margin-top: calc(var(--enjanga-section-gap) / 2);
+}
+
+
+
+
+// PADDINGS
+.section-top-padding {
+    padding-top: var(--enjanga-section-gap);
+}
+.section-bottom-padding {
+    padding-bottom: var(--enjanga-section-gap);
+}
+
+.section-top-padding-half {
+    padding-top: calc(var(--enjanga-section-gap) / 2);
+}
+.section-top-padding-half {
+    padding-top: calc(var(--enjanga-section-gap) / 2);
+}
