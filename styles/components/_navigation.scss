@@ -8,5 +8,25 @@
         border: 5px solid orange;
         margin-bottom: 15px;
     }
+    .modal-body{
+        height: 300px;
+    }
+    .row{
+    margin-top: -16px;
+    height: 300px;
+    margin-left: -28px;
+    }    
+    .left-grid{
+        background-color: rgb(202, 201, 201);
+    }
+    .right-grid{
+        margin-top: 30px;
+    }
+    ul.contact-option{
+        color: blue; /* Set the color of the bullet */
+    }
+    .btn-hire {
+        background-color: black;
+    }
 }
 
