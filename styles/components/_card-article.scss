@@ -1,0 +1,71 @@
+:root {
+    --enjanga-card-article-gap: 10px;
+    --enjanga-card-article-direction: column-reverse;
+    --enjanga-card-article-text-padding: 20px;
+    --enjanga-card-article-img-width: 100%;
+    --enjanga-card-article-img-height: 320px;
+    --enjanga-clr-card-article-card-bg: #fff;
+    --enjanga-clr-card-article-title: var(--enjanga-clr-body-h);
+}
+
+
+
+
+
+
+@layer article {
+    .card-article {
+        border: 0;
+        border-radius: 0;
+
+        &:hover {
+            background-color: var(--enjanga-clr-accent);
+            --enjanga-clr-card-article-card-bg: var(--enjanga-clr-accent);
+            --enjanga-clr-card-article-title: var(--enjanga-clr-dark-section-h);
+        }
+
+        a {
+            // border: 10px solid purple;
+            display: flex;
+            gap: var(--enjanga-card-article-gap);
+            flex-direction: var(--enjanga-card-article-direction);
+            text-decoration: none;
+            background-color: var(--enjanga-clr-card-article-card-bg);
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: var(--enjanga-card-article-text-padding);
+                background-color: var(--enjanga-clr-card-article-card-bg);
+            }
+
+            img {
+                object-fit: cover;
+                width: var(--enjanga-card-article-img-width);
+                height: var(--enjanga-card-article-img-height);
+            }
+            .card-text {
+                color: var(--enjanga-clr-body-txt);
+            }
+            .card-title {
+                color: var(--enjanga-clr-card-article-title);
+            }
+
+
+
+   
+            @media (min-width: 768px) and (max-width: (992px - 1)) {
+                --enjanga-card-article-img-width: 300px;
+                --enjanga-card-article-direction: row;
+            }
+            @media (min-width: 992px) {
+                --enjanga-card-article-img-width: 450px;
+                --enjanga-card-article-gap: 50px;
+            }
+            @media (min-width: 768px) {
+                --enjanga-card-article-direction: row;
+            }
+        }
+    }
+}
