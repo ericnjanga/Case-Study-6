@@ -2,8 +2,10 @@
   --enjanga-case-study-display: flex;
   --enjanga-case-study-gap: 10px;
   --enjanga-case-study-direction: column-reverse;
-  --enjanga-case-study-text-padding: 60px 20px;
-  --enjanga-case-study-img-height: 300px;
+  --enjanga-case-study-text-padding: 70px 20px;
+  --enjanga-case-study-img-width: 100%;
+  --enjanga-case-study-img-height: 320px;
+  --enjanga-case-study-body-width: 478px;
 }
 
 @layer case-study {
@@ -15,84 +17,36 @@
       color: var(--enjanga-clr-body-h);
       text-decoration: none;
 
-      @media (min-width: 1400px) {
-        --enjanga-case-study-direction: row;
+      @media (min-width: 992px) {
+        --enjanga-case-study-direction: row; 
+        --enjanga-case-study-img-width: 50%;
+        --enjanga-case-study-text-padding: 100px 40px;
+        --enjanga-case-study-img-height: 670px;
       }
-      @media (min-width: 1200px) and (max-width: (1400px - 1)) {
-        --enjanga-case-study-direction: row;
-      }
-      @media (min-width: 992px) and (max-width: (1200px - 1)) {
-        --enjanga-case-study-direction: row;
-      }
-      @media (min-width: 768px) and (max-width: (992px - 1)) {
-        --enjanga-case-study-direction: column-reverse;
-      }
-      @media (min-width: 576px) and (max-width: (768px - 1)) {
-        --enjanga-case-study-direction: column-reverse;
-      }
-      @media (max-width: (576px - 1px)) {
-        --enjanga-case-study-direction: column-reverse;
+      // @media (min-width: 768px) and (max-width: (992px - 1)) {
+      // }
+      @media (min-width: 576px) and (max-width: (992px - 1)) {
+        --enjanga-case-study-text-padding: 70px 40px;
       }
     }
 
     .case-study__body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border: 1px solid var(--enjanga-clr-border-1);
       padding: var(--enjanga-case-study-text-padding);
-      p {
-        margin: 0;
-      }
+      background-color: var(--enjanga-clr-body-bg1);
 
-      @media (min-width: 1400px) {
-        flex: 1;
-        --enjanga-case-study-text-padding: 250.5px 40px;
-        border: 1px solid #434343;
-      }
-      @media (min-width: 1200px) and (max-width: (1400px - 1)) {
-        flex: 1;
-        --enjanga-case-study-text-padding: 250.5px 40px;
-        border: 1px solid #434343;
-      }
-      @media (min-width: 992px) and (max-width: (1200px - 1)) {
-        flex: 1;
-        --enjanga-case-study-text-padding: 250.5px 40px;
-        border: 1px solid #434343;
-      }
-      @media (min-width: 768px) and (max-width: (992px - 1)) {
-        --enjanga-case-study-text-padding: 65px 40px;
-      }
-      @media (min-width: 576px) and (max-width: (768px - 1)) {
-        --enjanga-case-study-text-padding: 62px 40px;
-      }
-      @media (max-width: (576px - 1px)) {
-        --enjanga-case-study-text-padding: 60px 20px;
+      .case-study__title {
+        max-width: var(--enjanga-case-study-body-width);
       }
     }
 
     .case-study__img {
+      object-fit: cover;
+      width: var(--enjanga-case-study-img-width);
       height: var(--enjanga-case-study-img-height);
-      background: #ccc; // Delete this once image is available
-
-      @media (min-width: 1400px) {
-        max-width: 50%;
-        --enjanga-case-study-img-height: 670px;
-      }
-      @media (min-width: 1200px) and (max-width: (1400px - 1)) {
-        max-width: 50%;
-        --enjanga-case-study-img-height: 670px;
-      }
-      @media (min-width: 992px) and (max-width: (1200px - 1)) {
-        max-width: 50%;
-        --enjanga-case-study-img-height: 670px;
-      }
-      @media (min-width: 768px) and (max-width: (992px - 1)) {
-        --enjanga-case-study-img-height: 320px;
-      }
-      @media (min-width: 576px) and (max-width: (768px - 1)) {
-        --enjanga-case-study-img-height: 320px;
-      }
-      @media (max-width: (576px - 1px)) {
-        --enjanga-case-study-img-height: 300px;
-      }
     }
   }
 }
