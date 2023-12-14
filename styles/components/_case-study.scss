@@ -22,9 +22,8 @@
         --enjanga-case-study-img-width: 50%;
         --enjanga-case-study-text-padding: 100px 40px;
         --enjanga-case-study-img-height: 670px;
+        --enjanga-case-study-gap: 20px;
       }
-      // @media (min-width: 768px) and (max-width: (992px - 1)) {
-      // }
       @media (min-width: 576px) and (max-width: (992px - 1)) {
         --enjanga-case-study-text-padding: 70px 40px;
       }
