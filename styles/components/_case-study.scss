@@ -14,6 +14,25 @@
       flex-direction: var(--enjanga-case-study-direction);
       color: var(--enjanga-clr-body-h);
       text-decoration: none;
+
+      @media (min-width: 1400px) {
+        --enjanga-case-study-direction: row;
+      }
+      @media (min-width: 1200px) and (max-width: (1400px - 1)) {
+        --enjanga-case-study-direction: row;
+      }
+      @media (min-width: 992px) and (max-width: (1200px - 1)) {
+        --enjanga-case-study-direction: row;
+      }
+      @media (min-width: 768px) and (max-width: (992px - 1)) {
+        --enjanga-case-study-direction: column-reverse;
+      }
+      @media (min-width: 576px) and (max-width: (768px - 1)) {
+        --enjanga-case-study-direction: column-reverse;
+      }
+      @media (max-width: (576px - 1px)) {
+        --enjanga-case-study-direction: column-reverse;
+      }
     }
 
     .case-study__body {
@@ -22,11 +41,58 @@
       p {
         margin: 0;
       }
+
+      @media (min-width: 1400px) {
+        flex: 1;
+        --enjanga-case-study-text-padding: 250.5px 40px;
+        border: 1px solid #434343;
+      }
+      @media (min-width: 1200px) and (max-width: (1400px - 1)) {
+        flex: 1;
+        --enjanga-case-study-text-padding: 250.5px 40px;
+        border: 1px solid #434343;
+      }
+      @media (min-width: 992px) and (max-width: (1200px - 1)) {
+        flex: 1;
+        --enjanga-case-study-text-padding: 250.5px 40px;
+        border: 1px solid #434343;
+      }
+      @media (min-width: 768px) and (max-width: (992px - 1)) {
+        --enjanga-case-study-text-padding: 65px 40px;
+      }
+      @media (min-width: 576px) and (max-width: (768px - 1)) {
+        --enjanga-case-study-text-padding: 62px 40px;
+      }
+      @media (max-width: (576px - 1px)) {
+        --enjanga-case-study-text-padding: 60px 20px;
+      }
     }
 
     .case-study__img {
       height: var(--enjanga-case-study-img-height);
       background: #ccc; // Delete this once image is available
+
+      @media (min-width: 1400px) {
+        max-width: 50%;
+        --enjanga-case-study-img-height: 670px;
+      }
+      @media (min-width: 1200px) and (max-width: (1400px - 1)) {
+        max-width: 50%;
+        --enjanga-case-study-img-height: 670px;
+      }
+      @media (min-width: 992px) and (max-width: (1200px - 1)) {
+        max-width: 50%;
+        --enjanga-case-study-img-height: 670px;
+      }
+      @media (min-width: 768px) and (max-width: (992px - 1)) {
+        --enjanga-case-study-img-height: 320px;
+      }
+      @media (min-width: 576px) and (max-width: (768px - 1)) {
+        --enjanga-case-study-img-height: 320px;
+      }
+      @media (max-width: (576px - 1px)) {
+        --enjanga-case-study-img-height: 300px;
+      }
     }
   }
 }
