@@ -15,5 +15,14 @@
         p, th, td, ul li, ol li {
             color: var(--enjanga-clr-dark-section-txt);
         }
+
+
+        .table-style1 {
+            thead th {
+                color: var(--enjanga-clr-dark-section-accent);
+            }
+        }
     }
 }
+
+

@@ -18,84 +18,103 @@
 
   <link rel="stylesheet" href="/dist/styles.css" />
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
   <!-- Standard head styles -->
 </head>
 
 <body>
-  <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
-    <a href="/" class="navbar-brand d-flex w-50 mr-auto">Eric Njanga</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+  <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center fixed-top">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex w-50 mr-auto">Eric Njanga</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="expertise.html">Expertise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="case-studies.html">Case</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-secondary btn-hire" data-toggle="modal" data-target="#buttonModal">
+              Hire Me
+            </button>
+          </li>
+        </ul>
+      </div>
 
-      <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="expertise.html">Expertise</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="case-studies.html">Case</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">          
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-secondary btn-hire" data-toggle="modal" data-target="#buttonModal">
-            Hire Me
-          </button>
-        </li>
-      </ul>
     </div>
   </nav>
 
 
 
+
+
+
+
+
+
+
+
+
+  <!-- main header-->
+  <header class="hero section-top-margin section-bottom-margin">
     <div class="container">
-      <!-----------------------section 1---------------->
 
-      <section class="hero">
-        <nav aria-label="breadcrumb" class="breadcrumg">
-          <ol class="breadcrumg__list list-inline">
-            <li><a href="/index.html">Home</a></li>
-            <li>About</li>
-          </ol>
-        </nav>
+      <nav aria-label="breadcrumb" class="breadcrumg">
+        <ol class="breadcrumb__list list-inline">
+          <li><a href="/index.html">Home</a></li>
+          <li>/</li>
+          <li>About</li>
+        </ol>
+      </nav>
 
 
-        <h1>Smoothing the design & development lifecycle</h1>
+      <h1 class="section-bottom-margin-fourth">Smoothing the design & development lifecycle</h1>
 
-        <p>
-          By making mental connections between Design elements, technical
-          specifications and business constraints, I can eliminate frictions,
-          costly revisions and waisted efforts.
-        </p>
-      </section>
-      <!---------------------section2---------------------------->
-      <section class = "section-bottom-margin">
-        <div class="row align-items-md-stretch">
-          <div class="col-md-12">
-            <div class="">
-              <img
-                src="https://placehold.co/1140x562/CCCCCC/333333?text=Sample+Text"
-                class="img-fluid"
-                alt="image 8"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!---------------------section2---------------------------->
-      <section class = "section-bottom-margin">
+      <p class="section-max-w2 section-h-centering section-bottom-margin">
+        By making mental connections between Design elements, technical
+        specifications and business constraints, I can eliminate frictions,
+        costly revisions and waisted efforts.
+      </p>
+
+      <img
+        src="https://media.istockphoto.com/id/1460835826/photo/portrait-of-successful-hispanic-businessman-inside-office-man-with-laptop-working-typing-on.jpg?s=2048x2048&w=is&k=20&c=RH9ynwk6G1kCqIeo4z1D0w7FKOCDzbgdtp-L_JXcyHw="
+        class="banner-image" alt="image 8" />
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+  <section class="section-bottom-margin">
+    <div class="container">
+      <div class="col-md-12 col-lg-8 col-xl-8">
         <h2>Design and Development must be harmonious and fluid</h2>
         <p>
           My 15+ years of front-end development and 4+ years of UX Design
@@ -109,130 +128,112 @@
           iterations and rework, and keeping the product quality uncompromised.
         </p>
         <p>
-          <a href="#"
-            ><b>See My Latest Work</b> <i class="bi bi-arrow-right"></i
-          ></a>
+          <a href="#"><b>See My Latest Work</b> <i class="bi bi-arrow-right"></i></a>
         </p>
-      </section>
-      <!---------------------section3---------------------------->
-      <section class=" section-bottom-margin dark-section">
-        <h2>Education</h2>
-        <p>
-          I combine a robust skill set in computer science, Web Development and
-          UX Design that allows me to build technically sound, user-centric and
-          visually appealing web applications.
-        </p>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Degree</th>
-              <th scope="col">Qty</th>
-              <th scope="col">Type of degree</th>
-              <th scope="col">Institution</th>
-            </tr>
-          </thead>
-          <tbody class="table-group-divider">
-            <tr>
-              <th scope="row">Bachelor degree in computer science</th>
-              <td>1</td>
-              <td>Bachelor Degree</td>
-              <td>University of Montreal</td>
-            </tr>
-            <tr>
-              <th scope="row">Front-end/back-end developer mastery</th>
-              <td>3</td>
-              <td>Online Certification</td>
-              <td>Lynda University</td>
-            </tr>
-            <tr>
-              <th scope="row">WordPress PHP, MySQL development</th>
-              <td>2</td>
-              <td>Online Certification</td>
-              <td>Lynda University</td>
-            </tr>
-
-            <tr>
-              <th scope="row">React, REST-API development</th>
-              <td>1</td>
-              <td>Online Certification</td>
-              <td>UDEMY University</td>
-            </tr>
-            <tr>
-              <th scope="row">Angular, REST-API development</th>
-              <td>4</td>
-              <td>Online Certification</td>
-              <td>Angular University</td>
-            </tr>
-            <tr>
-              <th scope="row">UX Design and Design Thinking</th>
-              <td>6</td>
-              <td>Online Certification</td>
-              <td>Interaction Design Foundation</td>
-            </tr>
-            <tr>
-              <th scope="row"><a href="#">AODA certification</a></th>
-              <td>1</td>
-              <td>Online Certification</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <!---------------------section4---------------------------->
-      <section class = "section-bottom-margin">
-        <div class="row align-items-md-stretch">
-          <div class="col-md-6">
-            <div class="">
-              <h2>Developer since 2006</h2>
-              <p>
-                I earned my bachelor's degree in computer science from the
-                University of Montreal in 2006, and began my career that same
-                year, transforming PhotoShop mockups into DreamWeaver web pages,
-                building Adobe Flash websites, and hard-coding WordPress
-                websites in PHP, managing MySQL databases.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="">
-              <img
-                src="./images/profile-photo.png"
-                class="img-fluid"
-                alt="image 8"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!---------------------section4---------------------------->
-      <footer class="footer text-center">
-        <div class="footer-body">
-          <h3>Eric Njanga</h3>
-          <p>Senior UX Developer and Consultant</p>
-          <p>
-            <i class="footer-icon bi bi-geo-alt-fill"></i>Markham, Ontario,
-            Canada
-          </p>
-          <a href="#">
-            <i class="footer-icon bi bi-linkedin"></i>LinkedIn Profile</a
-          >
-          <span class="element-to-hide">|</span>
-
-          <a href="#">
-            <i class="footer-icon bi bi-calendar-fill"></i>Book a meeting</a
-          >
-        </div>
-      </footer>
+      </div>
     </div>
+  </section>
 
 
 
 
+
+
+
+  <section class="section-top-padding section-bottom-padding dark-section">
+    <div class="container">
+      <div class="row section-bottom-margin-fourth">
+        <div class="col-md-12 col-lg-8 col-xl-8">
+          <h2>Education</h2>
+          <p>
+            I combine a robust skill set in computer science, Web Development and
+            UX Design that allows me to build technically sound, user-centric and
+            visually appealing web applications.
+          </p>
+        </div>
+      </div>
+
+      <div class="row section-bottom-margin">
+        <div class="col-md-12">
+          <table class="table table-style1">
+            <thead>
+              <tr>
+                <th scope="col">Degree</th>
+                <th scope="col">Qty</th>
+                <th class="display-tabCell-hidden-12" scope="col">Type</th>
+                <th scope="col">Institution</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">Bachelor degree in computer science</th>
+                <td>1</td>
+                <td class="display-tabCell-hidden-12">Bachelor Degree</td>
+                <td>University of Montreal</td>
+              </tr>
+              <tr>
+                <th scope="row">Front-end/back-end developer mastery</th>
+                <td>3</td>
+                <td class="display-tabCell-hidden-12">Online Certification</td>
+                <td>Lynda University</td>
+              </tr>
+              <tr>
+                <th scope="row">WordPress PHP, MySQL development</th>
+                <td>2</td>
+                <td class="display-tabCell-hidden-12">Online Certification</td>
+                <td>Lynda University</td>
+              </tr>
     
-<!-- Add the back-to-top button with arrow symbol -->
-<button class="btn-back-to-top " onclick="scrollToTop()">
-  <div class="arrow-container"> <i class="bi bi-arrow-up"></i></div> 
-</button>
+              <tr>
+                <th scope="row">React, REST-API development</th>
+                <td>1</td>
+                <td class="display-tabCell-hidden-12">Online Certification</td>
+                <td>UDEMY University</td>
+              </tr>
+              <tr>
+                <th scope="row">Angular, REST-API development</th>
+                <td>4</td>
+                <td class="display-tabCell-hidden-12">Online Certification</td>
+                <td>Angular University</td>
+              </tr>
+              <tr>
+                <th scope="row">UX Design and Design Thinking</th>
+                <td>6</td>
+                <td class="display-tabCell-hidden-12">Online Certification</td>
+                <td>Interaction Design Foundation</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="#">AODA certification</a></th>
+                <td>1</td>
+                <td class="display-tabCell-hidden-12">Online Certification</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9 col-lg-6">
+          <div class="">
+            <h2 class="section-bottom-margin-fourth">Developer since 2006</h2>
+            <p>
+              I earned my bachelor's degree in computer science from the
+              University of Montreal in 2006, and began my career that same
+              year, transforming PhotoShop mockups into DreamWeaver web pages,
+              building Adobe Flash websites, and hard-coding WordPress
+              websites in PHP, managing MySQL databases.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-5 offset-lg-1">
+          <img src="./images/profile-photo.png" class="img-fluid" alt="image 8" />
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 
 
@@ -241,37 +242,84 @@
 
 
 
-          <!-- Modal -->
-          <div class="modal fade" id="buttonModal" tabindex="-1" role="dialog" aria-labelledby="buttonModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <!-- First Column -->
-                      <div class="col-4 left-grid">
-
-                      </div>
-                      <!-- Second Column -->
-                      <div class="col-8 right-grid">
-                        <h5><strong>How to reach out</strong></h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <ul class="contact-option">
-                          <li><a href=""><strong>Message me on LinkedIn</strong></a></li>
-                          <li><a href=""><strong>Book a meeting</strong></a></li>
-
-                        </ul>
 
 
 
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer text-center">
+    <div class="footer-body">
+      <h3>Eric Njanga</h3>
+      <p>Senior UX Developer and Consultant</p>
+      <p>
+        <i class="footer-icon bi bi-geo-alt-fill"></i>Markham, Ontario,
+        Canada
+      </p>
+      <a href="#">
+        <i class="footer-icon bi bi-linkedin"></i>LinkedIn Profile</a>
+      <span class="element-to-hide">|</span>
+
+      <a href="#">
+        <i class="footer-icon bi bi-calendar-fill"></i>Book a meeting</a>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Add the back-to-top button with arrow symbol -->
+  <button class="btn-back-to-top " onclick="scrollToTop()">
+    <div class="arrow-container"> <i class="bi bi-arrow-up"></i></div>
+  </button>
+
+
+
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="buttonModal" tabindex="-1" role="dialog" aria-labelledby="buttonModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- First Column -->
+              <div class="col-4 left-grid">
+
+              </div>
+              <!-- Second Column -->
+              <div class="col-8 right-grid">
+                <h5><strong>How to reach out</strong></h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <ul class="contact-option">
+                  <li><a href=""><strong>Message me on LinkedIn</strong></a></li>
+                  <li><a href=""><strong>Book a meeting</strong></a></li>
+
+                </ul>
+
+
+
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  </body>
+</body>
+
 </html>

@@ -5,13 +5,17 @@
 
 @layer navigation {
     .navbar {
-        border: 5px solid orange;
+        // border: 5px solid orange;
         margin-bottom: 15px;
 
         
         .btn-hire {
             background-color: black;
         }
+    }
+
+    .navbar.navbar-expand-md {
+        background-color: var(--enjanga-clr-body-bg);
     }
 }
 

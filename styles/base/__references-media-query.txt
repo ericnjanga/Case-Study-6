@@ -41,22 +41,23 @@
  * ---------
 */
 .browser-query {
-    @media (min-width: 1400px) {
+    @media (min-width: 1400px) { // position 7 ...
         border: 10px solid purple;
     }
-    @media (min-width: 1200px) and (max-width: (1400px - 1)) {
+    @media (min-width: 1200px) and (max-width: (1400px - 1)) { // position 6 ...
         border: 10px solid violet;
     }
-    @media (min-width: 992px) and (max-width: (1200px - 1)) {
+    @media (min-width: 992px) and (max-width: (1200px - 1)) { // position 5 ...
         border: 10px solid lime;
     }
-    @media (min-width: 768px) and (max-width: (992px - 1)) {
+    @media (min-width: 768px) and (max-width: (992px - 1)) { // position 4 ...
         border: 10px solid blue;
     }
-    @media (min-width: 576px) and (max-width: (768px - 1)) {
+    @media (min-width: 576px) and (max-width: (768px - 1)) { // position 3 ...
         border: 10px solid turquoise;
     }
-    @media (max-width: (576px - 1px)) {
+    @media (max-width: (576px - 1px)) { // position 2 ...
         border: 10px solid chocolate;
     }
+    // position 1 ...
 }

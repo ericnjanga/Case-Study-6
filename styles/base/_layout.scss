@@ -2,7 +2,11 @@
     --enjanga-section-gap: 75px;
     --enjanga-section-max-width1: 473px;
     --enjanga-section-max-width2: 752px;
+    --enjanga-display-block-hidden-12-display: none;
+    --enjanga-display-tabCell-hidden-12-display: none;
 }
+
+
 
 
 .section-top-margin,
@@ -86,3 +90,28 @@
     margin-right: auto;
 }
 
+
+
+
+
+/**
+ * Hidden classes
+ * ---------------------------------------
+*/
+
+.display-block-hidden-12 { // (Block) Hidden on position 1, and 2 breakpoints
+    display: var(--enjanga-display-block-hidden-12-display);
+
+    @media (min-width: 768px) { // position 4 ...
+        --enjanga-display-block-hidden-12-display: block;
+    }
+}
+
+
+.display-tabCell-hidden-12 { // (Cell) Hidden on position 1, and 2 breakpoints
+    display: var(--enjanga-display-tabCell-hidden-12-display);
+
+    @media (min-width: 768px) { // position 4 ...
+        --enjanga-display-tabCell-hidden-12-display: table-cell;
+    }
+}

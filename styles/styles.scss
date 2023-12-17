@@ -11,6 +11,9 @@
 }
 
 @layer components {
+    @import './components/table';
+    @import './components/banner-image';
+    @import './components/breadcrumb';
     @import './components/card-testimonial';
     @import './components/card-article';
     @import './components/navigation';

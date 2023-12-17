@@ -5,7 +5,7 @@
     --enjanga-card-article-img-width: 100%;
     --enjanga-card-article-img-height: 320px;
     --enjanga-clr-card-article-card-bg: var(--enjanga-clr-body-bg1);
-    --enjanga-clr-card-article-title: var(--enjanga-clr-body-h);
+    --enjanga-clr-card-article-title: var(--enjanga-clr-gray-1);
 }
 
 
@@ -46,7 +46,7 @@
                 height: var(--enjanga-card-article-img-height);
             }
             .card-text {
-                color: var(--enjanga-clr-body-txt);
+                color: var(--enjanga-clr-gray-2);
             }
             .card-title {
                 color: var(--enjanga-clr-card-article-title);

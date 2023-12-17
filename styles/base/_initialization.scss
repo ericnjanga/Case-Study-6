@@ -1,3 +1,16 @@
+:root {
+    --enjanga-h1-font-size: 45px;
+    --enjanga-h1-line-height: 54px;
+
+    --enjanga-h2-font-size: 36px;
+    --enjanga-h2-line-height: 40px;
+
+    --enjanga-h3-font-size: 28px;
+    --enjanga-h3-line-height: 32px;
+}
+
+ 
+
 /**
  * INITIALIZATION
  * ---------------------------------------------
@@ -34,18 +47,18 @@ h5 {
 
 
 h1 {
-    font-size: 54px;
-    line-height: 64px;
+    font-size: var(--enjanga-h1-font-size);
+    line-height: var(--enjanga-h1-line-height);
 }
 
 h2 {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: var(--enjanga-h2-font-size);
+    line-height: var(--enjanga-h2-line-height);
 }
 
 h3 {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: var(--enjanga-h3-font-size);
+    line-height: var(--enjanga-h3-line-height);
 }
 
 
@@ -55,4 +68,51 @@ h3 {
 */
 body {
     background-color: var(--enjanga-clr-body-bg);
+
+    @media (min-width: 1400px) {
+        // border: 10px solid purple;
+        --enjanga-h1-font-size: 94px;
+        --enjanga-h1-line-height: 90px;
+
+        --enjanga-h2-font-size: 64px;
+        --enjanga-h2-line-height: 62.5px;
+    }
+    @media (min-width: 1200px) {
+        // border: 10px solid violet;
+        --enjanga-h1-font-size: 84.5px;
+        --enjanga-h1-line-height: 83px;
+
+        --enjanga-h2-font-size: 58px;
+        --enjanga-h2-line-height: 62.5px;
+    }
+    @media (min-width: 992px) and (max-width: (1200px - 1)) {
+        // border: 10px solid lime;
+        --enjanga-h1-font-size: 75px;
+        --enjanga-h1-line-height: 76px;
+
+        --enjanga-h2-font-size: 52px;
+        --enjanga-h2-line-height: 62.5px;
+    }
+    @media (min-width: 768px) and (max-width: (992px - 1)) {
+        // border: 10px solid blue;
+        --enjanga-h1-font-size: 65.5px;
+        --enjanga-h1-line-height: 69px;
+
+        --enjanga-h2-font-size: 46px;
+        --enjanga-h2-line-height: 62.5px;
+    }
+    @media (min-width: 576px) and (max-width: (768px - 1)) {
+        // border: 10px solid turquoise;
+        --enjanga-h1-font-size: 56px;
+        --enjanga-h1-line-height: 62px;
+
+        --enjanga-h2-font-size: 40px;
+        --enjanga-h2-line-height: 62.5px;
+    }
+    
+    // --enjanga-h1-font-size: 45px;
+    // --enjanga-h1-line-height: 54px;
+
+//     --enjanga-h2-font-size: 36px;
+//     --enjanga-h2-line-height: 40px;
 }
