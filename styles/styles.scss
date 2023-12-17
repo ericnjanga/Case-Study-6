@@ -11,6 +11,7 @@
 }
 
 @layer components {
+    @import './components/card-testimonial';
     @import './components/card-article';
     @import './components/navigation';
     @import './components/case-study';
