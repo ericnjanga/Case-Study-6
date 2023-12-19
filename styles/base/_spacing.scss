@@ -6,16 +6,17 @@
 
 .gap-top-margin,
 .gap-top-padding,
-.gap-top-margin-half,
-.gap-top-margin-quarter,
-.gap-top-padding-half,
+.gap-top-margin-2th,
+.gap-top-margin-4th,
+.gap-top-padding-2th,
 
 .gap-bottom-margin,
 .gap-bottom-padding,
-.gap-bottom-padding-half,
-.gap-bottom-margin-half,
-.gap-bottom-margin-quarter,
-.gap-bottom-margin-5th {
+.gap-bottom-padding-2th,
+.gap-bottom-margin-2th,
+.gap-bottom-margin-4th,
+.gap-bottom-margin-5th,
+.gap-bottom-margin-10th {
     @media (min-width: 1400px) { 
         --enjanga-section-gap: 200px;
     }
@@ -34,10 +35,10 @@
 .gap-top-margin {
     margin-top: var(--enjanga-section-gap);
 }
-.gap-top-margin-half {
+.gap-top-margin-2th {
     margin-top: calc(var(--enjanga-section-gap) / 2);
 }
-.gap-top-margin-quarter {
+.gap-top-margin-4th {
     margin-top: calc(var(--enjanga-section-gap) / 4);
 
     // Cancel the gap spacing on media queries of positions ...
@@ -50,7 +51,7 @@
 .gap-top-padding {
     padding-top: var(--enjanga-section-gap);
 }
-.gap-top-padding-half {
+.gap-top-padding-2th {
     padding-top: calc(var(--enjanga-section-gap) / 2);
 }
 
@@ -58,19 +59,22 @@
 .gap-bottom-margin {
     margin-bottom: var(--enjanga-section-gap);
 }
-.gap-bottom-margin-half {
+.gap-bottom-margin-2th {
     margin-bottom: calc(var(--enjanga-section-gap) / 2);
 }
-.gap-bottom-margin-quarter {
+.gap-bottom-margin-4th {
     margin-bottom: calc(var(--enjanga-section-gap) / 4);
 }
 .gap-bottom-margin-5th {
     margin-bottom: calc(var(--enjanga-section-gap) / 5);
 }
+.gap-bottom-margin-10th {
+    margin-bottom: calc(var(--enjanga-section-gap) / 10);
+}
 
 .gap-bottom-padding {
     padding-bottom: var(--enjanga-section-gap);
 }
-.gap-bottom-padding-half {
+.gap-bottom-padding-2th {
     padding-bottom: calc(var(--enjanga-section-gap) / 2);
 }
