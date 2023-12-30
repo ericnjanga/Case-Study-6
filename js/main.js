@@ -2,7 +2,7 @@
 
 // Files import
 // scripts ...
-// import './site-image-gallery.js';
+import './scrollToTop.js';
 // import './site-timeline.js';
 // import './site-collapse.js';
 // import './site-tooltips.js';
