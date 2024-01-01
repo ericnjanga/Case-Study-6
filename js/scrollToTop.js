@@ -8,23 +8,28 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
 
-// Show/hide back-to-top button based on scroll position
-window.onscroll = function () {
-  // var button = document.querySelector('.btn-back-to-top');
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    btnBackToTop.style.display = 'block';
-  } else {
-    btnBackToTop.style.display = 'none';
-  }
-};
+
+if (btnBackToTop) {
+
+  // Show/hide back-to-top button based on scroll position
+  window.onscroll = function () {
+    // var button = document.querySelector('.btn-back-to-top');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      btnBackToTop.style.display = 'block';
+    } else {
+      btnBackToTop.style.display = 'none';
+    }
+  };
+
+  btnBackToTop.addEventListener('click', function(event) {
+    // Preventing the default behavior of the button (e.g., preventing form submission)
+    event.preventDefault();
+    scrollToTop();
+  });
+}
 
 
-btnBackToTop.addEventListener('click', function(event) {
-  // Preventing the default behavior of the button (e.g., preventing form submission)
-  event.preventDefault();
-  scrollToTop();
-});
 
 
-
+ 
 

@@ -125,3 +125,15 @@ body {
 .list-v-align {
     padding-left: 15px;
 }
+.pos-relative {
+    position: relative;
+}
+.page-anchor-dir {
+    position:absolute; 
+    top: 0;
+    display: block;
+    height: 10px;
+    width: 100%;
+}
+
+

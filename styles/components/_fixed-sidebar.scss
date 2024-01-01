@@ -1,0 +1,28 @@
+:root {
+}
+
+
+@layer fixed-sidebar {
+    .fixed-sidebar {
+        display: none; // Hide it by default
+        top: 210px;
+        z-index: 99;
+
+        &.isDefault {
+            position: absolute;
+            top: 830px;
+        }
+
+
+        // isFixed
+
+        &.isFixed {
+            position: fixed; 
+        }
+
+        // Reveal it starting at position 5 ...
+        @media (min-width: 992px) { 
+            display: block;
+        }
+    }
+}

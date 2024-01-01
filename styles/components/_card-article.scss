@@ -16,7 +16,6 @@
 @layer article {
     .card-article {
         border: 0;
-        border-radius: 0;
 
         &:hover {
             background-color: var(--enjanga-clr-accent);
