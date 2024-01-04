@@ -1,4 +1,6 @@
 :root {
+  --enjanga-btn-back-to-top-dim: 50px;
+  --enjanga-btn-back-to-top-right-pos: 10px;
 }
 
 @layer btn-back-to-top {
@@ -6,7 +8,7 @@
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: var(--enjanga-btn-back-to-top-right-pos);
     z-index: 99;
     font-size: 15px;
     border: none;
@@ -15,9 +17,15 @@
     color: white;
     cursor: pointer;
     padding: 8px;
+    width: var(--enjanga-btn-back-to-top-dim);
+    height: var(--enjanga-btn-back-to-top-dim);
+
+    @media (min-width: 768px) {
+      --enjanga-btn-back-to-top-right-pos: 30px;
+    }
   }
 
-  .bi-arrow-up{
-      color: white;
+  .bi-arrow-up {
+    color: white;
   }
 }
