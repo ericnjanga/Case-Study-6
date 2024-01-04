@@ -1,7 +1,9 @@
 
 
-@layer framework {
 
+
+@layer framework {
+    @import './framework/bootstrap';
 }
 
 @layer base {
@@ -12,8 +14,10 @@
 }
 
 @layer components {
+    @import './components/icons';
+    @import 'components/icons-before';
+    @import 'components/icons-after';
     @import './components/fixed-sidebar';
-    @import './components/buttons-and-links';
     @import './components/table';
     @import './components/banner-image';
     @import './components/breadcrumb';
@@ -27,6 +31,8 @@
     @import './components/hero';
     @import './components/btn-back-to-top';
     @import './components/card-testimonial';
+    // 
+    @import './components/buttons-and-links';
 }
 
 @layer common-styles {

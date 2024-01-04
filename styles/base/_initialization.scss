@@ -135,5 +135,14 @@ body {
     height: 10px;
     width: 100%;
 }
-
+.list-no-style {
+    li {
+        list-style: none;
+    }
+}
+.list-inline {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
 

@@ -1,0 +1,14 @@
+.icon-before {
+    &.icon-linkedIn::before {
+        content: "\F472";
+    }
+    &.icon-pin::before {
+        content: "\F3E7";
+    }
+    &.icon-link::before {
+        content: "\F471";
+    }
+    &.icon-text::before {
+        content: "\F3B9";
+    }
+}

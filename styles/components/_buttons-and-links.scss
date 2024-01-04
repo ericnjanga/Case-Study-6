@@ -4,6 +4,16 @@
 
 @layer buttons-and-links {
 
+
+    .btn-primary {
+        background-color: var(--enjanga-clr-gray-1);
+        border-color: var(--enjanga-clr-gray-1);
+
+        &:hover {
+            background-color: var(--enjanga-clr-accent);
+        }
+    }
+    
     /** 
      * Classes applied directly to <a /> tags 
      * --------------
@@ -16,6 +26,8 @@
             text-decoration: none;
         }
     }
+
+
 
     // Link with color1 by default, and color2 on hover
     a.link-hover1 {
@@ -30,6 +42,15 @@
         color: var(--enjanga-clr-accent);
         &:hover {
             color: var(--enjanga-clr-gray-2);
+        }
+    }
+
+    // ...
+    a.link-hover3 {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: var(--enjanga-clr-accent);
         }
     }
 

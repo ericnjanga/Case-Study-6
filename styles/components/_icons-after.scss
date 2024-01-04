@@ -1,0 +1,14 @@
+.icon-after {
+    &.icon-linkedIn::after {
+        content: "\F472";
+    }
+    &.icon-pin::after {
+        content: "\F3E7";
+    }
+    &.icon-link::after {
+        content: "\F471";
+    }
+    &.icon-text::after {
+        content: "\F3B9";
+    }
+}
