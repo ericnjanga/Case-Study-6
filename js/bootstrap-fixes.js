@@ -7,8 +7,8 @@
 // JavaScript to dismiss modal on button click
 const dismissButton = document.querySelector('.btn-bs-close');
 
-
-dismissButton.addEventListener('click', () => {
+if (dismissButton) {
+  dismissButton.addEventListener('click', () => {
     const modal = document.querySelector('.modal');
 
     /*
@@ -40,4 +40,5 @@ dismissButton.addEventListener('click', () => {
 
     // Remove 'aria-hidden' attribute
     modal.removeAttribute('aria-hidden');
-});
+  });
+}

@@ -7,6 +7,9 @@
 
     --enjanga-h3-font-size: 28px;
     --enjanga-h3-line-height: 32px;
+
+    --enjanga-grid-2col-max-template: auto;
+    --enjanga-grid-2col-max-gap: 30px;
 }
 
  
@@ -145,4 +148,15 @@ body {
     justify-content: center;
     gap: 30px;
 }
+.grid-2col-max {
+    display: grid;
+    grid-template: var(--enjanga-grid-2col-max-template);
+    gap: var(--enjanga-grid-2col-max-gap);
 
+    @media (min-width: 1200px) { // position 6 ...
+        --enjanga-grid-2col-max-gap: 50px;
+    }
+    @media (min-width: 768px) { // position 4 ...
+        --enjanga-grid-2col-max-template: auto auto / auto auto;
+    }
+}
