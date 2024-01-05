@@ -53,16 +53,13 @@
       .footer-body-cell-1 {
         grid-column: var(--enjanga-footer-body-cell-1);
       }
+
       .footer-body-cell-list-links {
         display: flex;
         flex-direction: column;
         gap: var(--enjanga-footer-body-cell-2-3-gap);
       }
     }
-
-    // a {
-    //   color: var(--enjanga-clr-accent);
-    // }
 
     .icon-before::before {
       color: var(--enjanga-clr-gray-2);
@@ -73,6 +70,7 @@
     @media (min-width: 1400px) {
       --enjanga-footer-body-gap: 100px;
     }
+
     @media (min-width: 1200px) and (max-width: (1400px - 1)) {
       --enjanga-footer-body-gap: 60px;
     }
@@ -96,7 +94,7 @@
     // Container gap ...
     // Header list gap ...
     @media (min-width: 576px) {
-      --enjanga-footer-container-gap: 50px; 
+      --enjanga-footer-container-gap: 50px;
       --enjanga-footer-header-list-gap: 60px;
     }
 

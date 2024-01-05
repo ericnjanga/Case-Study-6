@@ -3,26 +3,21 @@
 
 
 @layer fixed-sidebar {
-    .fixed-sidebar {
-        display: none; // Hide it by default
-        top: 210px;
+    .fixed-sidebar-container {
+        position: relative;
+        top: 2000px;
+        left: -9px;
+    }
+    .fixed-sidebar.is-sticky {
+        position: absolute;
+        top: 110px;
+        width: 330px;
+        display: none; /* Initially hidden */
         z-index: 99;
 
-        &.isDefault {
-            position: absolute;
-            top: 640px;
-        }
-
-
-        // isFixed
-
-        &.isFixed {
-            position: fixed; 
-        }
-
-        // Reveal it starting at position 5 ...
-        @media (min-width: 992px) { 
-            display: block;
+        @media (max-width: (992px - 1)) { // position 4 ...
+            border: 10px solid blue;
+            display: none!important;
         }
     }
 }
