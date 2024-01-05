@@ -81,7 +81,7 @@ body {
     background-color: var(--enjanga-clr-body-bg);
 
     @media (min-width: 1400px) {
-        border: 10px solid purple;
+        // border: 10px solid purple;
         --enjanga-h1-font-size: 94px;
         --enjanga-h1-line-height: 90px;
 
@@ -95,7 +95,7 @@ body {
         --enjanga-hero-subtitle-line-height: 35px;
     }
     @media (min-width: 1200px) and (max-width: (1400px - 1)) { // position 6 ...
-        border: 10px solid violet;
+        // border: 10px solid violet;
         --enjanga-h1-font-size: 84.5px;
         --enjanga-h1-line-height: 83px;
 
@@ -109,7 +109,7 @@ body {
         --enjanga-hero-subtitle-line-height: 30px;
     }
     @media (min-width: 992px) and (max-width: (1200px - 1)) {
-        border: 10px solid lime;
+        // border: 10px solid lime;
         --enjanga-h1-font-size: 75px;
         --enjanga-h1-line-height: 76px;
 
@@ -123,7 +123,7 @@ body {
         // --enjanga-hero-subtitle-line-height: root
     }
     @media (min-width: 768px) and (max-width: (992px - 1)) {
-        border: 10px solid blue;
+        // border: 10px solid blue;
         --enjanga-h1-font-size: 65.5px;
         --enjanga-h1-line-height: 69px;
 
@@ -135,8 +135,6 @@ body {
 
         // --enjanga-hero-subtitle-font-size: root
         // --enjanga-hero-subtitle-line-height: root
-
-
     }
     @media (min-width: 576px) and (max-width: (768px - 1)) {
         border: 10px solid turquoise;
@@ -191,8 +189,11 @@ body {
 }
 .list-inline {
     display: flex;
-    justify-content: center;
     gap: 30px;
+
+    &.gap-10 {
+        gap: 10px;
+    }
 }
 .grid-2col-max {
     display: grid;

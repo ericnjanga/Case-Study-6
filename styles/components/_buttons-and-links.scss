@@ -13,6 +13,11 @@
             background-color: var(--enjanga-clr-accent);
         }
     }
+    .btn-secondary {
+        &:hover {
+            background-color: var(--enjanga-clr-accent);
+        }
+    }
     
     /** 
      * Classes applied directly to <a /> tags 
@@ -69,6 +74,9 @@
                     text-decoration: none;
                 }
             }
+            .btn-secondary {
+                text-decoration: none;
+            }
         }
     
         // Link with color1 by default, and color2 on hover
@@ -77,6 +85,12 @@
                 color: var(--enjanga-clr-gray-2);
                 &:hover {
                     color: var(--enjanga-clr-accent);
+                }
+            }
+            .btn-secondary {
+                color: #fff;
+                &:hover {
+                    color: #fff;
                 }
             }
         }

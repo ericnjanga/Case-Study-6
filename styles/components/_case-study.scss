@@ -4,9 +4,6 @@
   --enjanga-case-study-direction: column-reverse;
   --enjanga-case-study-text-padding: 70px 20px;
   --enjanga-clr-case-study-text: var(--enjanga-clr-gray-2);
-  --enjanga-case-study-text-decoration: underline;
-  --enjanga-case-study-text-line-h: 40px;
-  --enjanga-case-study-text-weight: 500;
   --enjanga-case-study-img-opacity: 1;
   --enjanga-case-study-img-width: 100%;
   --enjanga-case-study-img-height: 320px;
@@ -22,7 +19,6 @@
       --enjanga-case-study-img-opacity: 0.5;
       --enjanga-case-study-body-bg: var(--enjanga-clr-accent);
       --enjanga-clr-case-study-text: var(--enjanga-clr-body-bg1);
-      --enjanga-case-study-text-decoration: none;
     }
 
 
@@ -47,7 +43,8 @@
 
     .case-study__body {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
       justify-content: center;
       width: var(--enjanga-case-study-body-width);
       padding: var(--enjanga-case-study-text-padding);
@@ -56,9 +53,7 @@
       .case-study__title {
         color: var(--enjanga-clr-case-study-text);
         max-width: var(--enjanga-case-study-title-width);
-        text-decoration: var(--enjanga-case-study-text-decoration);
-        font-weight: var(--enjanga-case-study-text-weight);
-        line-height: var(--enjanga-case-study-text-line-h);
+        text-decoration: none;
       }
     }
     
