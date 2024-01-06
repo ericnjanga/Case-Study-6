@@ -48,6 +48,9 @@
         }
     }
 }
+.gap-top-margin-5th {
+    margin-top: calc(var(--enjanga-section-gap) / 5);
+}
 .gap-top-padding {
     padding-top: var(--enjanga-section-gap);
 }

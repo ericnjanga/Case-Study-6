@@ -68,6 +68,12 @@
 
   .text-icon,
   .link-icon {
+
+
+      &.btn {
+        --halton-link-icon-padding-x: 40px;
+      }
+    
     &::before,
     &::after {
       color: var(--halton-clr-link);
