@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="/dist/styles.css" />
   <!-- Standard head styles -->
 
-
+  <!-- Google Analytics Events Script -->
+  <script async src="/js/google-analytics-events.js"></script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TGXTXXR9G2"></script>
@@ -30,7 +31,6 @@
 
     gtag('config', 'G-TGXTXXR9G2');
   </script>
-  <!-- Google tag (gtag.js) -->
 </head>
 
 <body>
@@ -110,13 +110,17 @@
     <div class="fixed-sidebar-container">
       <div id="nav-expertise" class="fixed-sidebar is-sticky">
         <div class="list-group">
-          <a href="#front-end-coding-architecture" class="list-group-item list-group-item-action">Front-end Coding &amp;
+          <a href="#front-end-coding-architecture" class="list-group-item list-group-item-action" 
+          onclick="trackButtonClick('Expertise sidebar nav', 'Front-end Coding & Architecture')">Front-end Coding &amp;
             Architecture</a>
-          <a href="#cms-coding-and-management" class="list-group-item list-group-item-action">CMS Coding &amp;
+          <a href="#cms-coding-and-management" class="list-group-item list-group-item-action" 
+          onclick="trackButtonClick('Expertise sidebar nav', 'CMS Coding & Managemente')">CMS Coding &amp;
             Management</a>
-          <a href="#prototype-and-mockup-design" class="list-group-item list-group-item-action">Prototype &amp; Mock-up
+          <a href="#prototype-and-mockup-design" class="list-group-item list-group-item-action" 
+          onclick="trackButtonClick('Expertise sidebar nav', 'Prototype & Mock-up design')">Prototype &amp; Mock-up
             design</a>
-          <a href="#ux-studies-and-research" class="list-group-item list-group-item-action">UX Studies &amp;
+          <a href="#ux-studies-and-research" class="list-group-item list-group-item-action" 
+          onclick="trackButtonClick('Expertise sidebar nav', 'UX Studies & Research')">UX Studies &amp;
             Research</a>
         </div>
       </div>
@@ -131,7 +135,7 @@
 
     <div class="container">
       <div class="col-lg-8 offset-lg-4">
-        <h2 class="gap-bottom-margin-5th">Front-end Coding & Architecture</h2>
+        <h2 class="gap-bottom-margin-5th">Front-end Coding &amp; Architecture</h2>
         <p class="gap-bottom-margin-5th">
           Expert front-end Development with a deep understanding of project
           architecture and interconnections with third-party software. Mastery
@@ -190,11 +194,13 @@
         <footer>
           <ul class="list-inline">
             <li>
-              <a class="btn btn-secondary link-icon icon-after icon-suitcase" href="/_pages/case-studies.html">Related
+              <a class="btn btn-secondary link-icon icon-after icon-suitcase" href="/_pages/case-studies.html" 
+              onclick="trackButtonClick('Related Case Studies', 'Front-end Coding & Architecture')">Related
                 Case Studies</a>
             </li>
             <li>
-              <a class="btn btn-secondary link-icon icon-after icon-text" href="/_pages/blog.html">Related articles</a>
+              <a class="btn btn-secondary link-icon icon-after icon-text" href="/_pages/blog.html" 
+              onclick="trackButtonClick('Related articles', 'Front-end Coding & Architecture')">Related articles</a>
             </li>
           </ul>
         </footer>
@@ -226,16 +232,16 @@
 
 
 
-
-
         <footer>
           <ul class="list-inline">
             <li>
-              <a class="btn btn-secondary link-icon icon-after icon-suitcase" href="/_pages/case-studies.html">Related
+              <a class="btn btn-secondary link-icon icon-after icon-suitcase" href="/_pages/case-studies.html" 
+              onclick="trackButtonClick('Related Case Studies', 'CMS Coding & Management')">Related
                 Case Studies</a>
             </li>
             <li>
-              <a class="btn btn-secondary link-icon icon-after icon-text" href="/_pages/blog.html">Related articles</a>
+              <a class="btn btn-secondary link-icon icon-after icon-text" href="/_pages/blog.html" 
+              onclick="trackButtonClick('Related articles', 'CMS Coding & Management')">Related articles</a>
             </li>
           </ul>
         </footer>
@@ -247,7 +253,7 @@
     <span id="prototype-and-mockup-design" class="page-anchor-dir"></span>
     <div class="container">
       <div class="col-lg-8 offset-lg-4">
-        <h2 class="gap-bottom-margin-5th">Prototype & Mock-up design</h2>
+        <h2 class="gap-bottom-margin-5th">Prototype &amp; Mock-up design</h2>
         <p>
           Great ability for exploring, communicating, and testing ideas through
           wireframing and prototyping. Excellent knowledge of visual design,
@@ -270,11 +276,13 @@
         <footer>
           <ul class="list-inline">
             <li>
-              <a class="btn btn-secondary link-icon icon-after icon-suitcase" href="/_pages/case-studies.html">Related
+              <a class="btn btn-secondary link-icon icon-after icon-suitcase" href="/_pages/case-studies.html" 
+              onclick="trackButtonClick('Related Case Studies', 'Prototype & Mock-up design')">Related
                 Case Studies</a>
             </li>
             <li>
-              <a class="btn btn-secondary link-icon icon-after icon-text" href="/_pages/blog.html">Related articles</a>
+              <a class="btn btn-secondary link-icon icon-after icon-text" href="/_pages/blog.html" 
+              onclick="trackButtonClick('Related articles', 'Prototype & Mock-up design')">Related articles</a>
             </li>
           </ul>
         </footer>
@@ -286,7 +294,7 @@
     <span id="ux-studies-and-research" class="page-anchor-dir"></span>
     <div class="container">
       <div class="col-lg-8 offset-lg-4">
-        <h2 class="gap-bottom-margin-5th">UX Studies & Research</h2>
+        <h2 class="gap-bottom-margin-5th">UX Studies &amp; Research</h2>
         <p class="gap-bottom-margin-5th">
           Familiarity in Design Thinking techniques with the aim of creating
           products that respond to user needs. Extensive practice of User
@@ -309,14 +317,17 @@
 
 
 
+
         <footer>
           <ul class="list-inline">
             <li>
-              <a class="btn btn-secondary link-icon icon-after icon-suitcase" href="/_pages/case-studies.html">Related
+              <a class="btn btn-secondary link-icon icon-after icon-suitcase" href="/_pages/case-studies.html" 
+              onclick="trackButtonClick('Related Case Studies', 'UX Studies & Research')">Related
                 Case Studies</a>
             </li>
             <li>
-              <a class="btn btn-secondary link-icon icon-after icon-text" href="/_pages/blog.html">Related articles</a>
+              <a class="btn btn-secondary link-icon icon-after icon-text" href="/_pages/blog.html" 
+              onclick="trackButtonClick('Related articles', 'UX Studies & Research')">Related articles</a>
             </li>
           </ul>
         </footer>

@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="/dist/styles.css" />
   <!-- Standard head styles -->
 
-
+  <!-- Google Analytics Events Script -->
+  <script async src="/js/google-analytics-events.js"></script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TGXTXXR9G2"></script>
@@ -30,7 +31,6 @@
 
     gtag('config', 'G-TGXTXXR9G2');
   </script>
-  <!-- Google tag (gtag.js) -->
 </head>
 
 <body>
@@ -134,9 +134,9 @@
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col bx-container">
           <div class="card h-100 card-expertise">
-            <a href="/_pages/expertise.html#expertise1">
+            <a href="/_pages/expertise.html#expertise1" onclick="trackButtonClick('Expertise Card', 'UI Coding & Architecture')">
               <div class="card-body card-expertise__body">
-                <h3 class="card-title">UI Coding & Architecture</h3>
+                <h3 class="card-title">UI Coding &amp; Architecture</h3>
                 <p class="card-text">
                   Mock-up translation into web pages. High-level HTML5, CSS3,
                   and JavaScript coding. Accessibility coding for WCAG 2.0+
@@ -151,9 +151,9 @@
         </div>
         <div class="col bx-container">
           <div class="card h-100 card-expertise">
-            <a href="/_pages/expertise.html#expertise2">
+            <a href="/_pages/expertise.html#expertise2" onclick="trackButtonClick('Expertise Card', 'CMS Coding & Management')">
               <div class="card-body card-expertise__body">
-                <h3 class="card-title">CMS Coding & Management</h3>
+                <h3 class="card-title">CMS Coding &amp; Management</h3>
                 <p class="card-text">
                   WordPress custom theme and plug-in development. CMS
                   architecture management (pages, taxonomies, custom post
@@ -169,9 +169,9 @@
 
         <div class="col bx-container">
           <div class="card h-100 card-expertise">
-            <a href="/_pages/expertise.html#expertise3">
+            <a href="/_pages/expertise.html#expertise3" onclick="trackButtonClick('Expertise Card', 'Prototype & Mock-up design')">
               <div class="card-body card-expertise__body">
-                <h3 class="card-title">Prototype & Mock-up design</h3>
+                <h3 class="card-title">Prototype &amp; Mock-up design</h3>
                 <p class="card-text">
                   Translation of research insights into user-friendly and
                   accessible mock-ups. Conducting usability testing with
@@ -186,9 +186,9 @@
         </div>
         <div class="col bx-container">
           <div class="card h-100 card-expertise">
-            <a href="/_pages/expertise.html#expertise4">
+            <a href="/_pages/expertise.html#expertise4" onclick="trackButtonClick('Expertise Card', 'UX Studies & Research')">
               <div class="card-body card-expertise__body">
-                <h3 class="card-title">UX Studies & Research</h3>
+                <h3 class="card-title">UX Studies &amp; Research</h3>
                 <p class="card-text">
                   4 years and experience in general UX Design, with an
                   extensive training in Design Thinking, User-centred and
@@ -265,7 +265,8 @@
             </div>
             <footer class="card-footer">
               <button type="button" class="btn btn-primary text-icon icon-after icon-box-arrow-up-right"
-                data-bs-toggle="modal" data-bs-target="#modal-testimonial-1">
+                data-bs-toggle="modal" data-bs-target="#modal-testimonial-1" 
+                onclick="trackButtonClick('Testimonial', 'by .. First, last name')">
                 See more
               </button>
             </footer>
@@ -454,7 +455,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <!-- Tenverto Script Bundle -->
-  <script src="/dist/scripts.tenverto-bundle.js"></script>
+  <script async src="/dist/scripts.tenverto-bundle.js"></script>
 </body>
 
 </html>
