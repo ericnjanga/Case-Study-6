@@ -8,7 +8,7 @@ module.exports = {
     styles: './styles/styles.scss', // Styles entry point
   },
   output: {
-    filename: '[name].bundle.js', // Use [name] to generate unique filenames based on entry point names
+    filename: '[name].tenverto-bundle.js', // Use [name] to generate unique filenames based on entry point names
     path: path.resolve(__dirname, 'dist'),
   },
   module: {

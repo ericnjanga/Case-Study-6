@@ -14,24 +14,16 @@
 
 
 @layer navigation {
-
     .navbar {
-        // ...
+        .tenverto-logo {
+            width: var(--enjanga-navbar-logo-width);
+        }
+    }
+
+    .tenverto-navbar {
         padding-top: var(--enjanga-navbar-padding-y);
         padding-bottom: var(--enjanga-navbar-padding-y);
         margin-bottom: 15px;
-
-        .logo-img {
-            width: var(--enjanga-navbar-logo-width);
-        }
-
-        .navbar-toggler {
-            background-color: var(--enjanga-clr-gray-1);
-        }
-
-        &.navbar-light .navbar-toggler-icon {
-            background-image: var(--enjanga--navbar-toggler-bg);
-        }
 
         .navbar-collapse {
             // border: 3px solid red;
@@ -57,7 +49,7 @@
             // border: 4px solid blue;
 
             // Actice link styling (for WordPress)
-            // (link-hover3 styling) ...
+            // (Combination of link-not-underlined and link-color-hover1) ...
             .navbar-nav {
                 > .menu-item.active > a, 
                 > .current-menu-item.page_item > a {
@@ -119,7 +111,26 @@
         }
     }
 
-    .navbar.navbar-expand-md {
+    .tenverto-navbar.navbar-expand-md {
         background-color: var(--enjanga-clr-body-bg);
+    }
+
+    .tenverto-navbar,
+    .navbar {
+        &.navbar-light,
+        &.bg-primary {
+            .navbar-toggler-icon {
+                background-image: var(--enjanga--navbar-toggler-bg);
+            }
+            .navbar-toggler {
+                background-color: var(--enjanga-clr-gray-1);
+            }
+        }
+
+        &.bg-primary {
+            .nav-link {
+                color: var(--enjanga-clr-body-bg);
+            }
+        }
     }
 }

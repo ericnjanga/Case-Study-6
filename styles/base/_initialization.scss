@@ -8,8 +8,8 @@
     --enjanga-h3-font-size: 28px;
     --enjanga-h3-line-height: 32px;
 
-    --enjanga-hero-subtitle-font-size: 20px;
-    --enjanga-hero-subtitle-line-height: 26px;
+    --enjanga-txt-large-font-size: 20px;
+    --enjanga-txt-large-line-height: 26px;
 
     --enjanga-grid-2col-max-template: auto;
     --enjanga-grid-2col-max-gap: 30px;
@@ -67,9 +67,14 @@ h3 {
     line-height: var(--enjanga-h3-line-height);
 }
 
-.hero-subtitle {
-    font-size: var(--enjanga-hero-subtitle-font-size);
-    line-height: var(--enjanga-hero-subtitle-line-height);
+.txt-small {
+    font-size: var(--enjanga-font-size-xs);
+    line-height: var(--enjanga-line-height-xs);
+}
+
+.txt-large {
+    font-size: var(--enjanga-txt-large-font-size);
+    line-height: var(--enjanga-txt-large-line-height);
 }
 
 
@@ -91,8 +96,8 @@ body {
         --enjanga-h3-font-size: 48px;
         --enjanga-h3-line-height: 52px;
 
-        --enjanga-hero-subtitle-font-size: 24px;
-        --enjanga-hero-subtitle-line-height: 35px;
+        --enjanga-txt-large-font-size: 24px;
+        --enjanga-txt-large-line-height: 35px;
     }
     @media (min-width: 1200px) and (max-width: (1400px - 1)) { // position 6 ...
         // border: 10px solid violet;
@@ -105,8 +110,8 @@ body {
         --enjanga-h3-font-size: 42px;
         --enjanga-h3-line-height: 46px;
 
-        --enjanga-hero-subtitle-font-size: 20px;
-        --enjanga-hero-subtitle-line-height: 30px;
+        --enjanga-txt-large-font-size: 20px;
+        --enjanga-txt-large-line-height: 30px;
     }
     @media (min-width: 992px) and (max-width: (1200px - 1)) {
         // border: 10px solid lime;
@@ -119,8 +124,8 @@ body {
         --enjanga-h3-font-size: 38px;
         --enjanga-h3-line-height: 42px;
 
-        // --enjanga-hero-subtitle-font-size: root
-        // --enjanga-hero-subtitle-line-height: root
+        // --enjanga-txt-large-font-size: root
+        // --enjanga-txt-large-line-height: root
     }
     @media (min-width: 768px) and (max-width: (992px - 1)) {
         // border: 10px solid blue;
@@ -133,8 +138,8 @@ body {
         --enjanga-h3-font-size: 32px;
         --enjanga-h3-line-height: 36px;
 
-        // --enjanga-hero-subtitle-font-size: root
-        // --enjanga-hero-subtitle-line-height: root
+        // --enjanga-txt-large-font-size: root
+        // --enjanga-txt-large-line-height: root
     }
     @media (min-width: 576px) and (max-width: (768px - 1)) {
         border: 10px solid turquoise;
@@ -147,8 +152,8 @@ body {
         // --enjanga-h3-font-size: root
         // --enjanga-h3-line-height: root
 
-        // --enjanga-hero-subtitle-font-size: root
-        // --enjanga-hero-subtitle-line-height: root
+        // --enjanga-txt-large-font-size: root
+        // --enjanga-txt-large-line-height: root
     }
     
     // --enjanga-h1-font-size: root
@@ -160,8 +165,8 @@ body {
     // --enjanga-h3-font-size: root
     // --enjanga-h3-line-height: root
 
-    // --enjanga-hero-subtitle-font-size: root
-    // --enjanga-hero-subtitle-line-height: root
+    // --enjanga-txt-large-font-size: root
+    // --enjanga-txt-large-line-height: root
 }
 
 

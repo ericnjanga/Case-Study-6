@@ -1,4 +1,6 @@
-<html lang="en"><head>
+<html lang="en">
+
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eric Njanga, UX Deveoper and Web Consultant</title>
@@ -8,7 +10,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
   <link rel="stylesheet" href="/dist/styles.css">
@@ -19,79 +23,65 @@
 
 
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar fixed-top navbar-expand-lg bg-primary">
+    <div class="container">
+
+      <a href="/" class="navbar-brand d-flex mr-auto">
+        <img class="tenverto-logo" src="/images/Logo.png" alt="Tenverto by Eric Njanga">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#tenverto-designSys-nav-collapse">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <div class="collapse navbar-collapse" id="tenverto-designSys-nav-collapse">
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link text-icon icon-before icon-linkedIn" href="/">Back to main site</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <!-- <a class="nav-link active" aria-current="page" href="#">Buttons</a> -->
+            <a class="nav-link" href="#section-typography">Typography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-buttons">Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-links">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-icons">Icons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-spacing">Spacing</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              Components
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#section-components-testimonial">Testimonial</a></li>
+              <li><a class="dropdown-item" href="#section-components-casestudy">Case Study</a></li>
+              <li><a class="dropdown-item" href="#section-components-expertise">Expertise</a></li>
+              <li><a class="dropdown-item" href="#section-components-article">Article</a></li>
+              <!-- <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Component 3</a></li> -->
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
         </ul>
-        <form class="d-flex" role="search">
+        <!-- <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        </form> -->
       </div>
     </div>
   </nav>
 
 
 
-<!-- 
-  <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center fixed-top">
-    <div class="container">
-      <a href="/" class="navbar-brand d-flex mr-auto">
-        <img class="logo-img" src="/images/Logo.png" alt="Tenverto by Eric Njanga">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-          <li class="nav-item menu-item active">
-            <a class="nav-link link-hover3" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-hover3" href="/_pages/about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-hover3" href="/_pages/expertise.html">Expertise</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-hover3" href="/_pages/case-studies.html">Case Studies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-hover3" href="/_pages/blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a target="_blank" href="https://www.linkedin.com/in/ericnjanga/" class="btn btn-primary btn-lg  halton-btn text-icon icon-after icon-linkedIn">Reach out</a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </nav> -->
 
 
 
@@ -99,59 +89,403 @@
 
 
 
-
-
-
-  <!-- main header-->
   <header class="hero gap-top-margin gap-bottom-margin">
     <div class="container">
-      <h1>Design System</h1>
-
-      <div class="hero-imgwrapper">
-        <button type="button" class="btn text-start hero-control">
-          Scroll <br>down
-        </button>
-        <img src="https://www.shutterstock.com/image-photo/headshot-successful-smiling-cheerful-african-600nw-567772042.jpg" class="hero-img img-fluid" alt="image 8">
-        <p class="hero-control text-end">Based in <br>Markham, Ontario</p>
-      </div>
-
-      <p class="hero-description hero-subtitle section-max-w1">
-        Hi, I’m Eric — experienced Web Developer, UX Design practitioner, and
-        website expert since 2006.
-      </p>
+      <h1 class="gap-bottom-margin-4th">Design System</h1>
+      <p class="txt-large section-max-w2 section-h-centering gap-bottom-margin">Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Id repellendus laboriosam aliquam at ea voluptas numquam nesciunt, similique pariatur
+        laudantium. Repudiandae minus error sint incidunt autem nisi, debitis eos quo.</p>
     </div>
   </header>
 
-  <!------------------Section2---------------------------->
-  <section class="gap-bottom-margin">
-    <div class="container">
-      <h2 class="text-center gap-bottom-margin-5th section-max-w2 section-h-centering">
-        Recent Work
-      </h2>
 
-      <div class="case-study">
-        <a href="/case-study-single.html">
-          <img class="card-img-top case-study__img" src="https://media.istockphoto.com/id/1267383747/vector/smartphone-interface-vector-template.jpg?s=2048x2048&amp;w=is&amp;k=20&amp;c=ECkozC0-QADdghC05Z6wmYzGHUtJO6q-EYkVgLdBi3I=" alt="image 8">
-          <div class="case-study__body">
-            <h3 class="case-study__title">
-              Redesigning a website to create a sense of corporate
-              sophistication and professionalism
-            </h3>
+
+  <section class="container">
+
+    <div class="row mb-5">
+      <div class="col">
+        <div class="pos-relative">
+          <span id="section-typography" class="page-anchor-dir"></span>
+          <h2 class="text-center mb-3 section-max-w2 section-h-centering">
+            Typography
+          </h2>
+
+          <div class="card p-4">
+            <div class="row">
+              <div class="col">
+                <h1>h1: text</h1>
+                <h2>h2: text</h2>
+                <h3>h3: text</h3>
+                <h4>h4: text</h4>
+                <h5>h5: text</h5>
+
+                <div class="mt-2">
+                  <span class="badge bg-secondary">Small Text</span>
+                  <p class="txt-small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem tempora et vel.
+                    Perferendis harum doloremque officia voluptatum, nulla dolores a animi, in praesentium laborum illo
+                    nostrum pariatur expedita consequuntur nisi.</p>
+                </div>
+
+                <div class="mt-2">
+                  <span class="badge bg-secondary">Normal Text</span>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem tempora et vel. Perferendis harum
+                    doloremque officia voluptatum, nulla dolores a animi, in praesentium laborum illo nostrum pariatur
+                    expedita consequuntur nisi.</p>
+                </div>
+
+                <div class="mt-2">
+                  <span class="badge bg-secondary">Large Text</span>
+                  <p class="txt-large">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem tempora et vel.
+                    Perferendis harum doloremque officia voluptatum, nulla dolores a animi, in praesentium laborum illo
+                    nostrum pariatur expedita consequuntur nisi.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row mb-5">
+      <div class="col">
+        <div class="pos-relative">
+          <span id="section-buttons" class="page-anchor-dir"></span>
+          <h2 class="text-center mb-3 section-max-w2 section-h-centering">
+            Buttons
+          </h2>
+
+          <div class="card p-4">
+            <div class="row mb-3">
+              <div class="col">
+                <p class="m-0">Primary</p>
+                <a target="_blank" href="#" class="btn btn-primary">Lorem Ipsum</a>
+              </div>
+              <div class="col">
+                <p class="m-0">Secondary</p>
+                <a target="_blank" href="#" class="btn btn-secondary">Lorem Ipsum</a>
+              </div>
+              <div class="col">
+                <p class="m-0">With icon (before)</p>
+                <a target="_blank" href="#" class="btn btn-secondary text-icon icon-before icon-linkedIn">Lorem
+                  Ipsum</a>
+              </div>
+              <div class="col">
+                <p class="m-0">With icon (after)</p>
+                <a target="_blank" href="#" class="btn btn-secondary text-icon icon-after icon-linkedIn">Lorem
+                  Ipsum</a>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                <p class="m-0">Primary - large</p>
+                <a target="_blank" href="#" class="btn btn-primary btn-lg">Lorem Ipsum</a>
+              </div>
+              <div class="col">
+                <p class="m-0">Secondary - large</p>
+                <a target="_blank" href="#" class="btn btn-secondary btn-lg">Lorem Ipsum</a>
+              </div>
+              <div class="col">
+                <p class="m-0">With icon - large (before)</p>
+                <a target="_blank" href="#" class="btn btn-secondary btn-lg text-icon icon-before icon-linkedIn">Lorem
+                  Ipsum</a>
+              </div>
+              <div class="col">
+                <p class="m-0">With icon - large (after)</p>
+                <a target="_blank" href="#" class="btn btn-secondary btn-lg text-icon icon-after icon-linkedIn">Lorem
+                  Ipsum</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-  <!------------------Section3---------------------------->
 
-  <section class="gap-bottom-margin">
-    <div class="container">
-      <h2 class="text-center gap-bottom-margin-5th section-max-w2 section-h-centering">
-        Developer, Designer &amp; Architect
-      </h2>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col bx-container">
-          <div class="card h-100 card-expertise">
+    <div class="row mb-5">
+      <div class="col">
+        <div class="pos-relative">
+          <span id="section-links" class="page-anchor-dir"></span>
+          <h2 class="text-center mb-3 section-max-w2 section-h-centering">
+            Links
+          </h2>
+
+
+
+          <div class="card p-4">
+            <div class="row">
+              <div class="col">
+                <div class="alert alert-primary text-center" role="alert">
+                  These styles can be combined.
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                <p class="m-0">link-underlined</p>
+                <a href="#" class="link-underlined">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis suscipit neque accusantium, amet nihil alias soluta necessitatibus blanditiis consectetur
+                  laborum autem quaerat aspernatur, tenetur libero repellat, eum fuga et dolorem.</a>
+              </div>
+              <div class="col">
+                <p class="m-0">link-not-underlined</p>
+                <a href="#" class="link-not-underlined">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis suscipit neque accusantium, amet nihil alias soluta necessitatibus blanditiis consectetur
+                  laborum autem quaerat aspernatur, tenetur libero repellat, eum fuga et dolorem.</a>
+              </div>
+              <div class="col">
+                <p class="m-0">link-color-hover1</p>
+                <a href="#" class="link-color-hover1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+                  suscipit neque accusantium, amet nihil alias soluta necessitatibus blanditiis consectetur laborum
+                  autem quaerat aspernatur, tenetur libero repellat, eum fuga et dolorem.</a>
+              </div>
+              <div class="col">
+                <p class="m-0">link-color-hover2</p>
+                <a href="#" class="link-color-hover2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+                  suscipit neque accusantium, amet nihil alias soluta necessitatibus blanditiis consectetur laborum
+                  autem quaerat aspernatur, tenetur libero repellat, eum fuga et dolorem.</a>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                <p class="m-0">With icon (before)</p>
+                <a href="#" class="text-icon icon-before icon-linkedIn">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Eius, quos? Sunt, sint nihil laboriosam excepturi dolores possimus, reiciendis
+                  dolorem porro nobis quia, quis dolore mollitia inventore? Enim quas accusantium aliquid.</a>
+              </div>
+              <div class="col">
+                <p class="m-0">With icon (after)</p>
+                <a href="#" class="text-icon icon-after icon-linkedIn">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Eius, quos? Sunt, sint nihil laboriosam excepturi dolores possimus, reiciendis
+                  dolorem porro nobis quia, quis dolore mollitia inventore? Enim quas accusantium aliquid.</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col">
+        <div class="pos-relative">
+          <span id="section-icons" class="page-anchor-dir"></span>
+          <h2 class="text-center mb-3 section-max-w2 section-h-centering">
+            Icons
+          </h2>
+
+          <div class="card p-4">
+            <div class="row mb-3">
+              <div class="col">
+                <p class="m-0 txt-small">icon-linkedIn</p>
+                <span target="_blank" href="#" class="text-icon icon-after icon-linkedIn">
+                  <span class="visually-hidden">LinkedIn icon</span>
+                </span>
+              </div>
+              <div class="col">
+                <p class="m-0 txt-small">icon-pin</p>
+                <span target="_blank" href="#" class="text-icon icon-after icon-pin">
+                  <span class="visually-hidden">Pin icon</span>
+                </span>
+              </div>
+              <div class="col">
+                <p class="m-0 txt-small">icon-link</p>
+                <span target="_blank" href="#" class="text-icon icon-after icon-link">
+                  <span class="visually-hidden">Link icon</span>
+                </span>
+              </div>
+              <div class="col">
+                <p class="m-0 txt-small">icon-text</p>
+                <span target="_blank" href="#" class="text-icon icon-after icon-text">
+                  <span class="visually-hidden">Text icon</span>
+                </span>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <p class="m-0 txt-small">icon-suitcase</p>
+                <span target="_blank" href="#" class="text-icon icon-after icon-suitcase">
+                  <span class="visually-hidden">Suitcase icon</span>
+                </span>
+              </div>
+              <div class="col">
+                <p class="m-0 txt-small">icon-rocket-takeoff</p>
+                <span target="_blank" href="#" class="text-icon icon-after icon-rocket-takeoff">
+                  <span class="visually-hidden">Rocket icon</span>
+                </span>
+              </div>
+              <div class="col">
+                <p class="m-0 txt-small">icon-box-arrow-up-right</p>
+                <span target="_blank" href="#" class="text-icon icon-after icon-box-arrow-up-right">
+                  <span class="visually-hidden">Box arrow right icon</span>
+                </span>
+              </div>
+              <div class="col">
+                <p class="m-0 txt-small">...</p>
+                <!-- <span target="_blank" href="#" class="text-icon icon-after icon-rocket-takeoff">
+                    <span class="visually-hidden">Rocket icon</span>
+                  </span> -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col">
+        <div class="pos-relative">
+          <span id="section-spacing" class="page-anchor-dir"></span>
+          <h2 class="text-center mb-3 section-max-w2 section-h-centering">
+            Spacing
+          </h2>
+
+          <div class="card p-4">
+            <div class="row mb-3">
+              <div class="col">
+                <div class="border p-2 bg-secondary mb-3">
+                  <div class="gap-top-margin bg-info">
+                    <p class="m-0 p-1 bg-info txt-small">gap-top-margin</p>
+                  </div>
+                </div>
+
+                <div class="border p-2 bg-secondary mb-3">
+                  <div class="gap-top-margin-2th bg-info">
+                    <p class="m-0 p-1 bg-info txt-small">gap-top-margin-2th</p>
+                  </div>
+                </div>
+
+                <div class="border p-2 bg-secondary mb-3">
+                  <div class="gap-top-margin-4th bg-info">
+                    <p class="m-0 p-1 bg-info txt-small">gap-top-margin-4th</p>
+                  </div>
+                </div>
+
+                <div class="border p-2 bg-secondary">
+                  <div class="gap-top-margin-5th bg-info">
+                    <p class="m-0 p-1 bg-info txt-small">gap-top-margin-5th</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="border p-2 bg-secondary mb-3">
+                  <div class="gap-bottom-margin bg-info">
+                    <p class="m-0 p-1 bg-info txt-small">gap-bottom-margin</p>
+                  </div>
+                </div>
+
+                <div class="border p-2 bg-secondary mb-3">
+                  <div class="gap-bottom-margin-2th bg-info">
+                    <p class="m-0 p-1 bg-info txt-small">gap-bottom-margin-2th</p>
+                  </div>
+                </div>
+
+                <div class="border p-2 bg-secondary mb-3">
+                  <div class="gap-bottom-margin-4th bg-info">
+                    <p class="m-0 p-1 bg-info txt-small">gap-bottom-margin-4th</p>
+                  </div>
+                </div>
+
+                <div class="border p-2 bg-secondary">
+                  <div class="gap-bottom-margin-5th bg-info">
+                    <p class="m-0 p-1 bg-info txt-small">gap-bottom-margin-5th</p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row mb-5">
+      <div class="col">
+        <div class="pos-relative">
+          <span id="section-components-testimonial" class="page-anchor-dir"></span>
+          <h2 class="text-center mb-3 section-max-w2 section-h-centering">
+            Testimonial
+          </h2>
+
+          <div class="card card-testimonial gap-bottom-margin-4th">
+            <img class="card-testimonial__img"
+              src="https://media.istockphoto.com/id/1126614847/photo/portrait-of-businessman-smiling-over-gray-background.jpg?s=612x612&w=0&k=20&c=Xxh81QLknMjHPpqgqY8j8vS46kWHhWm7yUYgHZ_AReU="
+              class="img-fluid" alt="image 8" />
+            <div class="card-testimonial__description">
+              <div class="card-body">
+                <h5 class="card-title">First, last name</h5>
+                <h6 class="card-subtitle">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quibu ntium incidu eos.
+                </h6>
+                <div class="card-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quibusdam magnam. Exercitationem
+                    obcaecati quia, iusto laudantium incidunt, earum porro asperiores dignissimos non aspernatur
+                    suscipit consequuntur saepe tempora eius deserunt eos. Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Accusantium a nihil ut repellat, in molestiae ex excepturi eligendi inventore,
+                    architecto rerum pariatur. Error, aut harum quam iste quia ab non. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Similique optio aspernatur obcaecati a doloremque cupiditate, debitis
+                    cumque et numquam, quia modi vitae? Non fugit vero mollitia, corrupti repellendus veritatis ...
+                  </p>
+                </div>
+                <footer class="card-footer">
+                  <button type="button" class="btn btn-primary text-icon icon-after icon-box-arrow-up-right"
+                    data-bs-toggle="modal" data-bs-target="#modal-testimonial-1">
+                    See more
+                  </button>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row mb-5">
+      <div class="col">
+        <div class="pos-relative">
+          <span id="section-components-casestudy" class="page-anchor-dir"></span>
+          <h2 class="text-center mb-3 section-max-w2 section-h-centering">
+            Case Study
+          </h2>
+
+          <div class="case-study">
+            <a href="/case-study-single.html">
+              <img class="card-img-top case-study__img"
+                src="https://media.istockphoto.com/id/1267383747/vector/smartphone-interface-vector-template.jpg?s=2048x2048&w=is&k=20&c=ECkozC0-QADdghC05Z6wmYzGHUtJO6q-EYkVgLdBi3I="
+                alt="image 8" />
+              <div class="case-study__body">
+                <p class="case-study__category">Category 1, Category 2</p>
+                <h3 class="case-study__title">
+                  Redesigning a website to create a sense of corporate
+                  sophistication and professionalism
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+
+      <div class="col">
+        <div class="pos-relative">
+          <span id="section-components-expertise" class="page-anchor-dir"></span>
+          <h2 class="text-center mb-3 section-max-w2 section-h-centering">
+            Expertise
+          </h2>
+
+          <div class="card card-expertise">
             <a href="/_pages/expertise.html#expertise1">
               <div class="card-body card-expertise__body">
                 <h3 class="card-title">UI Coding &amp; Architecture</h3>
@@ -167,229 +501,53 @@
             </a>
           </div>
         </div>
-        <div class="col bx-container">
-          <div class="card h-100 card-expertise">
-            <a href="/_pages/expertise.html#expertise2">
-              <div class="card-body card-expertise__body">
-                <h3 class="card-title">CMS Coding &amp; Management</h3>
-                <p class="card-text">
-                  WordPress custom theme and plug-in development. CMS
-                  architecture management (pages, taxonomies, custom post
-                  types, archives).
-                </p>
-              </div>
-              <div class="card-footer card-expertise__footer">
-                <small class="text-body-secondary">Learn more</small>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col bx-container">
-          <div class="card h-100 card-expertise">
-            <a href="/_pages/expertise.html#expertise3">
-              <div class="card-body card-expertise__body">
-                <h3 class="card-title">Prototype &amp; Mock-up design</h3>
-                <p class="card-text">
-                  Translation of research insights into user-friendly and
-                  accessible mock-ups. Conducting usability testing with
-                  prototypes.
-                </p>
-              </div>
-              <div class="card-footer card-expertise__footer">
-                <small class="text-body-secondary">Learn more</small>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col bx-container">
-          <div class="card h-100 card-expertise">
-            <a href="/_pages/expertise.html#expertise4">
-              <div class="card-body card-expertise__body">
-                <h3 class="card-title">UX Studies &amp; Research</h3>
-                <p class="card-text">
-                  4 years and experience in general UX Design, with an
-                  extensive training in Design Thinking, User-centred and
-                  Visual Design.
-                </p>
-              </div>
-              <div class="card-footer card-expertise__footer">
-                <small class="text-body-secondary">Learn more</small>
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
 
-  <!-----------------------section 4---------------->
-  <section class="gap-bottom-margin gap-top-padding gap-bottom-padding dark-section">
-    <div class="container text-center">
-      <div class="row align-items-md-stretch">
-        <div class="col-md-12">
-          <div class="gap-bottom-margin-4th section-max-w2 section-h-centering section-h-centering">
-            <h2 class="gap-bottom-margin-5th">
-              I play a pivotal role in the design &amp; development lifecycle
-            </h2>
-            <a class="link-underlined link-hover1" href="/pages//_pages/about.html">I can smoothen your Design and Development
-              process</a>
+      <div class="col">
+        <div class="pos-relative">
+          <span id="section-components-article" class="page-anchor-dir"></span>
+          <h2 class="text-center mb-3 section-max-w2 section-h-centering">
+            Article
+          </h2>
 
-          </div>
-          <img src="https://media.istockphoto.com/id/1460835826/photo/portrait-of-successful-hispanic-businessman-inside-office-man-with-laptop-working-typing-on.jpg?s=2048x2048&amp;w=is&amp;k=20&amp;c=RH9ynwk6G1kCqIeo4z1D0w7FKOCDzbgdtp-L_JXcyHw=" class="banner-image" alt="image 8">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-----------------------section 5---------------->
-  <section>
-    <div class="container">
-      <h2 class="text-center gap-bottom-margin-5th section-max-w2 section-h-centering">
-        Nice words from clients &amp; colleagues
-      </h2>
-
-
-     
-
-
-      <div class="card card-testimonial gap-bottom-margin-4th">
-        <img class="card-testimonial__img" src="https://www.shutterstock.com/image-photo/headshot-successful-smiling-cheerful-african-600nw-567772042.jpg" alt="image 8">
-        <div class="card-testimonial__description">
-          <div class="card-body">
-            <h5 class="card-title">Dave Landis</h5>
-            <h6 class="card-subtitle">
-              Principal UX Design &amp; Research &amp; Innovation Architect | Design
-              Thinking, Design Sprint, Process Improvement, Certified SCRUM
-              Master
-            </h6>
-            <p class="card-text">
-              This gem of a guy, is committed to excellence, and loves the
-              challenge to raise the bar for whatever he touches. He is
-              clearly an up and coming unicorn with the mix of Technical FE,
-              Human Centered Design (HCD) Research, and delivers on UX and
-              UI execution and strategy. His "Can Do" attitude and being an
-              upbeat team player is infectious and makes him a delight to
-              work with. He drives the product experience direction from
-              data and insights from real world customers goes above and
-              beyond most talent that I have worked with. I recommend adding
-              the "Njanga Magic" to your products and services. His work
-              embodies the meaning of his name: "Great Talent, Sentimental,
-              and Elegant".
-            </p>
-          </div>
+          <article class="card card-article bx-container">
+            <a href="/_pages/single.html">
+              <img
+                src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&amp;ext=jpg&amp;ga=GA1.1.1222169770.1701734400&amp;semt=ais"
+                class="card-article-img img-fluid" alt="image 8">
+              <div class="card-body">
+                <p class="card-text">Month day, year</p>
+                <h3 class="card-title m-0">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit delect est dolor, optio quaerat aut sequi ab.
+                </h3>
+              </div>
+            </a>
+          </article>
         </div>
       </div>
 
-
-
-
     </div>
+
   </section>
-  
 
 
 
-
-
-  
-
-
-  <footer class="footer gap-top-margin gap-bottom-margin link-hover2 link-underlined">
+  <footer class="footer gap-top-margin gap-bottom-margin link-color-hover2 link-underlined">
     <div class="container footer-container d-flex flex-column">
       <header class="footer-header row">
         <div class="col-lg-6 offset-lg-3 text-center">
           <a href="/" class="navbar-brand">
-            <img class="logo-img" src="/images/Logo.png" alt="Tenverto by Eric Njanga">
+            <img class="tenverto-logo" src="/images/Logo.png" alt="Tenverto by Eric Njanga">
           </a>
-          <p class="m-0">High-precision design, development, and improvement of large-scale web applications (this includes
-            intranet, CMS, and SASS-based websites). Area of expertise includes Web Accessibility, UI Architecture,
-            and User Experience Design.</p>
+          <p class="m-0">Design System, version 1.0. Return to <a href="/">main site</a>.</p>
         </div>
       </header>
 
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="footer-header-list list-inline justify-content-center list-no-style m-0 p-0">
-            <li>
-              <span class="text-icon icon-before icon-pin">Ontario, Canada</span>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.linkedin.com/in/ericnjanga/" class="link-icon icon-before icon-linkedIn">Reach out</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-body me-auto ms-auto">
-        <div class="footer-body-cell-1">
-          <h3 class="footer-body-title">Happiest Clients</h3>
-          <ul class="footer-client-list list-no-style m-0 p-0">
-            <li>
-              <a target="_blank" href="https://www.halton.ca/">
-                <img class="client-logo img-fluid" src="/images/dream client 1.png" alt="The Region of halton">
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.ontario.ca/page/ministry-public-business-service-delivery">
-                <img class="client-logo img-fluid" src="/images/dream client 2.png" alt="The Ministry of Public and Business Service Delivery">
-              </a>
-            </li>
-          </ul>
-        </div>
-        
-        <div>
-          <h3 class="footer-body-title">On this website</h3>
-          <ul class="footer-body-cell-list-links list-no-style m-0 p-0">
-            <li>
-              <a class="link-icon icon-before icon-link" href="/">Home</a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-link" href="/_pages/about.html">About</a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-link" href="/_pages/expertise.html">Expertise</a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-link" href="/_pages/case-studies.html">Case Studies</a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-link" href="/_pages/blog.html">Blog</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="footer-body-title">Online Presence</h3>
-          <ul class="footer-body-cell-list-links list-no-style m-0 p-0">
-            <li>
-              <a class="link-icon icon-before icon-linkedIn" target="_blank" href="https://www.linkedin.com/in/ericnjanga/">
-                Eric Njanga
-              </a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-linkedIn" target="_blank" href="https://www.linkedin.com/company/tenverto">
-                Tenverto
-              </a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-text" target="_blank" href="https://www.linkedin.com/newsletters/7083855170261946369/">
-                UX Development for Success
-              </a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-text" target="_blank" href="https://www.linkedin.com/newsletters/7141430870384553985/">
-                Successful Web Applications
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
   </footer>
 
 
- 
+
 
 
 
@@ -399,10 +557,50 @@
   </button>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-  <script src="/dist/scripts.bundle.js"></script>
 
 
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-testimonial-1" tabindex="-1" role="dialog"
+    aria-labelledby="modal-testimonial-1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <div>
+            <h5 class="modal-title">First, last name</h5>
+            <p class="modal-subtitle m-0">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quibu ntium incidu eos.
+            </p>
+          </div>
+          <button type="button" class="btn-close btn-bs-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur minus quisquam non sed dicta, deserunt
+            officiis. In asperiores dignissimos aperiam, sit aspernatur numquam quam illo alias sed deserunt distinctio
+            dolorum?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore laborum quasi ipsa sed modi non temporibus
+            quos tempore earum laboriosam adipisci repudiandae eligendi aut saepe, incidunt quia doloribus qui
+            doloremque?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto enim eos quibusdam molestiae aperiam
+            natus neque asperiores! Deleniti esse, explicabo ipsa dolores rem accusamus. Illo ex quas dolores error
+            quibusdam!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Bootstrap v5 Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- Tenverto Script Bundle -->
+  <script src="/dist/scripts.tenverto-bundle.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 :root {
-  --halton-link-icon-margin-x: 6px;
+  --halton-link-icon-margin-x: 13px;
   --halton-link-icon-padding-x: 22px;
 }
 
@@ -68,10 +68,8 @@
 
   .text-icon,
   .link-icon {
-
-
       &.btn {
-        --halton-link-icon-padding-x: 40px;
+        --halton-link-icon-padding-x: 45px;
       }
     
     &::before,

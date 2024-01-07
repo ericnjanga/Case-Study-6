@@ -10,16 +10,21 @@
     // Link underlined by default, underline removed on hover
     a.link-underlined {
         text-decoration: underline;
-    
         &:hover {
             text-decoration: none;
         }
     }
 
-
+    // ...
+    a.link-not-underlined {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 
     // Link with color1 by default, and color2 on hover
-    a.link-hover1 {
+    a.link-color-hover1 {
         color: var(--enjanga-clr-gray-2);
         &:hover {
             color: var(--enjanga-clr-accent);
@@ -27,21 +32,13 @@
     }
 
     // Link with color3 by default, and color4 on hover
-    a.link-hover2 {
+    a.link-color-hover2 {
         color: var(--enjanga-clr-accent);
         &:hover {
             color: var(--enjanga-clr-gray-2);
         }
     }
-
-    // ...
-    a.link-hover3 {
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-            color: var(--enjanga-clr-accent);
-        }
-    }
+    
 
 
 
@@ -64,7 +61,7 @@
         }
     
         // Link with color1 by default, and color2 on hover
-        .link-hover1 {
+        .link-color-hover1 {
             a {
                 color: var(--enjanga-clr-gray-2);
                 &:hover {
@@ -80,7 +77,7 @@
         }
     
         // Link with color3 by default, and color4 on hover
-        .link-hover2 {
+        .link-color-hover2 {
             a {
                 color: var(--enjanga-clr-accent);
                 &:hover {
