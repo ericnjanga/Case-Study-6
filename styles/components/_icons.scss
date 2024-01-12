@@ -49,16 +49,28 @@
     }
   }
 
-
+  /**
+   * Description 
+   * * Important ...
+   * ! Caution ...
+   * ? Question ...
+  */
   .text-icon, .link-icon {
     position: relative;
 
     &.icon-before {
+      /*
+        TODO: There is no left spacing with icon, see design system
+      */
       &::before {
         display: inline-block;
       }
     }
     &.icon-after {
+      /*
+        TODO: Space between text and icon is too big:
+        - Make the comparison with icon-before in the design system
+      */
       &::after {
         display: inline-block;
       }

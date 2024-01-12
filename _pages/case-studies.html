@@ -1,294 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eric Njanga, UX Deveoper and Web Consultant</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eric Njanga, UX Deveoper and Web Consultant</title>
+    <!-- Standard head styles -->
+    <link rel="stylesheet" href="/styles/framework/bootstrap.min.css" />
 
-  <!-- Standard head styles -->
-  <link rel="stylesheet" href="/styles/framework/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <!-- Standard head styles -->
 
-  <link rel="stylesheet" href="/dist/styles.css" />
-  <!-- Standard head styles -->
+    <!-- Google Analytics Events Script -->
+    <script async src="/js/google-analytics-events.js"></script>
 
-  <!-- Google Analytics Events Script -->
-  <script async src="/js/google-analytics-events.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TGXTXXR9G2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-TGXTXXR9G2");
+    </script>
+  </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TGXTXXR9G2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  <body>
+    <nav
+      class="tenverto-navbar navbar navbar-light navbar-expand-md bg-faded justify-content-center fixed-top"
+    >
+      <div class="container">
+        <a href="/" class="navbar-brand d-flex mr-auto">
+          <img
+            class="tenverto-logo"
+            src="/images/Logo.png"
+            alt="Tenverto by Eric Njanga"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#tenverto-nav-collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100" id="tenverto-nav-collapse">
+          <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link link-not-underlined link-color-hover1" href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-not-underlined link-color-hover1"
+                href="/_pages/about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-not-underlined link-color-hover1"
+                href="/_pages/expertise.html"
+                >Expertise</a
+              >
+            </li>
+            <li class="nav-item menu-item active">
+              <a
+                class="nav-link link-not-underlined link-color-hover1"
+                href="/_pages/case-studies.html"
+                >Case Studies</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-not-underlined link-color-hover1"
+                href="/_pages/blog.html"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/ericnjanga/"
+                class="btn btn-primary btn-lg halton-btn text-icon icon-after icon-linkedIn"
+                >Reach out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    gtag('config', 'G-TGXTXXR9G2');
-  </script>
-</head>
+    <!-- main header-->
+    <header class="hero gap-top-margin gap-bottom-margin">
+      <div class="container">
+        <nav aria-label="breadcrumb" class="breadcrumb section-max-w1 mx-auto">
+          <ol class="breadcrumb__list m-0 mx-auto">
+            <li>
+              <a class="link-underlined link-color-hover2" href="//">Home</a>
+            </li>
+            <li>/</li>
+            <li>Case Studies</li>
+          </ol>
+        </nav>
 
-<body>
-  <nav class="tenverto-navbar navbar navbar-light navbar-expand-md bg-faded justify-content-center fixed-top">
+        <h1 class="gap-bottom-margin-4th">Best work</h1>
+
+        <p
+          class="txt-large section-max-w2 section-h-centering gap-bottom-margin"
+        >
+          My most consequential work represents what I’m striving to bring to
+          every project: Efficient coding, smart usage of design techniques, and
+          an honest stakeholders and resource management.
+        </p>
+      </div>
+    </header>
+
     <div class="container">
-      <a href="/" class="navbar-brand d-flex mr-auto">
-        <img class="tenverto-logo" src="/images/Logo.png" alt="Tenverto by Eric Njanga">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tenverto-nav-collapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse w-100" id="tenverto-nav-collapse">
-        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link link-not-underlined link-color-hover1" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-not-underlined link-color-hover1" href="/_pages/about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-not-underlined link-color-hover1" href="/_pages/expertise.html">Expertise</a>
-          </li>
-          <li class="nav-item menu-item active">
-            <a class="nav-link link-not-underlined link-color-hover1" href="/_pages/case-studies.html">Case Studies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-not-underlined link-color-hover1" href="/_pages/blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a target="_blank" href="https://www.linkedin.com/in/ericnjanga/"
-              class="btn btn-primary btn-lg  halton-btn text-icon icon-after icon-linkedIn">Reach out</a>
-          </li>
-        </ul>
+      <div class="case-study gap-bottom-margin-4th">
+        <a href="/_pages/single.html">
+          <img
+            class="card-img-top case-study__img"
+            src="https://media.istockphoto.com/id/1267383747/vector/smartphone-interface-vector-template.jpg?s=2048x2048&w=is&k=20&c=ECkozC0-QADdghC05Z6wmYzGHUtJO6q-EYkVgLdBi3I="
+            alt="image 8"
+          />
+          <div class="case-study__body">
+            <p class="case-study__category">Category 1, Category 2</p>
+            <h3 class="case-study__title">
+              Redesigning a website to create a sense of corporate
+              sophistication and professionalism
+            </h3>
+          </div>
+        </a>
       </div>
 
-    </div>
-  </nav>
-
-
-
-
-
-
-
-
-
-
-
-  <!-- main header-->
-  <header class="hero gap-top-margin gap-bottom-margin">
-    <div class="container">
-
-      <nav aria-label="breadcrumb" class="breadcrumb section-max-w1 mx-auto">
-        <ol class="breadcrumb__list m-0 mx-auto">
-          <li><a class="link-underlined link-color-hover2" href="//">Home</a></li>
-          <li>/</li>
-          <li>Case Studies</li>
-        </ol>
-      </nav>
-
-
-      <h1 class="gap-bottom-margin-4th">Best work</h1>
-
-      <p class="txt-large section-max-w2 section-h-centering gap-bottom-margin">
-        My most consequential work represents what I’m striving to bring to
-        every project: Efficient coding, smart usage of design techniques, and
-        an honest stakeholders and resource management.
-      </p>
-    </div>
-  </header>
-
-
-
-
-
-
-  <div class="container">
-
-
-
-
-
-    <div class="case-study gap-bottom-margin-4th">
-      <a href="/_pages/single.html">
-        <img class="card-img-top case-study__img"
-          src="https://media.istockphoto.com/id/1267383747/vector/smartphone-interface-vector-template.jpg?s=2048x2048&w=is&k=20&c=ECkozC0-QADdghC05Z6wmYzGHUtJO6q-EYkVgLdBi3I="
-          alt="image 8" />
-        <div class="case-study__body">
-          <p class="case-study__category">Category 1, Category 2</p>
-          <h3 class="case-study__title">
-            Redesigning a website to create a sense of corporate
-            sophistication and professionalism
-          </h3>
-        </div>
-      </a>
-    </div>
-
-
-
-
-
-    <div class="case-study gap-bottom-margin-4th">
-      <a href="/_pages/single.html">
-        <img class="card-img-top case-study__img"
-          src="https://media.istockphoto.com/id/1267383747/vector/smartphone-interface-vector-template.jpg?s=2048x2048&w=is&k=20&c=ECkozC0-QADdghC05Z6wmYzGHUtJO6q-EYkVgLdBi3I="
-          alt="image 8" />
-        <div class="case-study__body">
-          <p class="case-study__category">Category 2</p>
-          <h3 class="case-study__title">
-            Redesigning a website to create a sense of corporate
-            sophistication and professionalism
-          </h3>
-        </div>
-      </a>
-    </div>
-
-
-
-
-
-    <div class="case-study gap-bottom-margin-4th">
-      <a href="/_pages/single.html">
-        <img class="card-img-top case-study__img"
-          src="https://media.istockphoto.com/id/1267383747/vector/smartphone-interface-vector-template.jpg?s=2048x2048&w=is&k=20&c=ECkozC0-QADdghC05Z6wmYzGHUtJO6q-EYkVgLdBi3I="
-          alt="image 8" />
-        <div class="case-study__body">
-          <p class="case-study__category">Category 3</p>
-          <h3 class="case-study__title">
-            Redesigning a website to create a sense of corporate
-            sophistication and professionalism
-          </h3>
-        </div>
-      </a>
-    </div>
-  </div>
-
-
-
-  <footer class="footer gap-top-margin gap-bottom-margin link-color-hover2 link-underlined">
-    <div class="container footer-container d-flex flex-column">
-      <header class="footer-header row">
-        <div class="col-lg-6 offset-lg-3 text-center">
-          <a href="/" class="navbar-brand">
-            <img class="tenverto-logo" src="/images/Logo.png" alt="Tenverto by Eric Njanga">
-          </a>
-          <p class="m-0">High-precision design, development, and improvement of large-scale web applications (this
-            includes
-            intranet, CMS, and SASS-based websites). Area of expertise includes Web Accessibility, UI Architecture,
-            and User Experience Design.</p>
-        </div>
-      </header>
-
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="footer-header-list list-inline justify-content-center list-no-style m-0 p-0">
-            <li>
-              <span class="text-icon icon-before icon-pin">Ontario, Canada</span>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.linkedin.com/in/ericnjanga/"
-                class="link-icon icon-before icon-linkedIn">Reach out</a>
-            </li>
-          </ul>
-        </div>
+      <div class="case-study gap-bottom-margin-4th">
+        <a href="/_pages/single.html">
+          <img
+            class="card-img-top case-study__img"
+            src="https://media.istockphoto.com/id/1267383747/vector/smartphone-interface-vector-template.jpg?s=2048x2048&w=is&k=20&c=ECkozC0-QADdghC05Z6wmYzGHUtJO6q-EYkVgLdBi3I="
+            alt="image 8"
+          />
+          <div class="case-study__body">
+            <p class="case-study__category">Category 2</p>
+            <h3 class="case-study__title">
+              Redesigning a website to create a sense of corporate
+              sophistication and professionalism
+            </h3>
+          </div>
+        </a>
       </div>
 
-      <div class="footer-body me-auto ms-auto">
-        <div class="footer-body-cell-1">
-          <h3 class="footer-body-title">Happiest Clients</h3>
-          <ul class="footer-client-list list-no-style m-0 p-0">
-            <li>
-              <a target="_blank" href="https://www.halton.ca/">
-                <img class="client-logo img-fluid" src="/images/dream client 1.png" alt="The Region of halton">
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.ontario.ca/page/ministry-public-business-service-delivery">
-                <img class="client-logo img-fluid" src="/images/dream client 2.png"
-                  alt="The Ministry of Public and Business Service Delivery">
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="footer-body-title">On this website</h3>
-          <ul class="footer-body-cell-list-links list-no-style m-0 p-0">
-            <li>
-              <a class="link-icon icon-before icon-link" href="/">Home</a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-link" href="/_pages/about.html">About</a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-link" href="/_pages/expertise.html">Expertise</a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-link" href="/_pages/case-studies.html">Case Studies</a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-link" href="/_pages/blog.html">Blog</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="footer-body-title">Online Presence</h3>
-          <ul class="footer-body-cell-list-links list-no-style m-0 p-0">
-            <li>
-              <a class="link-icon icon-before icon-linkedIn" target="_blank"
-                href="https://www.linkedin.com/in/ericnjanga/">
-                Eric Njanga
-              </a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-linkedIn" target="_blank"
-                href="https://www.linkedin.com/company/tenverto">
-                Tenverto
-              </a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-text" target="_blank"
-                href="https://www.linkedin.com/newsletters/7083855170261946369/">
-                UX Development for Success
-              </a>
-            </li>
-            <li>
-              <a class="link-icon icon-before icon-text" target="_blank"
-                href="https://www.linkedin.com/newsletters/7141430870384553985/">
-                Successful Web Applications
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="case-study gap-bottom-margin-4th">
+        <a href="/_pages/single.html">
+          <img
+            class="card-img-top case-study__img"
+            src="https://media.istockphoto.com/id/1267383747/vector/smartphone-interface-vector-template.jpg?s=2048x2048&w=is&k=20&c=ECkozC0-QADdghC05Z6wmYzGHUtJO6q-EYkVgLdBi3I="
+            alt="image 8"
+          />
+          <div class="case-study__body">
+            <p class="case-study__category">Category 3</p>
+            <h3 class="case-study__title">
+              Redesigning a website to create a sense of corporate
+              sophistication and professionalism
+            </h3>
+          </div>
+        </a>
       </div>
     </div>
-  </footer>
 
+    <footer
+      class="footer gap-top-margin gap-bottom-margin link-color-hover2 link-underlined"
+    >
+      <div class="container footer-container d-flex flex-column">
+        <header class="footer-header row">
+          <div class="col-lg-6 offset-lg-3 text-center">
+            <a href="/" class="navbar-brand">
+              <img
+                class="tenverto-logo"
+                src="/images/Logo.png"
+                alt="Tenverto by Eric Njanga"
+              />
+            </a>
+            <p class="m-0">
+              High-precision design, development, and improvement of large-scale
+              web applications (this includes intranet, CMS, and SASS-based
+              websites). Area of expertise includes Web Accessibility, UI
+              Architecture, and User Experience Design.
+            </p>
+          </div>
+        </header>
 
+        <div class="row">
+          <div class="col-lg-12">
+            <ul
+              class="footer-header-list list-inline justify-content-center list-no-style m-0 p-0"
+            >
+              <li>
+                <span class="text-icon icon-before icon-pin"
+                  >Ontario, Canada</span
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ericnjanga/"
+                  class="link-icon icon-before icon-linkedIn"
+                  >Reach out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="footer-body me-auto ms-auto">
+          <div class="footer-body-cell-1">
+            <h3 class="footer-body-title">Happiest Clients</h3>
+            <ul class="footer-client-list list-no-style m-0 p-0">
+              <li>
+                <a target="_blank" href="https://www.halton.ca/">
+                  <img
+                    class="client-logo img-fluid"
+                    src="/images/dream client 1.png"
+                    alt="The Region of halton"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.ontario.ca/page/ministry-public-business-service-delivery"
+                >
+                  <img
+                    class="client-logo img-fluid"
+                    src="/images/dream client 2.png"
+                    alt="The Ministry of Public and Business Service Delivery"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
 
+          <div>
+            <h3 class="footer-body-title">On this website</h3>
+            <ul class="footer-body-cell-list-links list-no-style m-0 p-0">
+              <li>
+                <a class="link-icon icon-before icon-link" href="/">Home</a>
+              </li>
+              <li>
+                <a
+                  class="link-icon icon-before icon-link"
+                  href="/_pages/about.html"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-icon icon-before icon-link"
+                  href="/_pages/expertise.html"
+                  >Expertise</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-icon icon-before icon-link"
+                  href="/_pages/case-studies.html"
+                  >Case Studies</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-icon icon-before icon-link"
+                  href="/_pages/blog.html"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
 
+          <div>
+            <h3 class="footer-body-title">Online Presence</h3>
+            <ul class="footer-body-cell-list-links list-no-style m-0 p-0">
+              <li>
+                <a
+                  class="link-icon icon-before icon-linkedIn"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ericnjanga/"
+                >
+                  Eric Njanga
+                </a>
+              </li>
+              <li>
+                <a
+                  class="link-icon icon-before icon-linkedIn"
+                  target="_blank"
+                  href="https://www.linkedin.com/company/tenverto"
+                >
+                  Tenverto
+                </a>
+              </li>
+              <li>
+                <a
+                  class="link-icon icon-before icon-text"
+                  target="_blank"
+                  href="https://www.linkedin.com/newsletters/7083855170261946369/"
+                >
+                  UX Development for Success
+                </a>
+              </li>
+              <li>
+                <a
+                  class="link-icon icon-before icon-text"
+                  target="_blank"
+                  href="https://www.linkedin.com/newsletters/7141430870384553985/"
+                >
+                  Successful Web Applications
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <!-- Add the back-to-top button with arrow symbol -->
+    <button class="btn-back-to-top">
+      <div class="arrow-container"><i class="bi bi-arrow-up"></i></div>
+    </button>
 
-  <!-- Add the back-to-top button with arrow symbol -->
-  <button class="btn-back-to-top">
-    <div class="arrow-container"><i class="bi bi-arrow-up"></i></div>
-  </button>
-
-
-  
-  
-  
-  <!-- Bootstrap v5 Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <!-- Tenverto Script Bundle -->
-  <script src="/dist/scripts.tenverto-bundle.js"></script>
-</body>
-
+    <!-- Bootstrap v5 Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tenverto Script Bundle -->
+    <script src="/dist/scripts.tenverto-bundle.js"></script>
+  </body>
 </html>
