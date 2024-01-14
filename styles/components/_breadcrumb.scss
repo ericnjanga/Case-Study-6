@@ -5,6 +5,11 @@
 
 @layer breadcrumb {
     .breadcrumb__list {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+
         li {
             display: inline-block;
         }

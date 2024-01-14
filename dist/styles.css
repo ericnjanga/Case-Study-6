@@ -409,11 +409,28 @@
     .icon-bigger::before, .icon-bigger::after {
       font-size: 60px;
     }
+    /**
+     * Description 
+     * * Important ...
+     * ! Caution ...
+     * ? Question ...
+    */
     .text-icon, .link-icon {
       position: relative;
     }
+    .text-icon.icon-before, .link-icon.icon-before {
+      /*
+        TODO: There is no left spacing with icon, see design system
+      */
+    }
     .text-icon.icon-before::before, .link-icon.icon-before::before {
       display: inline-block;
+    }
+    .text-icon.icon-after, .link-icon.icon-after {
+      /*
+        TODO: Space between text and icon is too big:
+        - Make the comparison with icon-before in the design system
+      */
     }
     .text-icon.icon-after::after, .link-icon.icon-after::after {
       display: inline-block;
@@ -550,6 +567,12 @@
     }
   }
   @layer breadcrumb {
+    .breadcrumb__list {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .breadcrumb__list li {
       display: inline-block;
     }
