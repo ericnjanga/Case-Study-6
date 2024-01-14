@@ -1,9 +1,106 @@
+:root {
 
+    --enjanga-search-input-width: initial;
+    --enjanga-blockquote-font-size: 24px;
+    --enjanga-blockquote-line-height: 32px;
+    --enjanga-blockquote-icon-dim: 107px;
+    --enjanga-blockquote-icon-left: 50%;
+    --enjanga-blockquote-icon-margin-left: calc(-1 * var(--enjanga-blockquote-icon-dim) / 2);
+    // --enjanga-blockquote-padding: 0 0 0 130px;
+    --enjanga-blockquote-padding: 130px 0 0 0;
+}
 
 .btn,
 .btn-back-to-top, 
 .card-expertise,
 .card-article,
+.form-control,
 .fixed-sidebar a {
     border-radius: 0;
 }
+
+
+
+/**
+ * SEARCH CONTAINER
+ * ----------------------
+*/
+.search-container {
+    .search-field {
+        width: var(--enjanga-search-input-width);
+    }
+
+    @media (min-width: 992px) { // position 5 ...
+        --enjanga-search-input-width: 540px;
+    }
+    @media (min-width: 768px) and (max-width: (992px - 1)) { // position 4 ...
+        --enjanga-search-input-width: 440px;
+    }
+    @media (min-width: 576px) and (max-width: (768px - 1)) { // position 3 ...
+        --enjanga-search-input-width: 340px;
+    }
+    // position 1 ...
+}
+
+
+
+/**
+ * POSTS / Embedded image
+ * ----------------------
+*/
+.wp-caption {
+    width: 100% !important;
+}
+
+
+
+
+
+
+blockquote {
+    position: relative;
+    font-family: 'Lora', serif;
+    font-size: var(--enjanga-blockquote-font-size);
+    line-height: var(--enjanga-blockquote-line-height);
+    padding: var(--enjanga-blockquote-padding);
+
+
+    @media (min-width: 1200px) { // position 6 ...
+        --enjanga-blockquote-icon-left: 0;
+        --enjanga-blockquote-icon-margin-left: 0;
+        --enjanga-blockquote-padding: 0 0 0 130px;
+    }
+    @media (min-width: 1200px) { // position 6 ...
+        --enjanga-blockquote-font-size: 28px;
+        --enjanga-blockquote-line-height: 36px;
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        margin-left: var(--enjanga-blockquote-icon-margin-left);
+        left: var(--enjanga-blockquote-icon-left);
+        top: 0;
+        width: var(--enjanga-blockquote-icon-dim);
+        height: var(--enjanga-blockquote-icon-dim);
+    }
+
+    &::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "\F6B0";
+        z-index: 10;
+        font-size: 60px;
+        color: var(--enjanga-clr-body-bg1);
+    }
+
+    &::after {
+        content: '';
+        background-color: #e74c3c; /* Change the background color as needed */
+        border-radius: 50%; /* Make it a circle */
+        z-index: 9;
+    }
+}
+
+

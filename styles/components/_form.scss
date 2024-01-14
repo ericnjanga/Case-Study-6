@@ -1,0 +1,28 @@
+:root {
+}
+
+
+@layer form {
+    @layer buttons {
+        .btn-primary {
+            background-color: var(--enjanga-clr-gray-1);
+            border-color: var(--enjanga-clr-gray-1);
+
+            &:hover {
+                background-color: var(--enjanga-clr-accent);
+            }
+        }
+        .btn-secondary {
+            &:hover {
+                background-color: var(--enjanga-clr-accent);
+            }
+        }
+    }
+
+    
+    .form-control {
+        padding: 7px;
+        border-radius: 0;
+    }
+}
+

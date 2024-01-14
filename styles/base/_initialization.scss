@@ -22,7 +22,7 @@
  * ---------------------------------------------
 */
 // Font type
-* {
+body {
     // Typography
     font-family: 'Open Sans', sans-serif;
     font-family: 'Space Grotesk', sans-serif;
@@ -142,7 +142,7 @@ body {
         // --enjanga-txt-large-line-height: root
     }
     @media (min-width: 576px) and (max-width: (768px - 1)) {
-        border: 10px solid turquoise;
+        // border: 10px solid turquoise;
         --enjanga-h1-font-size: 56px;
         --enjanga-h1-line-height: 62px;
 
