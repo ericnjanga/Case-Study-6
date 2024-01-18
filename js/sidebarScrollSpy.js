@@ -47,15 +47,24 @@ function isInViewport(elem) {
  * @param {*} DomEltList 
  */
 function handleScroll(DomEltList) {
+
+    console.log('1) handleScroll ', DomEltList.length);
+
     DomEltList.forEach(item => {
         const targetId = item.getAttribute('href').substring(1); // Get the ID without '#'
         const targetElement = document.getElementById(targetId);
 
         if (targetElement && isInViewport(targetElement)) {
-            // Remove .active class from all items
-            DomEltList.forEach(link => link.classList.remove('active'));
-            // Add .active class to the corresponding item
-            item.classList.add('active');
+
+            if (!item.classList.contains('active')) {
+                console.log(' -> Activate item: ', targetElement);
+
+
+                // Remove .active class from all items
+                DomEltList.forEach(link => link.classList.remove('active'));
+                // Add .active class to the corresponding item
+                item.classList.add('active');
+            }
         }
     });
 }
