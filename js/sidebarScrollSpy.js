@@ -70,9 +70,14 @@ function handleScroll(DomEltList) {
 }
 
 
-document.addEventListener("DOMContentLoaded", function () {
+
+
+// document.addEventListener("DOMContentLoaded", function () {
     // Get all anchor elements inside the list-example
     const listItems = document.querySelectorAll('#nav-expertise a');
+
+    console.log('0) intro -> ', listItems);
+
 
     // ...
     handleScroll(listItems);
@@ -81,5 +86,5 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', function () {
         handleScroll(listItems);
     });
-});
+// });
 
