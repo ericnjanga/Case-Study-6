@@ -48,7 +48,7 @@ function isInViewport(elem) {
  */
 function handleScroll(DomEltList) {
 
-    console.log('1) handleScroll ', DomEltList.length);
+    console.log('1) handleScroll ... ', DomEltList.length);
 
     DomEltList.forEach(item => {
         const targetId = item.getAttribute('href').substring(1); // Get the ID without '#'
