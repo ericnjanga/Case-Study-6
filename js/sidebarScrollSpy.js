@@ -47,9 +47,6 @@ function isInViewport(elem) {
  * @param {*} DomEltList 
  */
 function handleScroll(DomEltList) {
-
-    console.log('1) handleScroll ... ', DomEltList.length);
-
     DomEltList.forEach(item => {
         const targetId = item.getAttribute('href').substring(1); // Get the ID without '#'
         const targetElement = document.getElementById(targetId);
@@ -57,9 +54,6 @@ function handleScroll(DomEltList) {
         if (targetElement && isInViewport(targetElement)) {
 
             if (!item.classList.contains('active')) {
-                console.log(' -> Activate item: ', targetElement);
-
-
                 // Remove .active class from all items
                 DomEltList.forEach(link => link.classList.remove('active'));
                 // Add .active class to the corresponding item
@@ -72,19 +66,12 @@ function handleScroll(DomEltList) {
 
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-    // Get all anchor elements inside the list-example
-    const listItems = document.querySelectorAll('#nav-expertise a');
+// Get all anchor elements inside the list-example
+const listItems = document.querySelectorAll('#nav-expertise a');
+handleScroll(listItems);
 
-    console.log('0) intro -> ', listItems);
-
-
-    // ...
+// Attach scroll event listener to the window
+window.addEventListener('scroll', function () {
     handleScroll(listItems);
-
-    // Attach scroll event listener to the window
-    window.addEventListener('scroll', function () {
-        handleScroll(listItems);
-    });
-// });
+});
 
