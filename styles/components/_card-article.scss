@@ -32,13 +32,9 @@
                 // ...
                 @container (min-width: 430px) {
                     --enjanga-card-article-text-padding: 50px;
-                    // --enjanga-card-title-font-size: 34px;
-                    // --enjanga-card-title-line-height: 38px;
                 }
                 @container (min-width: 500px) {
                     --enjanga-card-article-text-padding: 70px;
-                    // --enjanga-card-title-font-size: 38px;
-                    // --enjanga-card-title-line-height: 42px;
                 }
             }
 
@@ -53,8 +49,6 @@
 
             .card-title {
                 color: var(--enjanga-clr-card-article-title);
-                // font-size: var(--enjanga-card-title-font-size);
-                // line-height: var(--enjanga-card-title-line-height);
             }
         }
     }

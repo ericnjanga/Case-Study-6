@@ -26,7 +26,10 @@ body {
     // Typography
     font-family: 'Open Sans', sans-serif;
     font-family: 'Space Grotesk', sans-serif;
-    // Smoorh transition
+}
+
+// Smoorh transition for any DOM element on the site
+* {
     transition: all 0.5s ease;
 }
 

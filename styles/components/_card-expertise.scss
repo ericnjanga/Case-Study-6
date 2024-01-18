@@ -14,14 +14,12 @@
     .card-expertise {
         background-color: var(--enjanga--clr-card-expertise-bg);
 
-
         &:hover {
             --enjanga--clr-card-expertise-bg: var(--enjanga-clr-accent);
             --enjanga--clr-card-expertise-title: var(--enjanga-clr-body-bg1);
             --enjanga--clr-card-expertise-p: var(--enjanga-clr-body-bg1);
             --enjanga--clr-card-expertise-footer-cta: var(--enjanga-clr-body-bg1);
         }
-
 
         > a {
             display: block;
@@ -31,10 +29,6 @@
                 margin: 0;
             }
         }
-
-
-
-
 
         // Increase card padding based on parent container size
         @container (min-width: 400px) {

@@ -15,9 +15,13 @@
 
 @layer components {
     @import './components/modal';
-    @import './components/icons';
-    @import 'components/icons-before';
-    @import 'components/icons-after';
+    @layer icons {
+        @import './components/icons';
+        @import './components/icons-typography';
+        @import './components/icons-btn-links';
+        @import 'components/icons-before';
+        @import 'components/icons-after';
+    }
     @import './components/fixed-sidebar';
     @import './components/table';
     @import './components/banner-image';
@@ -31,7 +35,6 @@
     @import './components/hero';
     @import './components/btn-back-to-top';
     @import './components/card-testimonial';
-    // 
     @import './components/form';
     @import './components/links';
     @import './components/dark-section';

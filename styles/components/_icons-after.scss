@@ -1,24 +1,25 @@
-.icon-after {
+@layer icon-after {
+  .icon-after {
     &.icon-linkedIn::after {
-        content: "\F472";
+      content: "\F472";
     }
     &.icon-pin::after {
-        content: "\F3E7";
+      content: "\F3E7";
     }
     &.icon-link::after {
-        content: "\F471";
+      content: "\F471";
     }
     &.icon-text::after {
-        content: "\F3B9";
+      content: "\F3B9";
     }
     &.icon-suitcase::after {
-        content: "\F8FF";
+      content: "\F8FF";
     }
     &.icon-rocket-takeoff::after {
-        content: "\F845";
+      content: "\F845";
     }
     &.icon-box-arrow-up-right::after {
-        content: "\F1C5";
+      content: "\F1C5";
     }
+  }
 }
-

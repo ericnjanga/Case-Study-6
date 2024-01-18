@@ -97,7 +97,7 @@ blockquote {
 
     &::after {
         content: '';
-        background-color: #e74c3c; /* Change the background color as needed */
+        background-color: var(--enjanga-clr-accent);
         border-radius: 50%; /* Make it a circle */
         z-index: 9;
     }

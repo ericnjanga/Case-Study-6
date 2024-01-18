@@ -61,13 +61,6 @@
         }
 
 
-        .btn-primary {
-            padding: var(--enjanga-navbar-btn-primary-padding);
-
-            &.text-icon::after {
-                right: var(--enjanga-navbar-btn-primary-icon-right-x);
-            }
-        }
 
         // ---> top and bottom padding
         @media (min-width: 1200px) {

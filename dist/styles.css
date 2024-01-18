@@ -30,6 +30,8 @@
   body {
     font-family: "Open Sans", sans-serif;
     font-family: "Space Grotesk", sans-serif;
+  }
+  * {
     transition: all 0.5s ease;
   }
   /**
@@ -372,137 +374,178 @@
       padding: var(--enjanga-modal-padding-body);
     }
   }
-  :root {
-    --halton-link-icon-margin-x: 13px;
-    --halton-link-icon-padding-x: 22px;
-  }
   @layer icons {
-    blockquote::before,
-    .halton-share__text.icon-share::after,
-    .halton-collapse .panel-heading a::after,
-    .link-icon::after,
-    .link-icon::before,
-    .text-icon::after,
-    .text-icon::before,
-    .list-icon-check li::before,
-    .alert-icon::before,
-    .card-icon::before {
-      position: absolute;
-      font-family: bootstrap-icons !important;
-      display: block;
-    }
-    .list-icon-check {
-      list-style: none;
-    }
-    .list-icon-check li::before {
-      left: -16px;
-      content: "\f633";
-      color: var(--halton-clr-accent);
-    }
-    .list-icon-check li {
-      position: relative;
-      padding-left: 13px;
-    }
-    .icon-big::before, .icon-big::after {
-      font-size: 30px;
-    }
-    .icon-bigger::before, .icon-bigger::after {
-      font-size: 60px;
-    }
-    /**
-     * Description 
-     * * Important ...
-     * ! Caution ...
-     * ? Question ...
-    */
-    .text-icon, .link-icon {
-      position: relative;
-    }
-    .text-icon.icon-before, .link-icon.icon-before {
-      /*
-        TODO: There is no left spacing with icon, see design system
+    @layer base {
+      blockquote::before,
+      .halton-share__text.icon-share::after,
+      .halton-collapse .panel-heading a::after,
+      .list-icon-check li::before,
+      .alert-icon::before,
+      .card-icon::before {
+        position: absolute;
+        font-family: bootstrap-icons !important;
+        display: block;
+      }
+      .has-icon::after,
+      .has-icon::before {
+        position: relative;
+        font-family: bootstrap-icons !important;
+        display: block;
+      }
+      .list-icon-check {
+        list-style: none;
+      }
+      .list-icon-check li::before {
+        left: -16px;
+        content: "\f633";
+        color: var(--halton-clr-accent);
+      }
+      .list-icon-check li {
+        position: relative;
+        padding-left: 13px;
+      }
+      .icon-big::before, .icon-big::after {
+        font-size: 30px;
+      }
+      .icon-bigger::before, .icon-bigger::after {
+        font-size: 60px;
+      }
+      /**
+       * Description 
+       * * Important ...
+       * ! Caution ...
+       * ? Question ...
       */
-    }
-    .text-icon.icon-before::before, .link-icon.icon-before::before {
-      display: inline-block;
-    }
-    .text-icon.icon-after, .link-icon.icon-after {
       /*
-        TODO: Space between text and icon is too big:
-        - Make the comparison with icon-before in the design system
+        TODO: Sample todo 1 ...
       */
+      /*
+        TODO: Sample todo 2 ...
+      */
+      /*
+        TODO: Sample todo 3 ...
+      */
+      .has-icon {
+        position: relative;
+      }
+      .has-icon.icon-before::before, .has-icon.icon-after::after {
+        display: inline-block;
+      }
+      .has-icon.icon-before::before {
+        left: 0;
+      }
     }
-    .text-icon.icon-after::after, .link-icon.icon-after::after {
-      display: inline-block;
+    @layer typography {
+      h1.has-icon.icon-before::before {
+        left: -10px;
+      }
+      h1.has-icon.icon-after::after {
+        margin-left: 20px;
+      }
+      h2.has-icon.icon-before::before {
+        left: -7px;
+      }
+      h2.has-icon.icon-after::after {
+        margin-left: 15px;
+      }
+      h3.has-icon.icon-before::before {
+        left: -6px;
+      }
+      h3.has-icon.icon-after::after {
+        margin-left: 10px;
+      }
+      h4.has-icon.icon-before::before {
+        left: -3px;
+      }
+      h4.has-icon.icon-after::after {
+        margin-left: 7px;
+      }
+      h5.has-icon.icon-before::before {
+        left: -3px;
+      }
+      h5.has-icon.icon-after::after {
+        margin-left: 5px;
+      }
+      p.has-icon.icon-before::before {
+        left: -3px;
+      }
+      p.has-icon.icon-after::after {
+        margin-left: 5px;
+      }
     }
-    .text-icon.btn,
-    .link-icon.btn {
-      --halton-link-icon-padding-x: 45px;
+    :root {
+      --enjanga-icon-btn-pos-y: 2px;
+      --enjanga-icon-anchor-pos-y: 3px;
+      --enjanga-icon-btn-marg-x: 10px;
     }
-    .text-icon::before, .text-icon::after,
-    .link-icon::before,
-    .link-icon::after {
-      color: var(--halton-clr-link);
+    @layer btn-and-links {
+      .btn.has-icon.icon-before::before {
+        top: var(--enjanga-icon-btn-pos-y);
+        margin-right: var(--enjanga-icon-btn-marg-x);
+      }
+      .btn.has-icon.icon-after::after {
+        top: var(--enjanga-icon-btn-pos-y);
+        margin-left: var(--enjanga-icon-btn-marg-x);
+      }
+      .btn.has-icon.btn-lg {
+        --enjanga-icon-btn-marg-x: 20px;
+      }
+      a.has-icon:not(.btn).icon-before::before {
+        top: var(--enjanga-icon-anchor-pos-y);
+        margin-right: var(--enjanga-icon-btn-marg-x);
+      }
+      a.has-icon:not(.btn).icon-after::after {
+        top: var(--enjanga-icon-anchor-pos-y);
+        margin-left: var(--enjanga-icon-btn-marg-x);
+        margin-right: var(--enjanga-icon-btn-marg-x);
+      }
     }
-    .text-icon.icon-before,
-    .link-icon.icon-before {
-      padding-left: var(--halton-link-icon-padding-x);
+    @layer icon-before {
+      .icon-before.icon-linkedIn::before {
+        content: "\f472";
+      }
+      .icon-before.icon-pin::before {
+        content: "\f3e7";
+      }
+      .icon-before.icon-link::before {
+        content: "\f471";
+      }
+      .icon-before.icon-text::before {
+        content: "\f3b9";
+      }
+      .icon-before.icon-suitcase::before {
+        content: "\f8ff";
+      }
+      .icon-before.icon-rocket-takeoff::before {
+        content: "\f845";
+      }
+      .icon-before.icon-box-arrow-up-right::before {
+        content: "\f1c5";
+      }
     }
-    .text-icon.icon-before::before,
-    .link-icon.icon-before::before {
-      margin-right: var(--halton-link-icon-margin-x);
-      left: 0;
+    @layer icon-after {
+      .icon-after.icon-linkedIn::after {
+        content: "\f472";
+      }
+      .icon-after.icon-pin::after {
+        content: "\f3e7";
+      }
+      .icon-after.icon-link::after {
+        content: "\f471";
+      }
+      .icon-after.icon-text::after {
+        content: "\f3b9";
+      }
+      .icon-after.icon-suitcase::after {
+        content: "\f8ff";
+      }
+      .icon-after.icon-rocket-takeoff::after {
+        content: "\f845";
+      }
+      .icon-after.icon-box-arrow-up-right::after {
+        content: "\f1c5";
+      }
     }
-    .text-icon.icon-after,
-    .link-icon.icon-after {
-      padding-right: var(--halton-link-icon-padding-x);
-    }
-    .text-icon.icon-after::after,
-    .link-icon.icon-after::after {
-      margin-left: var(--halton-link-icon-margin-x);
-    }
-  }
-  .icon-before.icon-linkedIn::before {
-    content: "\f472";
-  }
-  .icon-before.icon-pin::before {
-    content: "\f3e7";
-  }
-  .icon-before.icon-link::before {
-    content: "\f471";
-  }
-  .icon-before.icon-text::before {
-    content: "\f3b9";
-  }
-  .icon-before.icon-suitcase::before {
-    content: "\f8ff";
-  }
-  .icon-before.icon-rocket-takeoff::before {
-    content: "\f845";
-  }
-  .icon-before.icon-box-arrow-up-right::before {
-    content: "\f1c5";
-  }
-  .icon-after.icon-linkedIn::after {
-    content: "\f472";
-  }
-  .icon-after.icon-pin::after {
-    content: "\f3e7";
-  }
-  .icon-after.icon-link::after {
-    content: "\f471";
-  }
-  .icon-after.icon-text::after {
-    content: "\f3b9";
-  }
-  .icon-after.icon-suitcase::after {
-    content: "\f8ff";
-  }
-  .icon-after.icon-rocket-takeoff::after {
-    content: "\f845";
-  }
-  .icon-after.icon-box-arrow-up-right::after {
-    content: "\f1c5";
   }
   @layer fixed-sidebar {
     .fixed-sidebar-container {
@@ -730,12 +773,6 @@
       font-weight: bold;
       text-decoration: underline !important;
       color: var(--enjanga-clr-accent);
-    }
-    .tenverto-navbar .btn-primary {
-      padding: var(--enjanga-navbar-btn-primary-padding);
-    }
-    .tenverto-navbar .btn-primary.text-icon::after {
-      right: var(--enjanga-navbar-btn-primary-icon-right-x);
     }
     @media (min-width: 1200px) {
       .tenverto-navbar {
@@ -1372,7 +1409,7 @@
   }
   blockquote::after {
     content: "";
-    background-color: #e74c3c; /* Change the background color as needed */
+    background-color: var(--enjanga-clr-accent);
     border-radius: 50%; /* Make it a circle */
     z-index: 9;
   }

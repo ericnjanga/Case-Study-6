@@ -1,0 +1,50 @@
+:root {
+  --enjanga-icon-btn-pos-y: 2px;
+  --enjanga-icon-anchor-pos-y: 3px;
+  --enjanga-icon-btn-marg-x: 10px;
+}
+
+
+
+@layer btn-and-links {
+  // button ...
+  .btn.has-icon {
+    &.icon-before {
+      &::before {
+        top: var(--enjanga-icon-btn-pos-y);
+        margin-right: var(--enjanga-icon-btn-marg-x);
+      }
+    }
+    &.icon-after {
+      &::after {
+        top: var(--enjanga-icon-btn-pos-y);
+        margin-left: var(--enjanga-icon-btn-marg-x);
+      }
+    }
+    // Large buttons
+    &.btn-lg {
+      --enjanga-icon-btn-marg-x: 20px;
+    }
+  }
+
+  
+
+  // anchor ...
+  a.has-icon:not(.btn) {
+    // border: 20px solid blue;
+    &.icon-before {
+      &::before {
+        top: var(--enjanga-icon-anchor-pos-y);
+        margin-right: var(--enjanga-icon-btn-marg-x);
+      }
+    }
+    &.icon-after {
+      &::after {
+        top: var(--enjanga-icon-anchor-pos-y);
+        margin-left: var(--enjanga-icon-btn-marg-x);
+        margin-right: var(--enjanga-icon-btn-marg-x);
+      }
+    }
+  }
+
+}

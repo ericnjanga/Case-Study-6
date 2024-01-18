@@ -31,7 +31,6 @@
 
 
         @layer buttons-and-links {
-
             // Link with color1 by default, and color2 on hover
             a.link-color-hover1 {
                 color: var(--enjanga-clr-dark-section-accent);
@@ -43,7 +42,6 @@
 
 
             @layer link-container {
-
                 // Link with color3 by default, and color4 on hover
                 .link-color-hover2 {
                     a {
