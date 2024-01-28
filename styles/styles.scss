@@ -40,6 +40,10 @@
     @import './components/dark-section';
 }
 
+@layer pages {
+    @import './pages/all-pages';
+}
+
 @layer common-styles {
     @import './common-styles/style1';
 }

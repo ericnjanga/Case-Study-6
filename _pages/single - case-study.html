@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eric Njanga, UX Deveoper and Web Consultant</title>
+
+  <!-- Standard head styles -->
+  <link rel="stylesheet" href="/styles/framework/bootstrap.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Lora:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="/dist/styles.css" />
+  <!-- Standard head styles -->
+
+  <!-- Google Analytics Events Script -->
+  <script async src="/js/google-analytics-events.js"></script>
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TGXTXXR9G2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-TGXTXXR9G2');
+  </script>
+</head>
+
+<body class="single">
+  <nav class="tenverto-navbar navbar navbar-light navbar-expand-md bg-faded justify-content-center fixed-top">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex mr-auto">
+        <img class="tenverto-logo" src="/images/Logo.png" alt="Tenverto by Eric Njanga">
+      </a>
+
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tenverto-nav-collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="tenverto-nav-collapse">
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link link-not-underlined link-color-hover1" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-not-underlined link-color-hover1" href="/_pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-not-underlined link-color-hover1" href="/_pages/expertise.html">Expertise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-not-underlined link-color-hover1" href="/_pages/case-studies.html">Case Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-not-underlined link-color-hover1" href="/_pages/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank" href="https://www.linkedin.com/in/ericnjanga/"
+              class="btn btn-primary btn-lg  halton-btn has-icon icon-after icon-linkedIn">Reach out</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- main header-->
+  <header class="hero gap-top-margin gap-bottom-margin">
+    <div class="container">
+      <nav aria-label="breadcrumb" class="breadcrumb section-max-w1 mx-auto">
+        <ol class="breadcrumb__list p-0 m-0">
+          <!-- Breadcrumb NavXT 7.2.0 -->
+          <li><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage"
+                title="Go to Tenverto, by Eric Njanga." href="https://tenverto.com"
+                class="link-underlined link-color-hover2"><span property="name">Home</span></a>
+              <meta property="position" content="1">
+            </span></li>
+          <li>/</li>
+          <li><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Blog."
+                href="https://tenverto.com/blog/"
+                class="link-underlined link-color-hover2 post-root post post-post"><span property="name">Blog</span></a>
+              <meta property="position" content="2">
+            </span></li>
+          <li>/</li>
+          <li class="hide"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage"
+                title="Go to the CMS Coding &amp; Management Category archives."
+                href="https://tenverto.com/category/cms-coding-management/"
+                class="link-underlined link-color-hover2 taxonomy category"><span property="name">CMS Coding &amp;
+                  Management</span></a>
+              <meta property="position" content="3">
+            </span></li>
+          <li>/ </li>
+          <li><span property="itemListElement" typeof="ListItem"><span property="name"
+                class="post post-post current-item">Technical Debt - Redesigning a website to create a sense of
+                corporate sophistication and professionalism</span>
+              <meta property="url" content="https://tenverto.com/2024/01/13/technical-debt/">
+              <meta property="position" content="4">
+            </span></li>
+        </ol>
+      </nav>
+
+      <h1 class="gap-bottom-margin-4th">A private insurance broker’s website gets a Design Upgrade</h1>
+      <p class="txt-large section-max-w2 section-h-centering gap-bottom-margin">
+        The client is frustrated and unhappy with his website because it looks unprofessional and disorganized. Moreover,
+        the website neither inspires prospects nor reflects the company’s vision and services.
+      </p>
+    </div>
+  </header>
+
+
+
+
+
+  <div class="container">
+    <div class="fixed-sidebar-container">
+      <div id="nav-expertise" class="fixed-sidebar is-sticky">
+        <div class="list-group">
+          <a href="#the-problem" class="list-group-item list-group-item-action"
+            onclick="trackButtonClick('Case Study id(*) sidebar nav', 'The Problem')">The Problem</a>
+          <a href="#image-gallery" class="list-group-item list-group-item-action"
+            onclick="trackButtonClick('Case Study id(*) sidebar nav', 'Image Gallery')">Image Gallery</a>
+          <a href="#technical-process" class="list-group-item list-group-item-action"
+            onclick="trackButtonClick('Case Study id(*) sidebar nav', 'Technical Proces')">Technical Process</a>
+          <a href="#conclusion-and-takeaway" class="list-group-item list-group-item-action"
+            onclick="trackButtonClick('Case Study id(*) sidebar nav', 'Takeaway')">Conclusion &amp;
+            Takeaway</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section class="single-body">
+    <!-- Problem -->
+    <section class="pos-relative gap-bottom-padding">
+      <span id="the-problem" class="page-anchor-dir half-up"></span>
+
+      <div class="container">
+        <div class="col-lg-8 offset-lg-4">
+          <h2 id="ember3430" class="ember-view">The problem</h2>
+          <p id="ember3431" class="ember-view reader-content-blocks__paragraph">The client is frustrated and unhappy
+            with his website because it looks unprofessional and disorganized. Moreover, the website neither inspires
+            prospects nor reflects the company’s vision and services.</p>
+          <p id="ember3432" class="ember-view reader-content-blocks__paragraph">Also over time, the website is not
+            professionally managed, which further aggravates the unprofessional look. One important consequence is the
+            loss of prospects who, after bouncing off the website reported that they “<strong>couldn’t find what they
+              were looking for”</strong>. Others said, <strong>“This looks like an old-fashioned company that is run
+              with desperation”</strong>.</p>
+          <p id="ember3433" class="ember-view reader-content-blocks__paragraph">For all these reasons, the client
+            decided to get it redesigned by a “real professional”.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Problem -->
+
+
+
+    <!-- Image Gallery -->
+    <section class="pos-relative gap-top-padding gap-bottom-padding dark-section">
+      <span id="image-gallery" class="page-anchor-dir"></span>
+      <div class="container">
+        <div class="col-lg-8 offset-lg-4">
+          <h2>Image Gallery</h2>
+          <p>We’ve put together a gallery of images for a visual walkthrough of the project. <a href="#full-story">Skip
+              to the full story</a>.</p>
+          
+          <h4>The website before</h4>
+          <div class="ngg-pro-mosaic-container justified-gallery"
+            data-ngg-pro-mosaic-id="cc153ee2ef01575773596f6be55799f3" style="min-height: 180px; height: 351.688px;">
+            <p>Image gallery</p>
+            <!-- <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 109px; height: 341.688px; top: 5px; left: 5px;"><a class="ngg-simplelightbox"
+                rel="cc153ee2ef01575773596f6be55799f3"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-before/Case-Study-1-Before-1-Home.jpg"
+                title="" data-image-id="13"
+                data-src="https://tenverto.com/nextgen-image/13/0x360/272a20d2ece4a58c684511d0584ee86f"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-before/thumbs/thumbs-Case-Study-1-Before-1-Home.jpg"
+                data-title="Case-Study-1-Before-1-Home" data-description="" data-ngg-captions-nostylecopy="1"><img
+                  title="Case-Study-1-Before-1-Home" alt="Case-Study-1-Before-1-Home"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-before/cache/Case-Study-1-Before-1-Home.jpg-nggid0213-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="115" height="360"
+                  style="width: 109px; height: 342px; margin-left: -54.5px; margin-top: -171px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 148px; height: 341.688px; top: 5px; left: 119px;"><a class="ngg-simplelightbox"
+                rel="cc153ee2ef01575773596f6be55799f3"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-before/Case-Study-1-Before-2-About.jpg"
+                title="" data-image-id="14"
+                data-src="https://tenverto.com/nextgen-image/14/0x360/2b7860712f4eb1d8ce49ffd08464fa52"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-before/thumbs/thumbs-Case-Study-1-Before-2-About.jpg"
+                data-title="Case-Study-1-Before-2-About" data-description="" data-ngg-captions-nostylecopy="1"><img
+                  title="Case-Study-1-Before-2-About" alt="Case-Study-1-Before-2-About"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-before/cache/Case-Study-1-Before-2-About.jpg-nggid0214-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="156" height="360"
+                  style="width: 148px; height: 342px; margin-left: -74px; margin-top: -171px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 150px; height: 341.688px; top: 5px; left: 272px;"><a class="ngg-simplelightbox"
+                rel="cc153ee2ef01575773596f6be55799f3"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-before/Case-Study-1-Before-3-Services.jpg"
+                title="" data-image-id="15"
+                data-src="https://tenverto.com/nextgen-image/15/0x360/9b096bbd3dd8c5cc1a6c8634b0e83651"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-before/thumbs/thumbs-Case-Study-1-Before-3-Services.jpg"
+                data-title="Case-Study-1-Before-3-Services" data-description="" data-ngg-captions-nostylecopy="1"><img
+                  title="Case-Study-1-Before-3-Services" alt="Case-Study-1-Before-3-Services"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-before/cache/Case-Study-1-Before-3-Services.jpg-nggid0215-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="158" height="360"
+                  style="width: 150px; height: 342px; margin-left: -75px; margin-top: -171px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 99px; height: 341.688px; top: 5px; left: 427px;"><a class="ngg-simplelightbox"
+                rel="cc153ee2ef01575773596f6be55799f3"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-before/Case-Study-1-Before-4-Awards.jpg"
+                title="" data-image-id="16"
+                data-src="https://tenverto.com/nextgen-image/16/0x360/fd6dc46b07b86a7e198bfc36e5ad8cf8"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-before/thumbs/thumbs-Case-Study-1-Before-4-Awards.jpg"
+                data-title="Case-Study-1-Before-4-Awards" data-description="" data-ngg-captions-nostylecopy="1"><img
+                  title="Case-Study-1-Before-4-Awards" alt="Case-Study-1-Before-4-Awards"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-before/cache/Case-Study-1-Before-4-Awards.jpg-nggid0216-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="104" height="360"
+                  style="width: 99px; height: 342px; margin-left: -49.5px; margin-top: -171px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 149px; height: 341.688px; top: 5px; left: 531px;"><a class="ngg-simplelightbox"
+                rel="cc153ee2ef01575773596f6be55799f3"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-before/Case-Study-1-Before-5-Blog.jpg"
+                title="" data-image-id="17"
+                data-src="https://tenverto.com/nextgen-image/17/0x360/71e90f12528d436591ad3f4743b02319"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-before/thumbs/thumbs-Case-Study-1-Before-5-Blog.jpg"
+                data-title="Case-Study-1-Before-5-Blog" data-description="" data-ngg-captions-nostylecopy="1"><img
+                  title="Case-Study-1-Before-5-Blog" alt="Case-Study-1-Before-5-Blog"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-before/cache/Case-Study-1-Before-5-Blog.jpg-nggid0217-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="157" height="360"
+                  style="width: 149px; height: 342px; margin-left: -74.5px; margin-top: -171px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 166px; height: 341.688px; top: 5px; left: 685px;"><a class="ngg-simplelightbox"
+                rel="cc153ee2ef01575773596f6be55799f3"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-before/Case-Study-1-Before-6-Contact.jpg"
+                title="" data-image-id="18"
+                data-src="https://tenverto.com/nextgen-image/18/0x360/dc2e85de3170258703494dac252d3aa7"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-before/thumbs/thumbs-Case-Study-1-Before-6-Contact.jpg"
+                data-title="Case-Study-1-Before-6-Contact" data-description="" data-ngg-captions-nostylecopy="1"><img
+                  title="Case-Study-1-Before-6-Contact" alt="Case-Study-1-Before-6-Contact"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-before/cache/Case-Study-1-Before-6-Contact.jpg-nggid0218-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="175" height="360"
+                  style="width: 166px; height: 342px; margin-left: -83px; margin-top: -171px;"></a></div> -->
+          </div>
+
+          <h4>The Website After</h4>
+          <p>Light theme …</p>
+          <div class="ngg-pro-mosaic-container justified-gallery"
+            data-ngg-pro-mosaic-id="81529268b474ea7e77149dbda7ee7236" style="min-height: 180px; height: 263.679px;">
+            <p>Image gallery</p>
+            <!-- <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 83px; height: 253.679px; top: 5px; left: 5px;"><a class="ngg-simplelightbox"
+                rel="81529268b474ea7e77149dbda7ee7236"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/Case-Study-1-Before-1-Home-Phone.jpg"
+                title="" data-image-id="39"
+                data-src="https://tenverto.com/nextgen-image/39/0x360/fb0f507209b62d6ae41e84ef1e4ecade"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/thumbs/thumbs-Case-Study-1-Before-1-Home-Phone.jpg"
+                data-title="Case-Study-1-Before-1-Home-Phone" data-description="" data-ngg-captions-nostylecopy="1"><img
+                  title="Case-Study-1-Before-1-Home-Phone" alt="Case-Study-1-Before-1-Home-Phone"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/cache/Case-Study-1-Before-1-Home-Phone.jpg-nggid0239-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="118" height="360"
+                  style="width: 83px; height: 254px; margin-left: -41.5px; margin-top: -127px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 161px; height: 253.679px; top: 5px; left: 93px;"><a class="ngg-simplelightbox"
+                rel="81529268b474ea7e77149dbda7ee7236"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/Case-Study-1-Before-1-Home-Tablet.jpg"
+                title="" data-image-id="40"
+                data-src="https://tenverto.com/nextgen-image/40/0x360/8255c7297ce192706050510838ba3c23"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/thumbs/thumbs-Case-Study-1-Before-1-Home-Tablet.jpg"
+                data-title="Case-Study-1-Before-1-Home-Tablet" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-Before-1-Home-Tablet"
+                  alt="Case-Study-1-Before-1-Home-Tablet"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/cache/Case-Study-1-Before-1-Home-Tablet.jpg-nggid0240-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="229" height="360"
+                  style="width: 161px; height: 254px; margin-left: -80.5px; margin-top: -127px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 68px; height: 253.679px; top: 5px; left: 259px;"><a class="ngg-simplelightbox"
+                rel="81529268b474ea7e77149dbda7ee7236"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/Case-Study-1-After-1-Home-Desktop-light-theme.jpg"
+                title="" data-image-id="34"
+                data-src="https://tenverto.com/nextgen-image/34/0x360/993d3e96b56056f6af61c24df87d486b"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/thumbs/thumbs-Case-Study-1-After-1-Home-Desktop-light-theme.jpg"
+                data-title="Case-Study-1-After-1-Home-Desktop-light-theme" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-After-1-Home-Desktop-light-theme"
+                  alt="Case-Study-1-After-1-Home-Desktop-light-theme"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/cache/Case-Study-1-After-1-Home-Desktop-light-theme.jpg-nggid0234-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="96" height="360"
+                  style="width: 68px; height: 254px; margin-left: -34px; margin-top: -127px;"></a>
+            </div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 103px; height: 253.679px; top: 5px; left: 332px;"><a class="ngg-simplelightbox"
+                rel="81529268b474ea7e77149dbda7ee7236"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/Case-Study-1-After-2-0-About-light-theme.jpg"
+                title="" data-image-id="35"
+                data-src="https://tenverto.com/nextgen-image/35/0x360/3d0d2132c9b94b8531286f7aa4ca2f18"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/thumbs/thumbs-Case-Study-1-After-2-0-About-light-theme.jpg"
+                data-title="Case-Study-1-After-2-0-About-light-theme" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-After-2-0-About-light-theme"
+                  alt="Case-Study-1-After-2-0-About-light-theme"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/cache/Case-Study-1-After-2-0-About-light-theme.jpg-nggid0235-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="146" height="360"
+                  style="width: 103px; height: 254px; margin-left: -51.5px; margin-top: -127px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 121px; height: 253.679px; top: 5px; left: 440px;"><a class="ngg-simplelightbox"
+                rel="81529268b474ea7e77149dbda7ee7236"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/Case-Study-1-After-2-1-Testimonials-light-theme.jpg"
+                title="" data-image-id="36"
+                data-src="https://tenverto.com/nextgen-image/36/0x360/99dd7595d9167ebd0a0f89864290878c"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/thumbs/thumbs-Case-Study-1-After-2-1-Testimonials-light-theme.jpg"
+                data-title="Case-Study-1-After-2-1-Testimonials-light-theme" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-After-2-1-Testimonials-light-theme"
+                  alt="Case-Study-1-After-2-1-Testimonials-light-theme"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/cache/Case-Study-1-After-2-1-Testimonials-light-theme.jpg-nggid0236-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="172" height="360"
+                  style="width: 121px; height: 254px; margin-left: -60.5px; margin-top: -127px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 153px; height: 253.679px; top: 5px; left: 566px;"><a class="ngg-simplelightbox"
+                rel="81529268b474ea7e77149dbda7ee7236"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/Case-Study-1-After-3-Services-light-theme.jpg"
+                title="" data-image-id="37"
+                data-src="https://tenverto.com/nextgen-image/37/0x360/ffedca406915dbce63ffd4c3a1ee1fc4"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/thumbs/thumbs-Case-Study-1-After-3-Services-light-theme.jpg"
+                data-title="Case-Study-1-After-3-Services-light-theme" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-After-3-Services-light-theme"
+                  alt="Case-Study-1-After-3-Services-light-theme"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/cache/Case-Study-1-After-3-Services-light-theme.jpg-nggid0237-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="217" height="360"
+                  style="width: 153px; height: 254px; margin-left: -76.5px; margin-top: -127px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 127px; height: 253.679px; top: 5px; left: 724px;"><a class="ngg-simplelightbox"
+                rel="81529268b474ea7e77149dbda7ee7236"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/Case-Study-1-After-4-Blog-light-theme.jpg"
+                title="" data-image-id="38"
+                data-src="https://tenverto.com/nextgen-image/38/0x360/79f5bc7d71a6a936eaae818599922300"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/thumbs/thumbs-Case-Study-1-After-4-Blog-light-theme.jpg"
+                data-title="Case-Study-1-After-4-Blog-light-theme" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-After-4-Blog-light-theme"
+                  alt="Case-Study-1-After-4-Blog-light-theme"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-light-theme/cache/Case-Study-1-After-4-Blog-light-theme.jpg-nggid0238-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="180" height="360"
+                  style="width: 127px; height: 254px; margin-left: -63.5px; margin-top: -127px;"></a></div> -->
+          </div>
+
+          <p>Dark theme …</p>
+          <div class="ngg-pro-mosaic-container justified-gallery"
+            data-ngg-pro-mosaic-id="01991037fae23973f39aa23da6f11aa1" style="min-height: 180px; height: 251.778px;">
+            <p>Image gallery</p>
+            <!-- <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 79px; height: 241.778px; top: 5px; left: 5px;"><a class="ngg-simplelightbox"
+                rel="01991037fae23973f39aa23da6f11aa1"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/Case-Study-1-After-1-Home-Phone-dark-them.jpg"
+                title="" data-image-id="28"
+                data-src="https://tenverto.com/nextgen-image/28/0x360/77c7e037f611de10f56112fabcdec219"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/thumbs/thumbs-Case-Study-1-After-1-Home-Phone-dark-them.jpg"
+                data-title="Case-Study-1-After-1-Home-Phone-dark-them" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-After-1-Home-Phone-dark-them"
+                  alt="Case-Study-1-After-1-Home-Phone-dark-them"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/cache/Case-Study-1-After-1-Home-Phone-dark-them.jpg-nggid0228-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="118" height="360"
+                  style="width: 79px; height: 242px; margin-left: -39.5px; margin-top: -121px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 154px; height: 241.778px; top: 5px; left: 89px;"><a class="ngg-simplelightbox"
+                rel="01991037fae23973f39aa23da6f11aa1"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/Case-Study-1-After-1-Home-Tablet-dark-theme.jpg"
+                title="" data-image-id="29"
+                data-src="https://tenverto.com/nextgen-image/29/0x360/9e319a5d5c2884b6ee6f418f20770fff"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/thumbs/thumbs-Case-Study-1-After-1-Home-Tablet-dark-theme.jpg"
+                data-title="Case-Study-1-After-1-Home-Tablet-dark-theme" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-After-1-Home-Tablet-dark-theme"
+                  alt="Case-Study-1-After-1-Home-Tablet-dark-theme"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/cache/Case-Study-1-After-1-Home-Tablet-dark-theme.jpg-nggid0229-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="229" height="360"
+                  style="width: 154px; height: 242px; margin-left: -77px; margin-top: -121px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 64px; height: 241.778px; top: 5px; left: 248px;"><a class="ngg-simplelightbox"
+                rel="01991037fae23973f39aa23da6f11aa1"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/Case-Study-1-After-1-Home-dark-theme.jpg"
+                title="" data-image-id="27"
+                data-src="https://tenverto.com/nextgen-image/27/0x360/fe7c802c819b2fcf4c05a68eb133922d"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/thumbs/thumbs-Case-Study-1-After-1-Home-dark-theme.jpg"
+                data-title="Case-Study-1-After-1-Home-dark-theme" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-After-1-Home-dark-theme"
+                  alt="Case-Study-1-After-1-Home-dark-theme"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/cache/Case-Study-1-After-1-Home-dark-theme.jpg-nggid0227-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="96" height="360"
+                  style="width: 64px; height: 242px; margin-left: -32px; margin-top: -121px;"></a>
+            </div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 98px; height: 241.778px; top: 5px; left: 317px;"><a class="ngg-simplelightbox"
+                rel="01991037fae23973f39aa23da6f11aa1"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/Case-Study-1-After-2-About-dark-theme.jpg"
+                title="" data-image-id="30"
+                data-src="https://tenverto.com/nextgen-image/30/0x360/f35f567732d864776fe47441263f1384"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/thumbs/thumbs-Case-Study-1-After-2-About-dark-theme.jpg"
+                data-title="Case-Study-1-After-2-About-dark-theme" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-After-2-About-dark-theme"
+                  alt="Case-Study-1-After-2-About-dark-theme"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/cache/Case-Study-1-After-2-About-dark-theme.jpg-nggid0230-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="146" height="360"
+                  style="width: 98px; height: 242px; margin-left: -49px; margin-top: -121px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 146px; height: 241.778px; top: 5px; left: 420px;"><a class="ngg-simplelightbox"
+                rel="01991037fae23973f39aa23da6f11aa1"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/Case-Study-1-After-3-Services-dark-theme.jpg"
+                title="" data-image-id="31"
+                data-src="https://tenverto.com/nextgen-image/31/0x360/2b7c063f6aa511f7658f544de085a696"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/thumbs/thumbs-Case-Study-1-After-3-Services-dark-theme.jpg"
+                data-title="Case-Study-1-After-3-Services-dark-theme" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-After-3-Services-dark-theme"
+                  alt="Case-Study-1-After-3-Services-dark-theme"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/cache/Case-Study-1-After-3-Services-dark-theme.jpg-nggid0231-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="217" height="360"
+                  style="width: 146px; height: 242px; margin-left: -73px; margin-top: -121px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 128px; height: 241.778px; top: 5px; left: 571px;"><a class="ngg-simplelightbox"
+                rel="01991037fae23973f39aa23da6f11aa1"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/Case-Study-1-After-4-Blog-dark-theme.jpg"
+                title="" data-image-id="32"
+                data-src="https://tenverto.com/nextgen-image/32/0x360/ae6d6d65a9c3714c79a96309559db250"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/thumbs/thumbs-Case-Study-1-After-4-Blog-dark-theme.jpg"
+                data-title="Case-Study-1-After-4-Blog-dark-theme" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-After-4-Blog-dark-theme"
+                  alt="Case-Study-1-After-4-Blog-dark-theme"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/cache/Case-Study-1-After-4-Blog-dark-theme.jpg-nggid0232-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="191" height="360"
+                  style="width: 128px; height: 242px; margin-left: -64px; margin-top: -121px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 147px; height: 241.778px; top: 5px; left: 704px;"><a class="ngg-simplelightbox"
+                rel="01991037fae23973f39aa23da6f11aa1"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/Case-Study-1-After-6-Contact-dark-theme.jpg"
+                title="" data-image-id="33"
+                data-src="https://tenverto.com/nextgen-image/33/0x360/880c98b1dc28b703e28ec69fbc43a5b9"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/thumbs/thumbs-Case-Study-1-After-6-Contact-dark-theme.jpg"
+                data-title="Case-Study-1-After-6-Contact-dark-theme" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-After-6-Contact-dark-theme"
+                  alt="Case-Study-1-After-6-Contact-dark-theme"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-after-dark-theme/cache/Case-Study-1-After-6-Contact-dark-theme.jpg-nggid0233-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="218" height="360"
+                  style="width: 147px; height: 242px; margin-left: -73.5px; margin-top: -121px;"></a></div> -->
+          </div>
+
+          <p>How the prototype was created, leading to the final product …</p>
+          <!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->
+          <div class="wp-playlist wp-video-playlist wp-playlist-light">
+            <span class="mejs-offscreen">Video Player</span>
+            <!-- <div id="mep_0" class="mejs-container mejs-video mejs-container-keyboard-inactive" tabindex="0"
+              role="application" aria-label="Video Player" style="width: 856px; height: 488.633px; min-width: 217px;">
+              <div class="mejs-inner">
+                <div class="mejs-mediaelement">
+                  <mediaelementwrapper id="mejs_1511155881047268"><video preload="none" width="1898" height="1083"
+                      src="https://tenverto.com/wp-content/uploads/2024/01/Case-Study-1-Prototyping.mp4"
+                      id="mejs_1511155881047268_html5" style="width: 856px; height: 488.633px;"></video>
+                  </mediaelementwrapper>
+                </div>
+                <div class="mejs-layers">
+                  <div class="mejs-poster mejs-layer" style="display: none; width: 100%; height: 100%;"></div>
+                  <div class="mejs-overlay mejs-layer" style="width: 100%; height: 100%; display: none;">
+                    <div class="mejs-overlay-loading"><span class="mejs-overlay-loading-bg-img"></span></div>
+                  </div>
+                  <div class="mejs-overlay mejs-layer" style="display: none; width: 100%; height: 100%;">
+                    <div class="mejs-overlay-error"></div>
+                  </div>
+                  <div class="mejs-overlay mejs-layer mejs-overlay-play" style="width: 100%; height: 100%;">
+                    <div class="mejs-overlay-button" role="button" tabindex="0" aria-label="Play" aria-pressed="true">
+                    </div>
+                  </div>
+                </div>
+                <div class="mejs-controls">
+                  <div class="mejs-button mejs-playpause-button mejs-play"><button type="button" aria-controls="mep_0"
+                      title="Play" aria-label="Play" tabindex="0"></button></div>
+                  <div class="mejs-time mejs-currenttime-container" role="timer" aria-live="off"><span
+                      class="mejs-currenttime">00:00</span></div>
+                  <div class="mejs-time-rail"><span class="mejs-time-total mejs-time-slider" role="slider" tabindex="0"
+                      aria-label="Time Slider" aria-valuemin="0" aria-valuemax="39.15" aria-valuenow="0"
+                      aria-valuetext="00:00"><span class="mejs-time-buffering" style="display: none;"></span><span
+                        class="mejs-time-loaded" style="transform: scaleX(0.054917);"></span><span
+                        class="mejs-time-current" style="transform: scaleX(0);"></span><span
+                        class="mejs-time-hovered no-hover"></span><span class="mejs-time-handle"
+                        style="transform: translateX(0px);"><span class="mejs-time-handle-content"></span></span><span
+                        class="mejs-time-float"><span class="mejs-time-float-current">00:00</span><span
+                          class="mejs-time-float-corner"></span></span></span></div>
+                  <div class="mejs-time mejs-duration-container"><span class="mejs-duration">00:39</span></div>
+                  <div class="mejs-button mejs-volume-button mejs-mute"><button type="button" aria-controls="mep_0"
+                      title="Mute" aria-label="Mute" tabindex="0"></button><a href="javascript:void(0);"
+                      class="mejs-volume-slider" aria-label="Volume Slider" aria-valuemin="0" aria-valuemax="100"
+                      role="slider" aria-orientation="vertical" aria-valuenow="80" aria-valuetext="80%"><span
+                        class="mejs-offscreen">Use Up/Down Arrow keys to increase or decrease volume.</span>
+                      <div class="mejs-volume-total">
+                        <div class="mejs-volume-current" style="bottom: 0px; height: 80%;"></div>
+                        <div class="mejs-volume-handle" style="bottom: 80%; margin-bottom: -3px;"></div>
+                      </div>
+                    </a></div>
+                  <div class="mejs-button mejs-fullscreen-button"><button type="button" aria-controls="mep_0"
+                      title="Fullscreen" aria-label="Fullscreen" tabindex="0"></button></div>
+                </div>
+              </div>
+            </div>
+            <div class="wp-playlist-next"></div>
+            <div class="wp-playlist-prev"></div>
+            <noscript>
+              <ol>
+                <li><a href='https://tenverto.com/wp-content/uploads/2024/01/Case-Study-1-Prototyping.mp4'>Case Study 1
+                    - Prototyping</a></li>
+                <li><a href='https://tenverto.com/wp-content/uploads/2023/07/Case-Study-1-Finished-Product.mp4'>Case
+                    Study 1 - Finished Product</a></li>
+              </ol>
+            </noscript>
+            <script type="application/json"
+              class="wp-playlist-script">{"type":"video","tracklist":true,"tracknumbers":true,"images":true,"artists":true,"tracks":[{"src":"https:\/\/tenverto.com\/wp-content\/uploads\/2024\/01\/Case-Study-1-Prototyping.mp4","type":"video\/mp4","title":"Case Study 1 - Prototyping","caption":"","description":"","meta":{"length_formatted":"0:39"},"dimensions":{"original":{"width":2880,"height":1644},"resized":{"width":1898,"height":1083}},"image":{"src":"https:\/\/tenverto.com\/wp-includes\/images\/media\/video.png","width":48,"height":64},"thumb":{"src":"https:\/\/tenverto.com\/wp-includes\/images\/media\/video.png","width":48,"height":64}},{"src":"https:\/\/tenverto.com\/wp-content\/uploads\/2023\/07\/Case-Study-1-Finished-Product.mp4","type":"video\/mp4","title":"Case Study 1 - Finished Product","caption":"","description":"","meta":{"length_formatted":"1:04"},"dimensions":{"original":{"width":2880,"height":1644},"resized":{"width":1898,"height":1083}},"image":{"src":"https:\/\/tenverto.com\/wp-includes\/images\/media\/video.png","width":48,"height":64},"thumb":{"src":"https:\/\/tenverto.com\/wp-includes\/images\/media\/video.png","width":48,"height":64}}]}</script>
+            <div class="wp-playlist-tracks">
+              <div class="wp-playlist-item wp-playlist-playing">
+                <a class="wp-playlist-caption"
+                  href="https://tenverto.com/wp-content/uploads/2024/01/Case-Study-1-Prototyping.mp4">
+                  1.
+
+
+                  <span class="wp-playlist-item-title">Case Study 1 - Prototyping</span>
+
+
+                </a>
+
+                <div class="wp-playlist-item-length">0:39</div>
+
+              </div>
+
+              <div class="wp-playlist-item">
+                <a class="wp-playlist-caption"
+                  href="https://tenverto.com/wp-content/uploads/2023/07/Case-Study-1-Finished-Product.mp4">
+                  2.
+
+
+                  <span class="wp-playlist-item-title">Case Study 1 - Finished Product</span>
+
+
+                </a>
+
+                <div class="wp-playlist-item-length">1:04</div>
+
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Image Gallery -->
+
+
+
+    <!-- Technical Process -->
+    <section class="pos-relative gap-top-padding gap-bottom-padding">
+      <span id="technical-process" class="page-anchor-dir"></span>
+      <div class="container">
+        <div class="col-lg-8 offset-lg-4">
+          <h2 id="full-story" class="ember-view">Technical Process</h2>
+          <p id="ember3436" class="ember-view reader-content-blocks__paragraph">We created a solution in 5 major steps:
+          </p>
+          <ol>
+            <li>A new foundation</li>
+            <li>A polished and professional design</li>
+            <li>An accessible and user-friendly design</li>
+            <li>A website engineered with precision</li>
+          </ol>
+          
+          <h3 id="ember3439" class="ember-view">Step 1: A new foundation</h3>
+          <p id="ember3440" class="ember-view reader-content-blocks__paragraph">The client’s website lacks structure;
+            there is no logical connection between pages, blog articles, and navigation elements: “There is no
+            intuitiveness.” We start with the project’s cornerstone (technically called UX Research) which we complete
+            in two steps:</p>
+          <ol>
+            <li>Study of the company’s business model and customer base</li>
+            <li>Design of the information architecture</li>
+            <li>Refinement of the website’s objectives</li>
+            <li>Establishment of an attractive value proposition</li>
+          </ol>
+          
+          <h4 id="ember3443" class="ember-view">Study of the company’s business model and customer base</h4>
+          <p id="ember3444" class="ember-view reader-content-blocks__paragraph">It all starts with interviewing the
+            client and learning as much as possible about the company, the business model, and the customers (this phase
+            is technically called Empathy). We will later extract valuable insights from this information to create a
+            value proposition, build a customer profile (technically called persona), and structure the new website
+            information architecture.</p>
+          
+          <blockquote id="ember3445" class="ember-view">
+            <p><em>The lack of access to real customers is challenging because it limits the research’s accuracy, which
+                in turn limits the website’s. We worked around this limitation by building a persona based on insights
+                collected from the client and online research.</em></p>
+            
+          </blockquote>
+          <div class="reader-image-block reader-image-block--full-width gap-bottom-margin-2th">
+            <figure class="reader-image-block__figure">
+              <div class="ivm-image-view-model ">
+                <div class="ivm-view-attr__img-wrapper display-flex"><img fetchpriority="high" decoding="async"
+                    id="ember3446"
+                    class="img-fluid ivm-view-attr__img--centered reader-image-block__img evi-image lazy-image ember-view alignnone"
+                    src="https://media.licdn.com/dms/image/D4E12AQEDtBvGiyr1Xg/article-inline_image-shrink_1000_1488/0/1704467954373?e=1711584000&amp;v=beta&amp;t=jLL8Y7GBwHSekMjaE7aZr0lonT2fgfUS0bnq7BnlQi0"
+                    alt="" width="1488" height="938"></div>
+              </div>
+            </figure>
+          </div>
+          <h4 id="ember3448" class="ember-view">Designing the information architecture</h4>
+          <p id="ember3449" class="ember-view reader-content-blocks__paragraph">We completely reorganized the website
+            information to ensure its easy and logical flow.</p>
+          
+          <blockquote id="ember3450" class="ember-view">
+            <p><em>“We use insights collected from my interviews with the client to create
+              </em><strong><em>keywords</em></strong><em>, </em><strong><em>categories</em></strong><em>,
+              </em><strong><em>navigation items</em></strong><em>, widgets, and components that will all work in unison
+                on the website to create a sense of flow and direction!“</em></p>
+          </blockquote>
+          
+          <p id="ember3451" class="ember-view reader-content-blocks__paragraph">We eliminate redundant information and
+            regroup key insights into meaningful categories, simplifying the users’ experience (navigation and content
+            displayed more intuitively and logically).</p>
+          
+          <div class="reader-image-block reader-image-block--full-width gap-bottom-margin-2th">
+            <figure class="reader-image-block__figure">
+              <div class="ivm-image-view-model ">
+                <div class="ivm-view-attr__img-wrapper display-flex"><img decoding="async" id="ember3452"
+                    class="img-fluid ivm-view-attr__img--centered reader-image-block__img evi-image lazy-image ember-view alignnone"
+                    src="https://media.licdn.com/dms/image/D4E12AQErnisQJzLzQQ/article-inline_image-shrink_1000_1488/0/1704467954335?e=1711584000&amp;v=beta&amp;t=FvkPAEuaDXIJhiirtmqG4j9md_C_usOEnWS9FhtBa4E"
+                    alt="" width="1488" height="938"></div>
+              </div>
+            </figure>
+          </div>
+          <h4 id="ember3454" class="ember-view">Refinement of the website’s objectives</h4>
+          <p id="ember3455" class="ember-view reader-content-blocks__paragraph">Another problem that the client does not
+            mention and that we decided to address is <strong>the lack of direction for the website</strong>. After
+            careful analysis and client concertation, it was decided that the site’s objective would be to
+            <strong>“educate users on the company’s services, and facilitate the discovery process to help them make
+              informed life-insurance decisions.”</strong>
+          </p>
+          
+          <h4 id="ember3457" class="ember-view">Establishment of an attractive value proposition</h4>
+          <p id="ember3458" class="ember-view reader-content-blocks__paragraph">It was obvious from the start that the
+            website was not catering enough to visitors’ self-interest, that’s why we decided to work on an attractive
+            value proposition that would answer visitors’ intrinsic questions:</p>
+          <ul>
+            <li>What is the offer?</li>
+            <li>Why should people care?</li>
+            <li>Why pick this offer and not a competitor’s</li>
+          </ul>
+          <p id="ember3460" class="ember-view reader-content-blocks__paragraph">Once we clearly establish the value
+            proposition, we embed it in every aspect of the design flow.</p>
+          
+          <h3 id="ember3462" class="ember-view">Step 2: A polished and professional design</h3>
+          <p id="ember3463" class="ember-view reader-content-blocks__paragraph">The foundation that we just created (new
+            information architecture, new website objectives, and value propositions) will now support the visual
+            refinement that the client asked for in the first place. We achieved that visual refinement in two steps:
+          </p>
+          <ul>
+            <li>Wireframing of the experience</li>
+            <li>Selecting a visual style</li>
+          </ul>
+          
+          <h4 id="ember3466" class="ember-view">Wireframing the experience</h4>
+          <p id="ember3467" class="ember-view reader-content-blocks__paragraph">We create wireframes to shape the
+            architecture and design objectives into components users can interact with (navigation, page elements, …).
+          </p>
+          <p id="ember3468" class="ember-view reader-content-blocks__paragraph">From this point, we keep evaluating the
+            wireframes to ensure their:</p>
+          <ul>
+            <li>Compatibility with our team’s technical capabilities</li>
+            <li>Compliance with the new design objectives</li>
+            <li>Proper rendering on different screen sizes (technically called responsiveness)</li>
+          </ul>
+          
+          <div class="ngg-pro-mosaic-container justified-gallery"
+            data-ngg-pro-mosaic-id="b25c0047f3777f0b9d4fba7eb541ec9a" style="min-height: 180px; height: 248.055px;">
+            <p>Image gallery</p>
+            <!-- <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 151px; height: 238.055px; top: 5px; left: 5px;"><a class="ngg-simplelightbox"
+                rel="b25c0047f3777f0b9d4fba7eb541ec9a"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/Case-Study-1-1b-Home-Tablet-prototype.jpg"
+                title="" data-image-id="43"
+                data-src="https://tenverto.com/nextgen-image/43/0x360/ebbf8a9f9c0150e747c8b302cdd711b4"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/thumbs/thumbs-Case-Study-1-1b-Home-Tablet-prototype.jpg"
+                data-title="Case-Study-1-1b-Home-Tablet-prototype" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-1b-Home-Tablet-prototype"
+                  alt="Case-Study-1-1b-Home-Tablet-prototype"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/cache/Case-Study-1-1b-Home-Tablet-prototype.jpg-nggid0243-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="229" height="360"
+                  style="width: 151px; height: 239px; margin-left: -75.5px; margin-top: -119.5px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 65px; height: 238.055px; top: 5px; left: 161px;"><a class="ngg-simplelightbox"
+                rel="b25c0047f3777f0b9d4fba7eb541ec9a"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/Case-Study-1-1c-Home-Desktop-prototype.jpg"
+                title="" data-image-id="44"
+                data-src="https://tenverto.com/nextgen-image/44/0x360/3fd12569f8f414469b8a48483cf76dda"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/thumbs/thumbs-Case-Study-1-1c-Home-Desktop-prototype.jpg"
+                data-title="Case-Study-1-1c-Home-Desktop-prototype" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-1c-Home-Desktop-prototype"
+                  alt="Case-Study-1-1c-Home-Desktop-prototype"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/cache/Case-Study-1-1c-Home-Desktop-prototype.jpg-nggid0244-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="98" height="360"
+                  style="width: 65px; height: 239px; margin-left: -32.5px; margin-top: -119.5px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 104px; height: 238.055px; top: 5px; left: 231px;"><a class="ngg-simplelightbox"
+                rel="b25c0047f3777f0b9d4fba7eb541ec9a"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/Case-Study-1-2-About-Desktop-prototype.jpg"
+                title="" data-image-id="45"
+                data-src="https://tenverto.com/nextgen-image/45/0x360/30fd4a932e19d6f4754e995102a7f042"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/thumbs/thumbs-Case-Study-1-2-About-Desktop-prototype.jpg"
+                data-title="Case-Study-1-2-About-Desktop-prototype" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-2-About-Desktop-prototype"
+                  alt="Case-Study-1-2-About-Desktop-prototype"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/cache/Case-Study-1-2-About-Desktop-prototype.jpg-nggid0245-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="158" height="360"
+                  style="width: 104px; height: 239px; margin-left: -52px; margin-top: -119.5px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 144px; height: 238.055px; top: 5px; left: 340px;"><a class="ngg-simplelightbox"
+                rel="b25c0047f3777f0b9d4fba7eb541ec9a"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/Case-Study-1-3-Services-Desktop-prototype.jpg"
+                title="" data-image-id="46"
+                data-src="https://tenverto.com/nextgen-image/46/0x360/deb3cb03208b5f9e4eb72e6c0804b383"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/thumbs/thumbs-Case-Study-1-3-Services-Desktop-prototype.jpg"
+                data-title="Case-Study-1-3-Services-Desktop-prototype" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-3-Services-Desktop-prototype"
+                  alt="Case-Study-1-3-Services-Desktop-prototype"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/cache/Case-Study-1-3-Services-Desktop-prototype.jpg-nggid0246-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="218" height="360"
+                  style="width: 144px; height: 239px; margin-left: -72px; margin-top: -119.5px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 124px; height: 238.055px; top: 5px; left: 489px;"><a class="ngg-simplelightbox"
+                rel="b25c0047f3777f0b9d4fba7eb541ec9a"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/Case-Study-1-4-Blog-Desktop-prototype.jpg"
+                title="" data-image-id="47"
+                data-src="https://tenverto.com/nextgen-image/47/0x360/f793b7875179faa656d5b8dbf3478473"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/thumbs/thumbs-Case-Study-1-4-Blog-Desktop-prototype.jpg"
+                data-title="Case-Study-1-4-Blog-Desktop-prototype" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-4-Blog-Desktop-prototype"
+                  alt="Case-Study-1-4-Blog-Desktop-prototype"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/cache/Case-Study-1-4-Blog-Desktop-prototype.jpg-nggid0247-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="187" height="360"
+                  style="width: 124px; height: 239px; margin-left: -62px; margin-top: -119.5px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 149px; height: 238.055px; top: 5px; left: 618px;"><a class="ngg-simplelightbox"
+                rel="b25c0047f3777f0b9d4fba7eb541ec9a"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/Case-Study-1-6-Contact-Desktop-prototype.jpg"
+                title="" data-image-id="48"
+                data-src="https://tenverto.com/nextgen-image/48/0x360/3734305ecbead69c2fd2256777c7d463"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/thumbs/thumbs-Case-Study-1-6-Contact-Desktop-prototype.jpg"
+                data-title="Case-Study-1-6-Contact-Desktop-prototype" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-6-Contact-Desktop-prototype"
+                  alt="Case-Study-1-6-Contact-Desktop-prototype"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/cache/Case-Study-1-6-Contact-Desktop-prototype.jpg-nggid0248-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="226" height="360"
+                  style="width: 149px; height: 239px; margin-left: -74.5px; margin-top: -119.5px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 79px; height: 238.055px; top: 5px; left: 772px;"><a class="ngg-simplelightbox"
+                rel="b25c0047f3777f0b9d4fba7eb541ec9a"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/Case-Study-1-1a-Home-Phone-prototype.jpg"
+                title="" data-image-id="49"
+                data-src="https://tenverto.com/nextgen-image/49/0x360/2f396622d9a16e493a37c7c00433f01c"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/thumbs/thumbs-Case-Study-1-1a-Home-Phone-prototype.jpg"
+                data-title="Case-Study-1-1a-Home-Phone-prototype" data-description=""
+                data-ngg-captions-nostylecopy="1"><img title="Case-Study-1-1a-Home-Phone-prototype"
+                  alt="Case-Study-1-1a-Home-Phone-prototype"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-prototypes/cache/Case-Study-1-1a-Home-Phone-prototype.jpg-nggid0249-ngg0dyn-0x720-00f0w010c010r110f110r010t010.jpg"
+                  width="118" height="360"
+                  style="width: 79px; height: 239px; margin-left: -39.5px; margin-top: -119.5px;"></a></div> -->
+          </div>
+
+          <div class="reader-image-block reader-image-block--full-width gap-bottom-margin-2th">
+            <figure class="reader-image-block__figure">
+              <div class="ivm-image-view-model ">
+                <div class="ivm-view-attr__img-wrapper display-flex">&nbsp;</div>
+              </div>
+            </figure>
+          </div>
+          <h4 id="ember3472" class="ember-view">Selecting a visual style</h4>
+          <p id="ember3473" class="ember-view reader-content-blocks__paragraph">To create a sense of corporate
+            sophistication and professionalism, we are using:</p>
+          <ul>
+            <li>A mix of three design trends (Minimalism, Brutalism, Straight shapes, and flat design)</li>
+            <li>Neutral color tones (to create a sense of timeless elegance)</li>
+            <li>Straight shapes (to convey a sense of professionalism, precision, and order)</li>
+          </ul>
+          
+          <div class="ngg-pro-mosaic-container justified-gallery"
+            data-ngg-pro-mosaic-id="370858e82cd7dcefb016dd9a41b2b5fe" style="min-height: 180px; height: 275.114px;">
+            <p>Image gallery</p>
+            <!-- <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 420px; height: 265.114px; top: 5px; left: 5px;"><a class="ngg-simplelightbox"
+                rel="370858e82cd7dcefb016dd9a41b2b5fe"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-visual-style/Case-Study-1-Visual-Style-2.png"
+                title="" data-image-id="41"
+                data-src="https://tenverto.com/nextgen-image/41/0x360/a58c64be0c94379581b81c7e7210b25a"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-visual-style/thumbs/thumbs-Case-Study-1-Visual-Style-2.png"
+                data-title="Case-Study-1-Visual-Style-2" data-description="" data-ngg-captions-nostylecopy="1"><img
+                  title="Case-Study-1-Visual-Style-2" alt="Case-Study-1-Visual-Style-2"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-visual-style/cache/Case-Study-1-Visual-Style-2.png-nggid0241-ngg0dyn-0x720-00f0w010c010r110f110r010t010.png"
+                  width="571" height="360"
+                  style="width: 420px; height: 266px; margin-left: -210px; margin-top: -133px;"></a></div>
+            <div class="ngg-pro-mosaic-item jg-entry jg-entry-visible"
+              style="width: 421px; height: 265.114px; top: 5px; left: 430px;"><a class="ngg-simplelightbox"
+                rel="370858e82cd7dcefb016dd9a41b2b5fe"
+                href="https://tenverto.com/wp-content/gallery/case-study-1-visual-style/Case-Study-1-Visual-Style-1.png"
+                title="" data-image-id="42"
+                data-src="https://tenverto.com/nextgen-image/42/0x360/5923090059588f813340c9d1e30818d0"
+                data-thumbnail="https://tenverto.com/wp-content/gallery/case-study-1-visual-style/thumbs/thumbs-Case-Study-1-Visual-Style-1.png"
+                data-title="Case-Study-1-Visual-Style-1" data-description="" data-ngg-captions-nostylecopy="1"><img
+                  title="Case-Study-1-Visual-Style-1" alt="Case-Study-1-Visual-Style-1"
+                  src="https://tenverto.com/wp-content/gallery/case-study-1-visual-style/cache/Case-Study-1-Visual-Style-1.png-nggid0242-ngg0dyn-0x720-00f0w010c010r110f110r010t010.png"
+                  width="571" height="360"
+                  style="width: 421px; height: 266px; margin-left: -210.5px; margin-top: -133px;"></a></div> -->
+          </div>
+
+          <div class="reader-image-block reader-image-block--full-width">
+            <figure class="reader-image-block__figure">
+              <div class="ivm-image-view-model ">
+                <div class="ivm-view-attr__img-wrapper display-flex">&nbsp;</div>
+              </div>
+            </figure>
+          </div>
+          <div class="reader-image-block reader-image-block--full-width gap-bottom-margin-2th">
+            <figure class="reader-image-block__figure">
+              <div class="ivm-image-view-model ">
+                <div class="ivm-view-attr__img-wrapper display-flex">&nbsp;</div>
+              </div>
+            </figure>
+          </div>
+          <h3 id="ember3480" class="ember-view">Step 3: An accessible and user-friendly design</h3>
+          <p id="ember3481" class="ember-view reader-content-blocks__paragraph">By taking the time to make the design
+            accessible, we are taking into consideration users that we tend to forget (people with low vision, with
+            different screen sizes, or with different tastes). For this design, we are addressing four cases:</p>
+          <ul>
+            <li><strong>Contrast and color:</strong> Ensuring sufficient contrast between text and background colors
+            </li>
+            <li><strong>Responsiveness:</strong> Ensuring that the UI is adaptable to various screen sizes and
+              orientations</li>
+          </ul>
+          <p id="ember3483" class="ember-view reader-content-blocks__paragraph"><strong>Lighting Preferences</strong>:
+            We have created a design’s dark mode version to help reduce users’ eye strain, particularly in low-light
+            conditions.</p>
+          
+          <h3 id="ember3486" class="ember-view">Step 4: A website engineered with precision</h3>
+          <p id="ember3487" class="ember-view reader-content-blocks__paragraph">We use WordPress to build the website.
+            It combines all the necessary technical features (Content Management System, blogging, vast ecosystem of
+            extensions), and more importantly because it is fully open-source.</p>
+          
+          <blockquote id="ember3488" class="ember-view gap-bottom-margin-2th">
+            <p><em>Instead of relying on page builders (like Elementors), we create custom code because we aim for
+                precision.</em></p>
+          </blockquote>
+          <h4 id="ember3490" class="ember-view">Pixel-perfect design integration</h4>
+          <p id="ember3491" class="ember-view reader-content-blocks__paragraph">We develop the User Interface by
+            creating markups and styles that are inspired by design files. We develop with a mobile-first approach,
+            which consists in creating UI components and pages for small screens first, then gradually adapting the
+            layout to fit medium and larger screens.</p>
+          
+          <h4 id="ember3493" class="ember-view">Rich functionality integration a-la-carte</h4>
+          <p id="ember3494" class="ember-view reader-content-blocks__paragraph">We develop the website with a
+            minimalist, lean, and our-of-the-box approach, we:</p>
+          <ul>
+            <li>Code only what is necessary</li>
+            <li>Decide on a functionality/third-party system integration based on design needs</li>
+            <li>Kept everything to a minimum</li>
+          </ul>
+          
+          <h4 id="ember3497" class="ember-view">Fast website rendering</h4>
+          <p id="ember3498" class="ember-view reader-content-blocks__paragraph">Ensuring the website loads fast is a key
+            aspect of good User Experience. To</p>
+          <ul>
+            <li>Optimize images and database</li>
+            <li>Compress JavaScript and CSS files</li>
+            <li>Keep the code base light (theme and plug-ins)</li>
+            <li>Recommend quality hosting whenever we can</li>
+          </ul>
+          
+          <h2 id="ember3501" class="ember-view gap-top-margin-2th">Conclusion</h2>
+          <p id="ember3502" class="ember-view reader-content-blocks__paragraph">We started this journey with the goal of
+            realigning a website with the vision of professionalism, order, and sophistication that the leadership has.
+            During the research and analysis process, we discovered the website could bring more business if it could
+            also “educate users on the company’s services, and facilitate their discovery process so that they could
+            make informed life insurance decisions.”</p>
+          <p id="ember3503" class="ember-view reader-content-blocks__paragraph">We created the designs that reflect the
+            leadership’s desires but also made sure they are accessible (as per modern standards). Once the time of
+            development came, we created a pixel-perfect User Interface with rich functionalities that load fast.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Technical Process -->
+
+
+
+    <!-- Conclusion & Takeaway -->
+    <section class="pos-relative">
+      <span id="conclusion-and-takeaway" class="page-anchor-dir half-up"></span>
+      <div class="container">
+        <div class="col-lg-8 offset-lg-4">
+          <h2 id="ember3505" class="ember-view">Takeaway</h2>
+          <p id="ember3506" class="ember-view reader-content-blocks__paragraph">We understood our client’s need to get a
+            website that gives them prestige by reflecting elegance and sophistication, but we went further by ensuring
+            users’ aspirations are met and that the website we created provides the best possible User Experience. We
+            over-delivered on the client’s expectations and were very proud to do so.</p>
+          
+          <blockquote id="ember3507" class="ember-view">
+            <p>“Under promise and over-deliver. People will be pleasantly surprised that you gave more than they
+              expected. And remember that there is always room for us to be better and do better. That’s what I am
+              calling for. Not just everybody else – myself, too.” – Luvvie Ajayi</p>
+          </blockquote>
+        </div>
+    </section>
+    <!-- Conclusion & Takeaway -->
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer gap-top-margin gap-bottom-margin link-color-hover2 link-underlined">
+    <div class="container footer-container d-flex flex-column">
+      <header class="footer-header row">
+        <div class="col-lg-6 offset-lg-3 text-center">
+          <a href="/" class="navbar-brand">
+            <img class="tenverto-logo" src="/images/Logo.png" alt="Tenverto by Eric Njanga">
+          </a>
+          <p class="m-0">High-precision design, development, and improvement of large-scale web applications (this
+            includes
+            intranet, CMS, and SASS-based websites). Area of expertise includes Web Accessibility, UI Architecture,
+            and User Experience Design.</p>
+        </div>
+      </header>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="footer-header-list list-inline justify-content-center list-no-style m-0 p-0">
+            <li>
+              <span class="has-icon icon-before icon-pin">Ontario, Canada</span>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/ericnjanga/"
+                class="has-icon icon-before icon-linkedIn">Reach out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-body me-auto ms-auto">
+        <div class="footer-body-cell-1">
+          <h3 class="footer-body-title">Happiest Clients</h3>
+          <ul class="footer-client-list list-no-style m-0 p-0">
+            <li>
+              <a target="_blank" href="https://www.halton.ca/">
+                <img class="client-logo img-fluid" src="/images/dream client 1.png" alt="The Region of halton">
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.ontario.ca/page/ministry-public-business-service-delivery">
+                <img class="client-logo img-fluid" src="/images/dream client 2.png"
+                  alt="The Ministry of Public and Business Service Delivery">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-body-title">On this website</h3>
+          <ul class="footer-body-cell-list-links list-no-style m-0 p-0">
+            <li>
+              <a class="has-icon icon-before icon-link" href="/">Home</a>
+            </li>
+            <li>
+              <a class="has-icon icon-before icon-link" href="/_pages/about.html">About</a>
+            </li>
+            <li>
+              <a class="has-icon icon-before icon-link" href="/_pages/expertise.html">Expertise</a>
+            </li>
+            <li>
+              <a class="has-icon icon-before icon-link" href="/_pages/case-studies.html">Case Studies</a>
+            </li>
+            <li>
+              <a class="has-icon icon-before icon-link" href="/_pages/blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-body-title">Online Presence</h3>
+          <ul class="footer-body-cell-list-links list-no-style m-0 p-0">
+            <li>
+              <a class="has-icon icon-before icon-linkedIn" target="_blank"
+                href="https://www.linkedin.com/in/ericnjanga/">
+                Eric Njanga
+              </a>
+            </li>
+            <li>
+              <a class="has-icon icon-before icon-linkedIn" target="_blank"
+                href="https://www.linkedin.com/company/tenverto">
+                Tenverto
+              </a>
+            </li>
+            <li>
+              <a class="has-icon icon-before icon-text" target="_blank"
+                href="https://www.linkedin.com/newsletters/7083855170261946369/">
+                UX Development for Success
+              </a>
+            </li>
+            <li>
+              <a class="has-icon icon-before icon-text" target="_blank"
+                href="https://www.linkedin.com/newsletters/7141430870384553985/">
+                Successful Web Applications
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Add the back-to-top button with arrow symbol -->
+  <button class="btn-back-to-top">
+    <div class="arrow-container"><i class="bi bi-arrow-up"></i></div>
+  </button>
+
+
+
+
+
+  <!-- Bootstrap v5 Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- Tenverto Script Bundle -->
+  <script src="/dist/scripts.tenverto-bundle.js"></script>
+</body>
+
+</html>

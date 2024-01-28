@@ -1,0 +1,51 @@
+:root {
+    --enjanga-all-pages-blockquote-marg-y: 50px;
+    --enjanga-all-pages-h-top-gap: 40px;
+    --enjanga-all-pages-h2-marg-y: 15px;
+    --enjanga-all-pages-h3-marg-y: 13px;
+    --enjanga-all-pages-h4-marg-y: 10px;
+}
+
+@layer all-pages {
+
+    // Case Study Single
+    // Article Single
+    .single {
+        .single-body {
+            // h1 {}
+            // .ngg-pro-mosaic-container {}
+
+            h2 {
+                margin-bottom: var(--enjanga-all-pages-h2-marg-y);
+            }
+            h3 {
+                margin-top: var(--enjanga-all-pages-h-top-gap);
+                margin-bottom: var(--enjanga-all-pages-h3-marg-y);
+            }
+            h4 {
+                margin-top: var(--enjanga-all-pages-h-top-gap);
+                margin-bottom: var(--enjanga-all-pages-h4-marg-y);
+            }
+    
+            blockquote {
+                margin-top: var(--enjanga-all-pages-blockquote-marg-y);
+                margin-bottom: var(--enjanga-all-pages-blockquote-marg-y);
+            }
+
+            ol {
+                padding-left: 17px;
+            }
+            ul {
+                padding-left: 13px;
+            }
+
+            // ...
+            @media (min-width: 1200px) {
+                --enjanga-all-pages-h2-marg-y: 25px;
+                --enjanga-all-pages-h-top-gap: 70px;
+                --enjanga-all-pages-blockquote-marg-y: 100px;
+            }
+
+        }
+    }
+}
