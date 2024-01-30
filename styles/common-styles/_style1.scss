@@ -116,3 +116,41 @@ blockquote {
 .card.text-bg-secondary {
     background-color: rgb(108, 117, 125);
 }
+
+
+
+
+
+
+
+
+/**
+ * Poster
+ * (link with child image)
+ * -----------------------
+**/
+.poster {
+    display: block;
+    position: relative;
+
+    img {
+        position: relative;
+        z-index: 2;
+    }
+    // On hover, fade out image to reveal light background image
+    &:hover {
+        img {
+            opacity: 0.5;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--enjanga-clr-body-bg);
+        z-index: 1;
+    }
+}
