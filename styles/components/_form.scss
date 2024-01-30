@@ -4,21 +4,26 @@
 
 @layer form {
     @layer buttons {
+        .btn-primary,
+        .btn-secondary {
+            border: 1px solid transparent;
+        }
         .btn-primary {
             background-color: var(--enjanga-clr-gray-1);
-            border-color: var(--enjanga-clr-gray-1);
-
             &:hover {
-                background-color: var(--enjanga-clr-accent);
+                background-color: var(--enjanga-clr-accent1);
             }
         }
         .btn-secondary {
+            color: var(--enjanga-clr-accent2);
+            background-color: var(--enjanga-clr-body-bg1);
             &:hover {
-                background-color: var(--enjanga-clr-accent);
+                color: var(--enjanga-clr-body-bg1);
+                background-color: var(--enjanga-clr-accent1);
             }
         }
     }
-
+    
     
     .form-control {
         padding: 7px;

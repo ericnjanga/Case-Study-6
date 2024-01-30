@@ -3,11 +3,11 @@
   \*************************************************************************************************************/
 @layer framework {
   .list-group-item.active {
-    background-color: var(--enjanga-clr-accent);
-    border-color: var(--enjanga-clr-accent);
+    background-color: var(--enjanga-clr-accent1);
+    border-color: var(--enjanga-clr-accent1);
   }
   .list-group-item:hover:not(.active) {
-    background-color: var(--enjanga-clr-accent-fade);
+    background-color: var(--enjanga-clr-accent1-fade);
   }
 }
 @layer base {
@@ -189,8 +189,9 @@
     --enjanga-clr-gray-2: #434343;
     --enjanga-clr-gray-3: #595959;
     --enjanga-clr-gray-4: #747474;
-    --enjanga-clr-accent: #d65a00;
-    --enjanga-clr-accent-fade:#ffb27b;
+    --enjanga-clr-accent1: #d65a00;
+    --enjanga-clr-accent2: #9C203A;
+    --enjanga-clr-accent1-fade:#ffb27b;
     --enjanga-clr-dark-section-bg: #1c1c20;
     --enjanga-clr-dark-section-h: #e9e4de;
     --enjanga-clr-dark-section-accent: #ffa800;
@@ -531,6 +532,12 @@
       .icon-before.icon-box-arrow-up-right::before {
         content: "\f1c5";
       }
+      .icon-before.icon-arrow-up::before {
+        content: "\f148";
+      }
+      .icon-before.icon-arrow-down::before {
+        content: "\f128";
+      }
     }
     @layer icon-after {
       .icon-after.icon-linkedIn::after {
@@ -553,6 +560,12 @@
       }
       .icon-after.icon-box-arrow-up-right::after {
         content: "\f1c5";
+      }
+      .icon-after.icon-arrow-up::after {
+        content: "\f148";
+      }
+      .icon-after.icon-arrow-down::after {
+        content: "\f128";
       }
     }
   }
@@ -589,7 +602,7 @@
       border-bottom: 1px solid var(--enjanga-clr-gray-4);
     }
     .table-style1 thead th {
-      color: var(--enjanga-clr-accent);
+      color: var(--enjanga-clr-accent1);
       padding: var(--enjanga-table1-cell-padding);
     }
     .table-style1 tbody th, .table-style1 tbody td {
@@ -707,8 +720,8 @@
       border: 0;
     }
     .card-article:hover {
-      background-color: var(--enjanga-clr-accent);
-      --enjanga-clr-card-article-card-bg: var(--enjanga-clr-accent);
+      background-color: var(--enjanga-clr-accent1);
+      --enjanga-clr-card-article-card-bg: var(--enjanga-clr-accent1);
       --enjanga-clr-card-article-title: var(--enjanga-clr-dark-section-h);
     }
     .card-article a {
@@ -781,7 +794,7 @@
     .tenverto-navbar .navbar-collapse .navbar-nav > .current-menu-item.page_item > a {
       font-weight: bold;
       text-decoration: underline !important;
-      color: var(--enjanga-clr-accent);
+      color: var(--enjanga-clr-accent1);
     }
     @media (min-width: 1200px) {
       .tenverto-navbar {
@@ -870,7 +883,7 @@
   @layer case-study {
     .case-study:hover {
       --enjanga-case-study-img-opacity: 0.5;
-      --enjanga-case-study-body-bg: var(--enjanga-clr-accent);
+      --enjanga-case-study-body-bg: var(--enjanga-clr-accent1);
       --enjanga-clr-case-study-text: var(--enjanga-clr-body-bg1);
     }
     .case-study > a {
@@ -923,14 +936,14 @@
     --enjanga--clr-card-expertise-bg: var(--enjanga-clr-body-bg1);
     --enjanga--clr-card-expertise-title: var(--enjanga-clr-gray-1);
     --enjanga--clr-card-expertise-p: var(--enjanga-clr-gray-2);
-    --enjanga--clr-card-expertise-footer-cta: var(--enjanga-clr-accent);
+    --enjanga--clr-card-expertise-footer-cta: var(--enjanga-clr-accent1);
   }
   @layer card-expertise {
     .card-expertise {
       background-color: var(--enjanga--clr-card-expertise-bg);
     }
     .card-expertise:hover {
-      --enjanga--clr-card-expertise-bg: var(--enjanga-clr-accent);
+      --enjanga--clr-card-expertise-bg: var(--enjanga-clr-accent1);
       --enjanga--clr-card-expertise-title: var(--enjanga-clr-body-bg1);
       --enjanga--clr-card-expertise-p: var(--enjanga-clr-body-bg1);
       --enjanga--clr-card-expertise-footer-cta: var(--enjanga-clr-body-bg1);
@@ -1213,15 +1226,23 @@
   }
   @layer form {
     @layer buttons {
+      .btn-primary,
+      .btn-secondary {
+        border: 1px solid transparent;
+      }
       .btn-primary {
         background-color: var(--enjanga-clr-gray-1);
-        border-color: var(--enjanga-clr-gray-1);
       }
       .btn-primary:hover {
-        background-color: var(--enjanga-clr-accent);
+        background-color: var(--enjanga-clr-accent1);
+      }
+      .btn-secondary {
+        color: var(--enjanga-clr-accent2);
+        background-color: var(--enjanga-clr-body-bg1);
       }
       .btn-secondary:hover {
-        background-color: var(--enjanga-clr-accent);
+        color: var(--enjanga-clr-body-bg1);
+        background-color: var(--enjanga-clr-accent1);
       }
     }
     .form-control {
@@ -1250,10 +1271,10 @@
       color: var(--enjanga-clr-gray-2);
     }
     a.link-color-hover1:hover {
-      color: var(--enjanga-clr-accent);
+      color: var(--enjanga-clr-accent1);
     }
     a.link-color-hover2 {
-      color: var(--enjanga-clr-accent);
+      color: var(--enjanga-clr-accent1);
     }
     a.link-color-hover2:hover {
       color: var(--enjanga-clr-gray-2);
@@ -1272,22 +1293,16 @@
       .link-underlined .btn-secondary {
         text-decoration: none;
       }
-      .link-color-hover1 a {
+      .link-color-hover1 a:not(.btn-secondary) {
         color: var(--enjanga-clr-gray-2);
       }
-      .link-color-hover1 a:hover {
-        color: var(--enjanga-clr-accent);
+      .link-color-hover1 a:not(.btn-secondary):hover {
+        color: var(--enjanga-clr-accent1);
       }
-      .link-color-hover1 .btn-secondary {
-        color: #fff;
+      .link-color-hover2 a:not(.btn-secondary) {
+        color: var(--enjanga-clr-accent1);
       }
-      .link-color-hover1 .btn-secondary:hover {
-        color: #fff;
-      }
-      .link-color-hover2 a {
-        color: var(--enjanga-clr-accent);
-      }
-      .link-color-hover2 a:hover {
+      .link-color-hover2 a:not(.btn-secondary):hover {
         color: var(--enjanga-clr-gray-2);
       }
     }
@@ -1315,6 +1330,14 @@
       color: var(--enjanga-clr-dark-section-accent);
     }
     @layer buttons-and-links {
+      .dark-section .btn-primary {
+        color: var(--enjanga-clr-gray-1);
+        background-color: var(--enjanga-clr-dark-section-accent);
+      }
+      .dark-section .btn-primary:hover {
+        color: var(--enjanga-clr-body-bg);
+        background-color: var(--enjanga-clr-accent1);
+      }
       .dark-section a.link-color-hover1 {
         color: var(--enjanga-clr-dark-section-accent);
       }
@@ -1322,10 +1345,10 @@
         color: var(--enjanga-clr-body-bg);
       }
       @layer link-container {
-        .dark-section .link-color-hover2 a {
+        .dark-section .link-color-hover2 a:not(.btn-secondary) {
           color: var(--enjanga-clr-dark-section-accent);
         }
-        .dark-section .link-color-hover2 a:hover {
+        .dark-section .link-color-hover2 a:not(.btn-secondary):hover {
           color: var(--enjanga-clr-body-bg);
         }
       }
@@ -1341,36 +1364,6 @@
     --enjanga-all-pages-h4-marg-y: 10px;
   }
   @layer all-pages {
-    @media (min-width: 1400px) {
-      .single .single-body .ngg-pro-mosaic-container {
-        border: 10px solid purple;
-      }
-    }
-    @media (min-width: 1200px) and (max-width: 1399px) {
-      .single .single-body .ngg-pro-mosaic-container {
-        border: 10px solid violet;
-      }
-    }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .single .single-body .ngg-pro-mosaic-container {
-        border: 10px solid lime;
-      }
-    }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .single .single-body .ngg-pro-mosaic-container {
-        border: 10px solid blue;
-      }
-    }
-    @media (min-width: 576px) and (max-width: 767px) {
-      .single .single-body .ngg-pro-mosaic-container {
-        border: 10px solid turquoise;
-      }
-    }
-    @media (max-width: 575px) {
-      .single .single-body .ngg-pro-mosaic-container {
-        border: 10px solid chocolate;
-      }
-    }
     .single .single-body h2 {
       margin-bottom: var(--enjanga-all-pages-h2-marg-y);
     }
@@ -1487,8 +1480,18 @@
   }
   blockquote::after {
     content: "";
-    background-color: var(--enjanga-clr-accent);
+    background-color: var(--enjanga-clr-accent1);
     border-radius: 50%; /* Make it a circle */
     z-index: 9;
+  }
+  /**
+   * Card background images
+   * -----------------------
+  **/
+  .card.text-bg-primary {
+    background-color: rgb(13, 110, 253);
+  }
+  .card.text-bg-secondary {
+    background-color: rgb(108, 117, 125);
   }
 }

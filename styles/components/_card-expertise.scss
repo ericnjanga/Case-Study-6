@@ -7,7 +7,7 @@
     --enjanga--clr-card-expertise-bg: var(--enjanga-clr-body-bg1);
     --enjanga--clr-card-expertise-title: var(--enjanga-clr-gray-1);
     --enjanga--clr-card-expertise-p: var(--enjanga-clr-gray-2);
-    --enjanga--clr-card-expertise-footer-cta: var(--enjanga-clr-accent);
+    --enjanga--clr-card-expertise-footer-cta: var(--enjanga-clr-accent1);
 }
 
 @layer card-expertise {
@@ -15,7 +15,7 @@
         background-color: var(--enjanga--clr-card-expertise-bg);
 
         &:hover {
-            --enjanga--clr-card-expertise-bg: var(--enjanga-clr-accent);
+            --enjanga--clr-card-expertise-bg: var(--enjanga-clr-accent1);
             --enjanga--clr-card-expertise-title: var(--enjanga-clr-body-bg1);
             --enjanga--clr-card-expertise-p: var(--enjanga-clr-body-bg1);
             --enjanga--clr-card-expertise-footer-cta: var(--enjanga-clr-body-bg1);

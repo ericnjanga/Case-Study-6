@@ -21,5 +21,11 @@
     &.icon-box-arrow-up-right::after {
       content: "\F1C5";
     }
+    &.icon-arrow-up::after {
+      content: "\F148";
+    }
+    &.icon-arrow-down::after {
+      content: "\F128";
+    }
   }
 }

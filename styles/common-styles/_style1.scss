@@ -97,10 +97,22 @@ blockquote {
 
     &::after {
         content: '';
-        background-color: var(--enjanga-clr-accent);
+        background-color: var(--enjanga-clr-accent1);
         border-radius: 50%; /* Make it a circle */
         z-index: 9;
     }
 }
 
 
+
+
+/**
+ * Card background images
+ * -----------------------
+**/
+.card.text-bg-primary {
+    background-color: rgb(13, 110, 253);
+}
+.card.text-bg-secondary {
+    background-color: rgb(108, 117, 125);
+}

@@ -3,11 +3,11 @@
 
 .list-group-item {
     &.active {
-        background-color: var(--enjanga-clr-accent);
-        border-color: var(--enjanga-clr-accent);
+        background-color: var(--enjanga-clr-accent1);
+        border-color: var(--enjanga-clr-accent1);
     }
     &:hover:not(.active) {
-        background-color: var(--enjanga-clr-accent-fade);
+        background-color: var(--enjanga-clr-accent1-fade);
     }
 }
 

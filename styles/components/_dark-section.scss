@@ -1,7 +1,6 @@
 :root {}
 
 
-
 @layer dark-section {
     .dark-section {
         background-color: var(--enjanga-clr-dark-section-bg);
@@ -29,8 +28,17 @@
             }
         }
 
-
         @layer buttons-and-links {
+            .btn-primary {
+                color: var(--enjanga-clr-gray-1);
+                background-color: var(--enjanga-clr-dark-section-accent);
+
+                &:hover {
+                    color: var(--enjanga-clr-body-bg);
+                    background-color: var(--enjanga-clr-accent1);
+                }
+            }
+
             // Link with color1 by default, and color2 on hover
             a.link-color-hover1 {
                 color: var(--enjanga-clr-dark-section-accent);
@@ -40,11 +48,10 @@
                 }
             }
 
-
             @layer link-container {
                 // Link with color3 by default, and color4 on hover
                 .link-color-hover2 {
-                    a {
+                    a:not(.btn-secondary) {
                         color: var(--enjanga-clr-dark-section-accent);
 
                         &:hover {

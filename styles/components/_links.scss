@@ -27,13 +27,13 @@
     a.link-color-hover1 {
         color: var(--enjanga-clr-gray-2);
         &:hover {
-            color: var(--enjanga-clr-accent);
+            color: var(--enjanga-clr-accent1);
         }
     }
 
     // Link with color3 by default, and color4 on hover
     a.link-color-hover2 {
-        color: var(--enjanga-clr-accent);
+        color: var(--enjanga-clr-accent1);
         &:hover {
             color: var(--enjanga-clr-gray-2);
         }
@@ -62,24 +62,18 @@
     
         // Link with color1 by default, and color2 on hover
         .link-color-hover1 {
-            a {
+            a:not(.btn-secondary) {
                 color: var(--enjanga-clr-gray-2);
                 &:hover {
-                    color: var(--enjanga-clr-accent);
-                }
-            }
-            .btn-secondary {
-                color: #fff;
-                &:hover {
-                    color: #fff;
+                    color: var(--enjanga-clr-accent1);
                 }
             }
         }
     
         // Link with color3 by default, and color4 on hover
         .link-color-hover2 {
-            a {
-                color: var(--enjanga-clr-accent);
+            a:not(.btn-secondary) {
+                color: var(--enjanga-clr-accent1);
                 &:hover {
                     color: var(--enjanga-clr-gray-2);
                 }
